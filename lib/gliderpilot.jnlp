@@ -1,0 +1,17 @@
+<jnlp spec="1.0+" version="1.0" href="gliderpilot.jnlp"
+codebase="http://www.gliderpilot.de/">
+<information>
+  <title>Gliderpilot</title>
+  <vendor>Tobias Schulte</vendor>
+  <homepage href="http://www.gliderpilot.de" />
+  <offline-allowed />
+</information>
+
+<security />
+<resources>
+  <j2se version="1.4+" />
+  <jar href="downloads/gliderpilot.jar" main="true" />
+</resources>
+
+<application-desc main-class="de.gliderpilot.Gliderpilot" />
+</jnlp>
