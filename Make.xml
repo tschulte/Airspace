@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Gliderpilot" default="Jar" basedir=".">
+
+    <target name="Jar">
+    	<jar destfile="lib/gliderpilot.jar" basedir="classes" />
+    </target>
+
+    <target name="SignJar" depends="Jar">
+    	<signjar jar="lib/gliderpilot.jar" alias="gliderpilot" storepass="gpsp02"/>
+    </target>
+
+    <target name="Export" depends="SignJar">
+    	<ftp server="www.gliderpilot.de" userid="p6645041" password="MPWGP.de" remotedir="/download" 
+	    		binary="no" passive="yes">
+    		<fileset dir="lib">
+    			<include name="gliderpilot.jar"/>
+    			<include name="gliderpilot.jnlp"/>
+    		</fileset>
+    	</ftp>
+    </target>
+
+</project>
