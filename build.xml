@@ -11,9 +11,14 @@
 
     <target name="Export" depends="SignJar">
     	<ftp server="www.gliderpilot.de" userid="p6645041" password="MPWGP.de" remotedir="/download" 
-	    		binary="no" passive="yes">
+	    		passive="yes" action="put">
     		<fileset dir="lib">
     			<include name="gliderpilot.jar"/>
+    		</fileset>
+    	</ftp>
+    	<ftp server="www.gliderpilot.de" userid="p6645041" password="MPWGP.de" remotedir="/download" 
+	    		binary="no" passive="yes" action="put">
+    		<fileset dir="lib">
     			<include name="gliderpilot.jnlp"/>
     		</fileset>
     	</ftp>
