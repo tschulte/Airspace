@@ -101,9 +101,6 @@ public class TrackLogTableModel extends AbstractTableModel {
 		tracks.add(track);
 		fireTableRowsInserted(tracks.size() - 1, tracks.size() - 1);
 
-//		ObjectContainer db = Db4o.openFile("TrackLog.yap");
-//		db.set(track);
-//		db.close();
 	}
 
 	/**
@@ -112,12 +109,8 @@ public class TrackLogTableModel extends AbstractTableModel {
 	 * @param index DOCUMENT ME!
 	 */
 	public void removeTrackLog(int index) {
-		TrackLog track = (TrackLog) tracks.remove(index);
 		fireTableRowsDeleted(index, index);
 
-//		ObjectContainer db = Db4o.openFile("TrackLog.yap");
-//		db.delete(track);
-//		db.close();
 	}
 	/**
 	 * @see javax.swing.table.TableModel#getColumnClass(int)

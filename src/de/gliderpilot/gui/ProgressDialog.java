@@ -38,9 +38,9 @@ public class ProgressDialog extends JDialog implements Cancelable {
 		getContentPane().setLayout(new FlowLayout());
 		progressBar = new JProgressBar(min, max);
 
-		if (min == max) {
-			progressBar.setIndeterminate(true);
-		}
+//		if (min == max) {
+//			progressBar.setIndeterminate(true);
+//		}
 
 		CancelButton cancelButton = new CancelButton(this);
 

@@ -6,7 +6,6 @@
  */
 package de.gliderpilot.task;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.ProtocolException;
@@ -35,8 +34,6 @@ public abstract class OlcDirectFlightClaimer extends AbstractOlcDefinitionWriter
 	protected String getOlcDefinition() {
 		StringBuffer buf = new StringBuffer();
 		buf.append(super.getOlcDefinition());
-		
-		File igcFile = new File(task.getTrackLog().getIgcFileName());
 		return buf.toString();
 	}
 

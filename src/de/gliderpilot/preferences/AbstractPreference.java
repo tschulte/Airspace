@@ -20,7 +20,7 @@ public abstract class AbstractPreference implements Pref {
 	}
 	
 	public void save() {
-		prefs.put(getKey(), stringValue());
+		prefs.put(this);
 	}
 	
 	/**

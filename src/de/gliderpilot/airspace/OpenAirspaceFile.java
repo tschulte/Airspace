@@ -7,11 +7,13 @@ package de.gliderpilot.airspace;
 
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.logging.Logger;
-import java.util.regex.Pattern;
+import java.util.StringTokenizer;
+
+import org.apache.log4j.Logger;
 
 import de.gliderpilot.geom.Point4D;
 import de.gliderpilot.trace.TraceLevels;
@@ -30,11 +32,11 @@ public class OpenAirspaceFile implements AirspaceFile, AirspaceTypes, TraceLevel
 //		39:36.8 N 119:46.1W
 //		25:46.625N 80:26.041W
 //		25:38.52 S 027:11.16 E
-	private static Pattern pointPattern = Pattern.compile(
-												  "[\\p{Punct}\\p{Blank}]");
+//	private static Pattern pointPattern = Pattern.compile(
+//												  "[\\p{Punct}\\p{Blank}]");
 	private AirspaceContainer airspaceContainer;
 	private BufferedReader asciiReader;
-	private String filename;
+	private File file;
 	private boolean eof = true;
 
 	/**
@@ -43,8 +45,8 @@ public class OpenAirspaceFile implements AirspaceFile, AirspaceTypes, TraceLevel
 	 * @param file DOCUMENT ME!
 	 * @param airspaceContainer DOCUMENT ME!
 	 */
-	public OpenAirspaceFile(String file, AirspaceContainer airspaceContainer) {
-		this.filename = file;
+	public OpenAirspaceFile(File file, AirspaceContainer airspaceContainer) {
+		this.file = file;
 		this.airspaceContainer = airspaceContainer;
 	}
 
@@ -59,7 +61,7 @@ public class OpenAirspaceFile implements AirspaceFile, AirspaceTypes, TraceLevel
 		try {
 			asciiReader = new BufferedReader(
 								  new InputStreamReader(
-										  new FileInputStream(filename)));
+										  new FileInputStream(file)));
 
 			if (asciiReader != null) {
 				retval = parse();
@@ -93,16 +95,17 @@ public class OpenAirspaceFile implements AirspaceFile, AirspaceTypes, TraceLevel
 //		25:38.52 S 027:11.16 E
 		substring = substring.trim();
 
-		Logger.getLogger(LOGGER).fine(substring);
+		Logger.getLogger(LOGGER).debug(substring);
+		
+		StringTokenizer tokenizer = new StringTokenizer(substring, ".:\t ");
 
-		String[] data = pointPattern.split(substring);
-
-		for (int i = 0; i < data.length; i++) {
-			Logger.getLogger(LOGGER).fine(data[i]);
-		}
-
-		if (data.length < 8) {
+		if (tokenizer.countTokens() < 8) {
+			Logger.getLogger(LOGGER).debug("Less than 8 tokens");
 			return null;
+		}
+		String[] data = new String[8];
+		for (int i = 0; i < 8; i++) {
+			data[i] = tokenizer.nextToken();
 		}
 
 		int wD;
@@ -238,7 +241,7 @@ public class OpenAirspaceFile implements AirspaceFile, AirspaceTypes, TraceLevel
 	}
 
 	private boolean parse() throws IOException {
-		Logger.getLogger(LOGGER).fine("start parsing");
+		Logger.getLogger(LOGGER).debug("start parsing");
 
 		String line;
 		AirspaceElement airspace = null;

@@ -7,10 +7,10 @@ package de.gliderpilot.task;
 
 
 import java.util.Iterator;
-import java.util.logging.Logger;
 
 import de.gliderpilot.geom.Point4D;
 import de.gliderpilot.preferences.Prefs;
+import de.gliderpilot.trace.Logger;
 import de.gliderpilot.tracklog.TrackLog;
 
 
@@ -53,11 +53,16 @@ public class OlcOptimizer extends AbstractOptimizer {
 	 */
 	protected void optimize() {
 		OlcTask[] tasks = new AbstractOlcTask[endIndex - startIndex];
+		
+		
+		// first we place an OlcTask with a start point in every point of the track
 		for (int i = 0; i < tasks.length; i++) {
 			int index = i + startIndex;
 			tasks[i] = new OlcTask2003(track);
 			tasks[i].addTrackPoint(index);
 		}
+		
+		// this will hold the best result
 		OlcTask bestTask;
 
 		Logger.getLogger(LOGGER).info("Number of TrackPoints " + 
@@ -99,6 +104,13 @@ public class OlcOptimizer extends AbstractOptimizer {
 		Logger.getLogger(LOGGER).info("\n"+bestTask.getDumpString());
 	}
 	
+	/**
+	 * Optimize a given Task by moving one task point after another to find a
+	 * better task
+	 * 
+	 * @param task the task to optimize
+	 * @return the optimized task
+	 */
 	private OlcTask optimize(OlcTask task) {
 		OlcTask best = (OlcTask) task.clone();
 		Iterator iterator = best.iterator();
@@ -119,6 +131,13 @@ public class OlcOptimizer extends AbstractOptimizer {
 		return best;
 	}
 	
+	/**
+	 * Adds another task point to an existing task. This method is called, after
+	 * the best start point has been already found
+	 * 
+	 * @param task
+	 * @return OlcTask
+	 */
 	private OlcTask addLeg(OlcTask task) {
 		int iLeaveOuts = 0;
 		OlcTask bestTask = (OlcTask) task.clone();
@@ -148,10 +167,6 @@ public class OlcOptimizer extends AbstractOptimizer {
 			int j = i+1;
 			if (bestJ != 0) {
 				best.addTrackPoint(bestJ);
-//				j   = bestJ - 10;//(int) (1f/6 * (endIndex-startIndex));
-//				if (j <= i) j = i+1;
-//				end = bestJ + 10;//(int) (1f/6 * (endIndex-startIndex));
-//				if (end > endIndex) end = endIndex;
 			}
 			OlcTask task = tasks[k];
 			jLeaveOuts = 0;

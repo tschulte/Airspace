@@ -10,7 +10,6 @@ import java.awt.GridLayout;
 
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import javax.swing.text.Document;
 
 import de.gliderpilot.gui.CancelApplyPanel;
 
@@ -67,7 +66,6 @@ public class StringPreference extends AbstractPreference {
 			setLayout(new GridLayout(1, 1));
 			textField = new JTextField(value);
 
-			Document doc = textField.getDocument();
 			add(textField);
 		}
 

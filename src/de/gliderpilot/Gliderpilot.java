@@ -12,8 +12,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.File;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import javax.swing.JDesktopPane;
 import javax.swing.JFileChooser;
@@ -26,6 +24,10 @@ import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
+
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 
 import de.gliderpilot.airspace.AirspaceContainer;
 import de.gliderpilot.airspace.preferences.AirspacePrefs;
@@ -40,7 +42,6 @@ import de.gliderpilot.preferences.PrefsChangeEvent;
 import de.gliderpilot.preferences.PrefsDialog;
 import de.gliderpilot.trace.TraceLevels;
 import de.gliderpilot.tracklog.TrackLog;
-import de.gliderpilot.util.Util;
 
 
 /**
@@ -50,8 +51,12 @@ import de.gliderpilot.util.Util;
  * @author <a href="mailto:tobias.schulte@gliderpilot.de">Tobias Schulte</a>
  */
 public class Gliderpilot extends JFrame implements TraceLevels, Prefs.Listener {
-	public static final String APP_NAME = "Gliderpilot 2003 Beta 01";
+	public static final String APP_NAME = "Gliderpilot 2003 Beta 03";
 	static Logger logger = Logger.getLogger(LOGGER);
+	static {
+		logger.setLevel(Level.WARN);
+		BasicConfigurator.configure();
+	}
 	static JFrame frame;
 	
 	public static JFrame getFrame() {
@@ -102,27 +107,18 @@ public class Gliderpilot extends JFrame implements TraceLevels, Prefs.Listener {
 		String lookAndFeel = AirspacePrefs.LOOK_AND_FEEL.stringValue();
 
 		try {
-			logger.fine("Setting Look & Feel");
+			logger.debug("Setting Look & Feel");
 			UIManager.setLookAndFeel(lookAndFeel);
 			SwingUtilities.updateComponentTreeUI(this);
 
-//			Handler handler = new FileHandler("test%g.log", 1024000, 10);
-//			handler.setFormatter(new SimpleFormatter());
-//			handler.setLevel(Level.INFO);
-//			logger.addHandler(handler);
-
-			logger.setLevel(Level.INFO);
 		} catch (Exception e) {
-			logger.log(Level.WARNING, "Error", e);
+			logger.warn("Error", e);
 		}
 
-		logger.fine("getting Preferences");
+		logger.debug("getting Preferences");
 
 		String path = AirspacePrefs.CURRENT_PATH.stringValue();
 		currentPath = new File(path);
-
-		Util.setTraceStream(System.out);
-		Util.setTraceLevel(INFO);
 
 		trackTable = new TrackTable();
 
@@ -168,9 +164,6 @@ public class Gliderpilot extends JFrame implements TraceLevels, Prefs.Listener {
 		desktopPane.validate();
 
 
-//		VarioPanel varioPanel = new VarioPanel(trackTable);
-//		internalFrame = new JInternalFrame("Vario");
-//		internalFrame.getContentPane().add(varioPanel);
 		menuBar = new JMenuBar();
 
 		fileMenu = new JMenu(Msg.get(Msg.FILE));

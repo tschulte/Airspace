@@ -15,19 +15,4 @@ package de.gliderpilot.trace;
 public interface TraceLevels {
 	/** DOCUMENT ME! */
 	public static final String LOGGER = "AirspaceViewer";
-
-	/** DOCUMENT ME! */
-	public static final int ERROR = 0;
-
-	/** DOCUMENT ME! */
-	public static final int WARNING = 1;
-
-	/** DOCUMENT ME! */
-	public static final int INFO = 2;
-
-	/** DOCUMENT ME! */
-	public static final int VERBOSE = 3;
-
-	/** DOCUMENT ME! */
-	public static final int DEBUG = 4;
 }

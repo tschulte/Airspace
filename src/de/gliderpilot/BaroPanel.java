@@ -45,7 +45,6 @@ public class BaroPanel extends AbstractZoomable4DPanelTime
 		setName(Msg.get(Msg.BARO));
 		contextMenu = new BaroPanelContextMenu();
 
-		Prefs airPref = AirspacePrefs.getReference();
 		airPrefs.addPreferenceChangeListener(this);
 
 		setMode(AirspacePrefs.BARO_MODE.intValue());

@@ -18,7 +18,8 @@ import de.gliderpilot.geom.Point4D;
 import de.gliderpilot.preferences.Pref;
 import de.gliderpilot.preferences.Prefs;
 import de.gliderpilot.task.ExternalAppOptimizer;
-import de.gliderpilot.task.OlcTask2002;
+import de.gliderpilot.task.OlcTask;
+import de.gliderpilot.task.OlcTask2003;
 import de.gliderpilot.task.Task;
 import de.gliderpilot.tracklog.TrackLog;
 
@@ -89,8 +90,8 @@ public class OptiGcOptimizer extends ExternalAppOptimizer {
 		BufferedReader errReader = new BufferedReader(
 										new InputStreamReader(errStream));
 										
-		OlcTask2002 actualResult = new OlcTask2002(track);
-		OlcTask2002 bestResult = new OlcTask2002(track);
+		OlcTask actualResult = new OlcTask2003(track);
+		OlcTask bestResult = new OlcTask2003(track);
 		int count = -1;
 
 		boolean parseStd = true;
@@ -116,7 +117,7 @@ public class OptiGcOptimizer extends ExternalAppOptimizer {
 					count = 0;
 	
 					if (bestResult.getScore() < actualResult.getScore()) {
-						bestResult = (OlcTask2002) actualResult.clone();
+						bestResult = (OlcTask) actualResult.clone();
 					}
 				} else if (line.startsWith("p") && (count >= 0)) {
 					int start = line.indexOf(' ') + 1;
@@ -182,7 +183,7 @@ public class OptiGcOptimizer extends ExternalAppOptimizer {
 		}
 
 		if (bestResult.getScore() < actualResult.getScore()) {
-			bestResult = (OlcTask2002) actualResult.clone();
+			bestResult = (OlcTask) actualResult.clone();
 		}
 
 		System.out.println(bestResult.getDistance());

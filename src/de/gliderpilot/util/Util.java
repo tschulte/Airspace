@@ -6,8 +6,6 @@
 package de.gliderpilot.util;
 
 
-import java.io.PrintStream;
-
 import de.gliderpilot.geom.Point4D;
 import de.gliderpilot.trace.TraceLevels;
 
@@ -19,8 +17,6 @@ import de.gliderpilot.trace.TraceLevels;
  * @author <a href="mailto:tobias.schulte@gliderpilot.de">Tobias Schulte</a>
  */
 public class Util implements TraceLevels {
-	private static PrintStream trace;
-	private static int traceLevel = INFO;
 	private static double kmOneDegree = new Point4D(1, 0, 0, true, 1, 0, 0, 
 													true).getXDistanceFrom(
 												new Point4D());
@@ -86,24 +82,6 @@ public class Util implements TraceLevels {
 	 */
 	public static int getSystemValue(double km, double factor) {
 		return (int) (km * factor / kmOneDegree);
-	}
-
-	/**
-	 * DOCUMENT ME!
-	 * 
-	 * @param traceLevel DOCUMENT ME!
-	 */
-	public static void setTraceLevel(int traceLevel) {
-		Util.traceLevel = traceLevel;
-	}
-
-	/**
-	 * DOCUMENT ME!
-	 * 
-	 * @param trace DOCUMENT ME!
-	 */
-	public static void setTraceStream(PrintStream trace) {
-		Util.trace = trace;
 	}
 
 	/**

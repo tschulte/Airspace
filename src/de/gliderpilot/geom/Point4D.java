@@ -296,7 +296,6 @@ public class Point4D extends Point2D.Double implements Dumpable {
 		return this.getXDegrees() - reference.getXDegrees();
 	}
 
-	// TODO: Implement the real distance
 
 	/**
 	 * Returns the x distance in km from the reference point. If reference is

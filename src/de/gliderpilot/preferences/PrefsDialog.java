@@ -10,7 +10,6 @@ import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Frame;
 import java.awt.GridLayout;
-import java.awt.HeadlessException;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.Hashtable;
@@ -50,7 +49,7 @@ public class PrefsDialog extends JDialog implements Applyable, ApplyAndCloseable
 	 * 
 	 * @throws HeadlessException
 	 */
-	public PrefsDialog(Frame owner, Prefs prefs) throws HeadlessException {
+	public PrefsDialog(Frame owner, Prefs prefs) {
 		super(owner, "Preferences", true);
 
 		getContentPane().setLayout(new BorderLayout());
@@ -131,7 +130,6 @@ public class PrefsDialog extends JDialog implements Applyable, ApplyAndCloseable
 
 		prefs.addPreferenceChangeListener(new Prefs.Listener() {
 			public void preferenceChange(PrefsChangeEvent evt) {
-				Prefs prefs = evt.getNode();
 				Pref pref = evt.getNewPref();
 
 				if (pref instanceof ExternalClassPreference) {

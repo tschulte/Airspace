@@ -75,7 +75,7 @@ public class DimensionPreference extends AbstractPreference {
 	}
 		
 	public void setDimension(Dimension dimension) {
-		this.dimension.setSize(dimension.getWidth(), dimension.getHeight());
+		this.dimension.setSize((int) dimension.getWidth(), (int) dimension.getHeight());
 	}
 
 	class DimensionPrefPanel extends CancelApplyPanel implements Prefs.Listener {

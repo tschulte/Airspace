@@ -24,8 +24,6 @@ public class Msg implements TranslationKeys {
 	
 	static {
 		try {
-			Locale defaultLocale = Locale.getDefault();
-			String loc = defaultLocale.toString();
 			String bundleName = "resources/messages/messages";
 			bundle = ResourceBundle.getBundle(bundleName);
 		} catch (Exception e) {

@@ -62,7 +62,9 @@ public class BitPreference extends AbstractPreference {
 	
 	public void setValue(int value) {
 		for (int i = 0; i < indexNames.length; i++) {
-			bitSet.set(i, ((value >> i) & 1) != 0);
+			boolean set = ((value >> i) & 1) != 0;
+			if (set) bitSet.set(i);
+			else bitSet.clear(i);
 		}
 
 		if (bitPrefPanel != null) {
@@ -162,7 +164,8 @@ public class BitPreference extends AbstractPreference {
 				changed = false;
 				for (int i = 0; i < indexNames.length; i++) {
 					JCheckBox checkBox = (JCheckBox) getComponent(i);
-					bitSet.set(i, checkBox.isSelected());
+					if (checkBox.isSelected()) bitSet.set(i);
+					else bitSet.clear(i);
 				}
 				save();
 			}

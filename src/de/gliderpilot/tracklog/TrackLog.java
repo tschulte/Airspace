@@ -14,9 +14,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Enumeration;
 import java.util.Iterator;
-import java.util.RandomAccess;
 import java.util.Vector;
-import java.util.logging.Logger;
+
+import org.apache.log4j.Logger;
 
 import de.gliderpilot.geom.Line4D;
 import de.gliderpilot.geom.Modes4D;
@@ -37,7 +37,7 @@ import de.gliderpilot.util.DumpString;
  * @version $Revision$
  * @author $author$
  */
-public class TrackLog implements Dumpable, RandomAccess, Drawable4D, TraceLevels, Modes4D,
+public class TrackLog implements Dumpable, Drawable4D, TraceLevels, Modes4D,
 								 TrackParamsChangedEvent.Source {
 	ArrayList paramsChangedListeners = new ArrayList();
 	ArrayList tasks = new ArrayList();
@@ -325,7 +325,7 @@ public class TrackLog implements Dumpable, RandomAccess, Drawable4D, TraceLevels
 	 */
 	public void add(Point4D point) {
 		Logger.getLogger(LOGGER)
-			  .fine("Adding Point to Track: " + point.getDumpString());
+			  .debug("Adding Point to Track: " + point.getDumpString());
 
 		if (lastPoint != null) {
 			deltaT = deltaT * lines.size();

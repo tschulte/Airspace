@@ -25,12 +25,13 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.Iterator;
-import java.util.logging.Logger;
 
 import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+
+import org.apache.log4j.Logger;
 
 import de.gliderpilot.TrackLogTableModel;
 import de.gliderpilot.TrackTable;
@@ -101,7 +102,7 @@ public abstract class AbstractZoomable4DPanel extends JPanel
 		trackTable.getSelectionModel()
 		  .addListSelectionListener(new TrackListSelectionListener());
 		Logger.getLogger(LOGGER)
-			  .fine("Width:" + getWidth() + ",Height:" + getHeight());
+			  .debug("Width:" + getWidth() + ",Height:" + getHeight());
 		xform = new AffineTransform();
 		reverseXform = new AffineTransform();
 		imageXform = new AffineTransform();
@@ -467,7 +468,7 @@ public abstract class AbstractZoomable4DPanel extends JPanel
 		mousePoint.y = y;
 		fireMousePointChanged();
 		repaint();
-		Logger.getLogger(LOGGER).fine("X: " + x + "; Y: " + y);
+		Logger.getLogger(LOGGER).debug("X: " + x + "; Y: " + y);
 	}
 
 	/**
@@ -603,7 +604,7 @@ public abstract class AbstractZoomable4DPanel extends JPanel
 		 * @param e DOCUMENT ME!
 		 */
 		public void mouseClicked(MouseEvent e) {
-			Logger.getLogger(LOGGER).fine("mouseClicked");
+			Logger.getLogger(LOGGER).debug("mouseClicked");
 		}
 
 		/**
@@ -612,7 +613,7 @@ public abstract class AbstractZoomable4DPanel extends JPanel
 		 * @param e DOCUMENT ME!
 		 */
 		public void mouseEntered(MouseEvent e) {
-			Logger.getLogger(LOGGER).fine("mouseEntered");
+			Logger.getLogger(LOGGER).debug("mouseEntered");
 		}
 
 		/**
@@ -621,7 +622,7 @@ public abstract class AbstractZoomable4DPanel extends JPanel
 		 * @param e DOCUMENT ME!
 		 */
 		public void mouseExited(MouseEvent e) {
-			Logger.getLogger(LOGGER).fine("mouseExited");
+			Logger.getLogger(LOGGER).debug("mouseExited");
 		}
 
 		/**
@@ -630,7 +631,7 @@ public abstract class AbstractZoomable4DPanel extends JPanel
 		 * @param e DOCUMENT ME!
 		 */
 		public void mousePressed(MouseEvent e) {
-			Logger.getLogger(LOGGER).fine("mousePressed");
+			Logger.getLogger(LOGGER).debug("mousePressed");
 
 			if ((e.getModifiers() & MouseEvent.BUTTON1_MASK) != 0) {
 				zoomPoint1 = new Point(e.getX(), e.getY());
@@ -644,7 +645,7 @@ public abstract class AbstractZoomable4DPanel extends JPanel
 		 * @param e DOCUMENT ME!
 		 */
 		public void mouseReleased(MouseEvent e) {
-			Logger.getLogger(LOGGER).fine("mouseReleased");
+			Logger.getLogger(LOGGER).debug("mouseReleased");
 
 			if (((e.getModifiers() & MouseEvent.BUTTON1_MASK) != 0) && 
 					(zoomPoint1 != null) && (zoomPoint2 != null)) {
@@ -683,7 +684,7 @@ public abstract class AbstractZoomable4DPanel extends JPanel
 			if (zoomPoint1 != null) {
 				zoomPoint2 = new Point(e.getX(), e.getY());
 				zoomRect.setFrameFromDiagonal(zoomPoint1, zoomPoint2);
-				Logger.getLogger(LOGGER).fine("ZoomRect set");
+				Logger.getLogger(LOGGER).debug("ZoomRect set");
 				repaint();
 			}
 		}

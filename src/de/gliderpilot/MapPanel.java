@@ -10,6 +10,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.io.File;
 
 import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
@@ -21,6 +22,7 @@ import de.gliderpilot.airspace.preferences.AirspacePrefs;
 import de.gliderpilot.gui.AbstractZoomable4DPanel;
 import de.gliderpilot.gui.AbstractZoomable4DPanelXY;
 import de.gliderpilot.gui.Msg;
+import de.gliderpilot.preferences.FilePreference;
 import de.gliderpilot.preferences.Prefs;
 import de.gliderpilot.preferences.PrefsChangeEvent;
 import de.gliderpilot.tracklog.TrackLog;
@@ -48,10 +50,15 @@ public class MapPanel extends AbstractZoomable4DPanelXY
 		Prefs prefs = AirspacePrefs.getReference();
 		prefs.addPreferenceChangeListener(this);
 
-		AirspaceContainer airspace = new AirspaceVector();
-		new OpenAirspaceFile(AirspacePrefs.MAP_FILE.stringValue(), airspace).read();
-		airspace.trimToSize();
-		setAirspace(airspace);
+		File file = AirspacePrefs.MAP_FILE.fileValue();
+		if (file != null && file.exists()) {
+			AirspaceContainer airspace = new AirspaceVector();
+			new OpenAirspaceFile(file, airspace).read();
+			airspace.trimToSize();
+			setAirspace(airspace);
+		} else {
+			setAirspace(new AirspaceVector());
+		}
 	}
 
 	/**
@@ -86,12 +93,15 @@ public class MapPanel extends AbstractZoomable4DPanelXY
 	 */
 	public void preferenceChange(PrefsChangeEvent evt) {
 		if (evt.getNewPref() == AirspacePrefs.MAP_FILE) {
-			AirspaceContainer airspace = new AirspaceVector();
-			new OpenAirspaceFile(evt.getNewPref().stringValue(), airspace).read();
-			airspace.trimToSize();
-			setAirspace(airspace);
-			contentChanged();
-			repaint();
+			File file = ((FilePreference) evt.getNewPref()).fileValue();
+			if (file != null && file.exists()) {
+				AirspaceContainer airspace = new AirspaceVector();
+				new OpenAirspaceFile(file, airspace).read();
+				airspace.trimToSize();
+				setAirspace(airspace);
+				contentChanged();
+				repaint();
+			}
 		}
 	}
 

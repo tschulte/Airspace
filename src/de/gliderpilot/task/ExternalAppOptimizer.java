@@ -7,7 +7,8 @@ package de.gliderpilot.task;
 
 
 import java.io.InputStream;
-import java.util.logging.Logger;
+
+import org.apache.log4j.Logger;
 
 import de.gliderpilot.tracklog.TrackLog;
 

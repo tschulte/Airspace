@@ -50,10 +50,13 @@ public class ExclusiveBitPreference extends BitPreference {
 
 	public void set(int bitIndex, boolean value) {
 		if (value) {
-			bitSet.clear();
+			for (int i = 0; i < indexNames.length; i++) {
+				bitSet.clear(i);
+			}
+			bitSet.set(bitIndex);
+		} else {
+			bitSet.clear(bitIndex);
 		}
-
-		bitSet.set(bitIndex, value);
 	}
 
 	class BitPrefPanel extends CancelApplyPanel implements ChangeListener,

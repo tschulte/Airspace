@@ -6,7 +6,9 @@
 package de.gliderpilot.airspace;
 
 
-import java.util.logging.Logger;
+import java.io.File;
+
+import org.apache.log4j.Logger;
 
 import de.gliderpilot.trace.TraceLevels;
 
@@ -19,7 +21,7 @@ import de.gliderpilot.trace.TraceLevels;
  */
 public class AirspaceLoader extends Thread implements TraceLevels {
 	AirspaceContainer airspace;
-	String file;
+	File file;
 	int fileType;
 
 	/**
@@ -29,7 +31,7 @@ public class AirspaceLoader extends Thread implements TraceLevels {
 	 * @param file DOCUMENT ME!
 	 * @param fileType DOCUMENT ME!
 	 */
-	public AirspaceLoader(AirspaceContainer airspace, String file, int fileType) {
+	public AirspaceLoader(AirspaceContainer airspace, File file, int fileType) {
 		this.airspace = airspace;
 		this.file = file;
 		this.fileType = fileType;
@@ -44,7 +46,7 @@ public class AirspaceLoader extends Thread implements TraceLevels {
 		switch (fileType) {
 		case AirspaceFile.OPEN_AIRSPACE:
 			Logger.getLogger(LOGGER)
-				  .fine("Load data from OpenAirspaceFile " + file);
+				  .debug("Load data from OpenAirspaceFile " + file);
 			airspaceFile = new OpenAirspaceFile(file, airspace);
 
 			break;

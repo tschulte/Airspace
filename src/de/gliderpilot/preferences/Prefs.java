@@ -6,12 +6,16 @@
 package de.gliderpilot.preferences;
 
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.Hashtable;
-import java.util.prefs.BackingStoreException;
-import java.util.prefs.PreferenceChangeEvent;
-import java.util.prefs.PreferenceChangeListener;
-import java.util.prefs.Preferences;
+import java.util.Properties;
+
+import org.apache.log4j.Logger;
+
+import de.gliderpilot.trace.TraceLevels;
 
 
 /**
@@ -19,15 +23,19 @@ import java.util.prefs.Preferences;
  * 
  * @author <a href="mailto:tobias.schulte@gliderpilot.de">Tobias Schulte</a>
  */
-public abstract class Prefs implements PreferenceChangeListener {
+public abstract class Prefs {
+	private final File PROPERTY_FILE = new File(getClass().getName());
+	Properties properties = new Properties();
 	Hashtable values = new Hashtable();
 	ArrayList listeners = new ArrayList();
-	Preferences preferences;
 
 	// not instanciable
 	protected Prefs() {
-		preferences = Preferences.userNodeForPackage(getClass());
-		preferences.addPreferenceChangeListener(this);
+		try {
+			properties.load(new FileInputStream(PROPERTY_FILE));
+		} catch (Exception e) {
+			Logger.getLogger(TraceLevels.LOGGER).warn(e);
+		}
 	}
 
 	/**
@@ -47,12 +55,13 @@ public abstract class Prefs implements PreferenceChangeListener {
 	}
 
 	/**
-	 * DOCUMENT ME!
+	 * TODO: flush to disk
 	 */
 	public void flush() {
 		try {
-			preferences.flush();
-		} catch (BackingStoreException e) {
+			properties.store(new FileOutputStream(PROPERTY_FILE), "");
+		} catch (Exception e) {
+			Logger.getLogger(TraceLevels.LOGGER).warn(e);
 		}
 	}
 
@@ -68,13 +77,8 @@ public abstract class Prefs implements PreferenceChangeListener {
 		return value;
 	}
 
-	/**
-	 * DOCUMENT ME!
-	 * 
-	 * @param evt DOCUMENT ME!
-	 */
-	public void preferenceChange(PreferenceChangeEvent evt) {
-		PrefsChangeEvent e = new PrefsChangeEvent(this, get(evt.getKey()));
+	private void preferenceChange(Pref pref) {
+		PrefsChangeEvent e = new PrefsChangeEvent(this, pref);
 
 		for (int i = 0; i < listeners.size(); i++) {
 			((Listener) listeners.get(i)).preferenceChange(e);
@@ -92,11 +96,16 @@ public abstract class Prefs implements PreferenceChangeListener {
 	 * @param value DOCUMENT ME!
 	 */
 	public void put(String key, String value) {
-		preferences.put(key, value);
+		put(get(key));
+	}
+	
+	public void put(Pref pref) {
+		properties.setProperty(pref.getKey(), pref.stringValue());
+		preferenceChange(pref);
 	}
 
 	String get(String key, String def) {
-		return preferences.get(key, def);
+		return properties.getProperty(key, def);
 	}
 
 	public interface Listener {

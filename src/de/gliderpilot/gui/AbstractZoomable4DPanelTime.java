@@ -12,7 +12,8 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
-import java.util.logging.Logger;
+
+import org.apache.log4j.Logger;
 
 import de.gliderpilot.TrackTable;
 import de.gliderpilot.airspace.preferences.AirspacePrefs;

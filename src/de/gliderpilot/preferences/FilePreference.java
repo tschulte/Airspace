@@ -77,6 +77,10 @@ public class FilePreference extends AbstractPreference {
 	public String stringValue() {
 		return file.getPath();
 	}
+	
+	public File fileValue() {
+		return file;
+	}
 
 	public void setValue(String value) {
 		setValue(new File(value));

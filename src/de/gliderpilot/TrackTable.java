@@ -22,7 +22,6 @@ import de.gliderpilot.gui.Msg;
 import de.gliderpilot.gui.ProgressDialog;
 import de.gliderpilot.preferences.ExternalClass;
 import de.gliderpilot.preferences.ExternalClassPreference;
-import de.gliderpilot.preferences.Prefs;
 import de.gliderpilot.task.OlcOptimizer;
 import de.gliderpilot.task.OlcTask;
 import de.gliderpilot.task.Optimizer;
@@ -31,7 +30,7 @@ import de.gliderpilot.tracklog.TrackLog;
 
 
 /**
- * DOCUMENT ME!
+ * This table displays the list of currently loaded Tracks.
  * 
  * @author <a href="mailto:tobias.schulte@gliderpilot.de">Tobias Schulte</a>
  */
@@ -58,7 +57,6 @@ public class TrackTable extends JTable {
 		}
 		TrackLog track = model.getTrackLog(selectedRow);
 		Optimizer olcOptimizer = null;
-		Prefs prefs = AirspacePrefs.getReference();
 		int optiMethod = Integer.parseInt(AirspacePrefs.OPTI_METHOD.stringValue());
 
 		if (optiMethod == 1) {
@@ -87,7 +85,7 @@ public class TrackTable extends JTable {
 
 	class TrackTableContextMenu extends JPopupMenu { 
 		public TrackTableContextMenu() {
-			JMenuItem item = new JMenuItem("Remove");
+			JMenuItem item = new JMenuItem(Msg.get(Msg.REMOVE));
 			item.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					int selectedRow = getSelectedRow();
@@ -97,29 +95,29 @@ public class TrackTable extends JTable {
 				}
 			});
 			add(item);
-			item = new JMenuItem("Optimize");
+			item = new JMenuItem(Msg.get(Msg.OPTIMIZE));
 			item.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					optimize();
 				}
 			});
 			add(item);
-			item = new JMenuItem("OLC File");
+			item = new JMenuItem(Msg.get(Msg.OLC_FILE));
 			item.addActionListener(new ActionListener() {
+				CreateOlcFileDialog olcDialog;
 				public void actionPerformed(ActionEvent e) {
 					int selectedRow = getSelectedRow();
 					if (selectedRow >= 0) {
 						TrackLog track = model.getTrackLog(selectedRow);
 						OlcTask task = (OlcTask) track.getBestTask(OlcTask.class);
 						if (task != null) {
-							CreateOlcFileDialog olcDialog 
-								= new CreateOlcFileDialog(Gliderpilot.getFrame(), task);
+							olcDialog = new CreateOlcFileDialog(Gliderpilot.getFrame(), task);
 						}
 					}
 				}
 			});
 			add(item);
-			item = new JMenuItem("OLC Task info");
+			item = new JMenuItem(Msg.get(Msg.OLC_TASK_INFO));
 			item.addActionListener(new ActionListener() {
 				InfoDialog infoDialog;
 				public void actionPerformed(ActionEvent e) {

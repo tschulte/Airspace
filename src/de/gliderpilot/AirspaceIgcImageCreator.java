@@ -12,12 +12,17 @@ import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+
 import com.sun.image.codec.jpeg.JPEGCodec;
 import com.sun.image.codec.jpeg.JPEGImageEncoder;
+
 import de.gliderpilot.airspace.AirspaceVector;
 import de.gliderpilot.airspace.OpenAirspaceFile;
 import de.gliderpilot.geom.Point4D;
@@ -44,8 +49,8 @@ public class AirspaceIgcImageCreator {
 	 * @param airFile DOCUMENT ME!
 	 * @param igcFile DOCUMENT ME!
 	 */
-	public AirspaceIgcImageCreator(String airFile, String igcFile) {
-		Util.setTraceLevel(TraceLevels.INFO);
+	public AirspaceIgcImageCreator(File airFile, String igcFile) {
+		Logger.getLogger(TraceLevels.LOGGER).setLevel(Level.INFO);
 		airspace = new AirspaceVector();
 		track = new TrackLog();
 
@@ -90,8 +95,6 @@ public class AirspaceIgcImageCreator {
 
 		Rectangle4D rect = track.getBounds4D();
 		Point4D center = new Point4D(rect.getCenterX(), rect.getY());
-		Point4D systemCenter = new Point4D(bi.getWidth() / 2, 
-										   bi.getHeight() / 2);
 
 		Point4D ul = new Point4D(rect.getX(), rect.getY());
 		double zoom = Util.getFactor(bi.getWidth(), 
@@ -143,7 +146,7 @@ public class AirspaceIgcImageCreator {
 
 		AirspaceIgcImageCreator imageCreator;
 		long millis = System.currentTimeMillis();
-		imageCreator = new AirspaceIgcImageCreator(args[0], args[1]);
+		imageCreator = new AirspaceIgcImageCreator(new File(args[0]), args[1]);
 		imageCreator.createTrackImage(args[2]);
 		System.out.println("Image created. lasted " + 
 						   (System.currentTimeMillis() - millis) + " ms.");

@@ -7,7 +7,8 @@ package de.gliderpilot.gui;
 
 
 import java.awt.geom.NoninvertibleTransformException;
-import java.util.logging.Logger;
+
+import org.apache.log4j.Logger;
 
 import de.gliderpilot.TrackTable;
 import de.gliderpilot.geom.Point4D;
