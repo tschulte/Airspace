@@ -1,0 +1,258 @@
+* EPHRATA, WA vicinity class B,C,D, and Restricted
+* (c) 1999 Sierra SkyWare, Inc
+* Source : Seattle Sectional, 56th edition, Dec 31, 1998
+* USE AT YOUR OWN RISK (see disclaimer on www.winpilot.com/openair) *
+
+******* OPEN AIR (tm) TERRAIN and AIRSPACE DESRIPTION LANGUAGE *************
+*	Version 0.92
+*	December 10, 1998
+*	Send comments to jerryp@winpilot.com
+*
+*
+*	AIRSPACE-related record types:
+*	==============================
+*
+*	AC	class	;	class = Airspace Class:
+*                        R                       restricted
+*                        Q                       danger
+*                        P                       prohibited
+*                        A                       Class A
+*                        B                       Class B
+*                        C                       Class C
+*                        D                       Class D 
+*                        GP                      glider prohibited 
+*                        CTR                     CTR
+*						 W						 Wave Window
+*
+*
+*	AN string		;	string = Airspace Name
+*	AH string		;	string = Airspace Ceiling
+*	AL string		;	string = Airspace Floor
+*	AT coordinate	;	coordinate = Coordinate of where to place a name label on the map (optional)
+*					;	NOTE: there can be multiple AT records for a single airspace segment
+*	
+*	
+*	TERRAIN-related record types (NYI):
+*	==============================
+*
+*	TO	{string}				; Declares Terrain Open Polygon; string = name (optional)
+*	TC	{string}				; Declares Terrain Closed Polygon; string = name  (optional)
+*	TX							; Specifies the center of the label where terrain name should be placed (optional record)
+*	SP style, width, color		; Selects Pen to be used in drawing
+*	SB color					; Selects Brush to be used in drawing
+*
+* 
+*	Record types common to both TERRAIN and AIRSPACE
+*	=================================================
+*
+*	V x=n			;	Variable assignment.
+*					;	Currently the following variables are supported:
+*					;	D={+|-}	sets direction for: DA and DB records
+*					;					'-' means counterclockwise direction; '+' is the default
+*					;					automatically reset to '+' at the begining of new airspace segment	
+*					;	X=coordinate	: sets the center for the following records: DA, DB, and DC	
+*					;	W=number		: sets the width of an airway in nm (NYI)
+*
+*
+*	DP coordinate					; add polygon pointC
+*	DA radius, angleStart angleEnd	; add an arc, angles in degrees, radius in nm
+*	DB coordinate1, coordinate2		; add an arc, from coordinate1 to coordinate2
+*	DC radius						; draw a circle (center taken from the previous V X record, radius in nm
+*	DY coordinate					; add a segment of an airway (NYI)
+
+
+
+
+* Spokane Class C
+
+AC C
+AN Spokane
+AL 3700ft
+AH 6400ft
+AT 47:44.0N 117:36.0W
+AT 47:30.0N 117:35.0W
+AT 47:37.0N 117:50.5W
+V X=47:37.2N 117:32.0W
+DA 10,148,191
+V X=47:36.9N 117:39.3W
+DA 10,162,10
+V X=47:37.2N 117:32.0W
+DA 10,342,71
+V D=-
+DA 5,71,327
+V X=47:36.9N 117:39.3W
+DA 5,24,147
+V X=47:37.2N 117:32.0W
+DA 5,206,148
+
+AC C
+AN Spokane
+AL SFC
+AH 6400ft
+V X=47:36.9N 117:39.3W
+DA 5,147,24
+V X=47:37.2N 117:32.0W
+DA 5,327,206
+
+AC C
+AN Spokane
+AL 4200ft
+AH 6400ft
+AT 47:35.0N 117:22:0W
+V X=47:37.2N 117:32.0W
+DA 10,71,148
+V D=-
+DA 5,148,71
+
+** Class D **
+
+AC D
+AN Moses Lake
+AL 0
+AH 3700ft
+V X=47:12.4 N 119:19.2 W
+DC 5.6
+
+AC D
+AN Felts
+AL 0
+AH 4500ft
+V X=47:41.0 N 117:19.4 W
+DC 4
+
+AC D
+AN Yakima
+AL 0
+AH 3600ft
+V X=46:34.1 N 120:32.6W
+DC 4.1
+
+AC D
+AN Tri-Cities
+AL 0
+AH 2900ft
+V X=46:15.9 N 119:07.1 W
+DC 4.2
+
+AC D
+AN Walla Walla
+AL 0
+AH 3700ft
+V X=46:05.7 N 118:17.3W
+DC 4.2
+
+
+
+
+
+** RESTRICTED **
+
+
+AC R
+AN R-6714A
+AL 0
+AH 29000ft
+DP 46:49:20 N 119:55:50 W		c1
+DP 46:48:15 N 119:55:50 W		c2
+DP 46:46:10 N 119:57:10 W		c3
+DP 46:45:30 N 119:58:00 W		c4
+DP 46:42:20 N 119:58:00 W		c5
+DP 46:34:50 N 120:02:50 W		c6
+DP 46:37:40 N 120:20:00 W		c7
+DP 46:38:15 N 120:20:00 W		c8
+DP 46:38:55 N 120:21:55 W		c9
+DP 46:42:10 N 120:25:30 W		c10
+DP 46:43:30 N 120:22:15 W		c11
+DP 46:44:30 N 120:22:15 W		c12
+DP 46:48:55 N 120:21:05	W		b5
+DP 46:51:15 N 120:09:00	W		b1
+DP 46:51:25 N 119:57:15 W		a1
+
+
+AC R
+AN R-6714B
+AL 0
+AH 29000ft
+AT 46:37:00 N 119:58:30 W
+DP 46:38:40 N 119:56:00 W		d1
+DP 46:38:00	N 119:56:00 W		d2
+DP 46:38:00 N 119:55:00 W		d3
+DP 46:33:30 N 119:55:00 W		d4
+DP 46:34:50 N 120:02:50 W		c6
+DP 46:42:20 N 119:58:00 W		c5
+
+
+AC R
+AN R-6714C
+AL 0
+AH 29000ft
+AT 46:33:40 N 120:01:45 W
+DP 46:32:45 N 119:55:00 W		e1
+DP 46:32:45 N 120:04:25	W		e2
+DP 46:37:00 N 120:20:00	W		e3
+DP 46:37:40 N 120:20:00 W		c7
+DP 46:34:50 N 120:02:50 W		c6
+DP 46:33:30 N 119:55:00 W		d4
+
+
+AC R
+AN R-6714D
+AL 0
+AH 29000ft
+AT 46:40:30 N 120:24:50 W
+DP 46:38:55 N 120:23:25 W
+DP 46:40:30 N 120:26:40 W
+DP 46:42:10 N 120:25:30 W		c10
+DP 46:38:55 N 120:21:55 W		c9
+
+
+AC R
+AN R-6714F
+AL 0
+AH 29000ft
+AT 46:50:10 N 120:19:00 W
+DP 46:51:15 N 120:09:00	W	b1
+DP 46:51:00 N 120:16:50	W	b2
+DP 46:51:00 N 120:21:40	W	b3
+DP 46:49:30 N 120:21:40	W	b4
+DP 46:48:55 N 120:21:05	W	b5
+
+
+AC R
+AN R-6714G
+AL 0
+AH 29000ft
+AT 46:52:20 N 120:10:00	W
+DP 46:51:25 N 119:57:15 W		a1
+DP 46:54:20 N 120:15:20 W		a4
+DP 46:51:00 N 120:16:50	W		b2
+DP 46:51:15 N 120:09:00	W		b1
+
+
+AC R
+AN R-6714H
+AL 0
+AH 5500ft
+AT 46:53:30 N 120:03:00	W
+DP 46:51:25 N 119:57:15 W		a1
+DP 46:54:55 N 120:00:00	W		a2
+DP 46:55:25 N 120:15:15 W		a3
+DP 46:54:20 N 120:15:20 W		a4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

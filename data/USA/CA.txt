@@ -1,0 +1,141 @@
+* AVENAL Vicinity Class B,C, D, and Restricted airspace data *****
+* For WinPilot registered users ONLY 
+* Copyright (c) 1999 Sierra SkyWare, Inc 
+
+* Source: San Francisco Sectional dated September 10, 1998
+* Source: Los Angeles Sectional dated December 31, 1998
+
+
+******* OPEN AIR (tm) TERRAIN and AIRSPACE DESRIPTION LANGUAGE *************
+*	Version 0.92
+*	December 10, 1998
+*	Send comments to jerryp@winpilot.com
+*
+*
+*	AIRSPACE-related record types:
+*	==============================
+*
+*	AC	class	;	class = Airspace Class:
+*                        R                       restricted
+*                        Q                       danger
+*                        P                       prohibited
+*                        A                       Class A
+*                        B                       Class B
+*                        C                       Class C
+*                        D                       Class D 
+*                        GP                      glider prohibited 
+*                        CTR                     CTR
+*						 W						 Wave Window
+*
+*
+*	AN string		;	string = Airspace Name
+*	AH string		;	string = Airspace Ceiling
+*	AL string		;	string = Airspace Floor
+*	AT coordinate	;	coordinate = Coordinate of where to place a name label on the map (optional)
+*					;	NOTE: there can be multiple AT records for a single airspace segment
+*	
+*	
+*	TERRAIN-related record types (NYI):
+*	==============================
+*
+*	TO	{string}				; Declares Terrain Open Polygon; string = name (optional)
+*	TC	{string}				; Declares Terrain Closed Polygon; string = name  (optional)
+*	TX							; Specifies the center of the label where terrain name should be placed (optional record)
+*	SP style, width, color		; Selects Pen to be used in drawing
+*	SB color					; Selects Brush to be used in drawing
+*
+* 
+*	Record types common to both TERRAIN and AIRSPACE
+*	=================================================
+*
+*	V x=n			;	Variable assignment.
+*					;	Currently the following variables are supported:
+*					;	D={+|-}	sets direction for: DA and DB records
+*					;					'-' means counterclockwise direction; '+' is the default
+*					;					automatically reset to '+' at the begining of new airspace segment	
+*					;	X=coordinate	: sets the center for the following records: DA, DB, and DC	
+*					;	W=number		: sets the width of an airway in nm (NYI)
+*
+*
+*	DP coordinate					; add polygon point
+*	DA radius, angleStart angleEnd	; add an arc, angles in degrees, radius in nm
+*	DB coordinate1, coordinate2		; add an arc, from coordinate1 to coordinate2
+*	DC radius						; draw a circle (center taken from the previous V X record, radius in nm
+*	DY coordinate					; add a segment of an airway (NYI)
+
+* FRESNO Class C
+AC C
+AN FRESNO
+AL SFC
+AH 4400 ft
+V X=36:46.6N 119:43.1W
+DA 5,262,195
+
+AC C
+AN FRESNO
+AL 1600 ft
+AH 4400 ft
+AT 36:54.0 N 119:43.0 W
+AT 36:45.0 N 119:34.0 W
+DA 5,262,195
+V D=-
+DA 10,163,294
+
+AC C
+AN FRESNO
+AL 2500 ft
+AH 4400 ft
+AT 36:42.0N 119:49.0 W
+DA 10,163,294
+
+* Class D
+
+AC D 
+AN Bakersfield
+AL 0
+AH 3000 ft agl
+V X=35:26.0N 119:03.4 W
+DC 5
+
+AC D 
+AN Lemoore NAS
+AL 0
+AH 2700 ft agl
+V X=36:20.0N 119:57.1 W
+DC 5
+
+* Restricted
+AC R
+AN R-2504
+AL 0
+AH 15000 ft
+
+DP 35:51:15 N 120:46:20 W
+DP 35:49:05 N 120:45:55 W
+DP 35:48:00 N 120:46:00 W
+DP 35:47:30 N 120:45:00 W
+DP 35:46:50 N 120:44:50 W
+DP 35:43:20 N 120:45:45 W
+DP 35:42:30 N 120:47:25 W
+DP 35:43:00 N 120:49:00 W
+DP 35:44:10 N 120:48:05 W
+DP 35:46:05 N 120:50:05 W
+DP 35:49:00 N 120:50:05 W
+DP 35:51:25 N 120:48:30 W
+
+
+AC R
+AN R-2513
+AL 0
+AH FL240
+
+DP 35:55:40 N 121:05:45 W
+DP 35:48:25 N 121:11:00 W
+DP 35:51:10 N 121:16:15 W
+DP 35:51:10 N 121:17:20 W
+DP 35:58:20 N 121:24:00 W
+DP 35:58:20 N 121:21:50 W
+DP 36:02:35 N 121:24:55 W
+DP 36:03:50 N 121:22:45 W
+DP 36:02:50 N 121:18:00 W
+DP 35:57:00 N 121:10:00 W

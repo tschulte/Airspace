@@ -1,0 +1,172 @@
+**
+** North Tokyo Area Airspace Data - Nov 2000
+** All coordinates are refered to AIP, and convert to WGS84.
+** Should use your own risks.
+**
+** NOTE: Unfortunately, JCAB is silly to created 3-D maze on
+** TYO/NRT TCA.
+** This file express only border of the TCA, NOT provide each
+** cells and altitude informations on your display.
+** Please refer to your chart when you fly in TYO/NRT TCA.
+**
+** Toshimasa Somenaka
+** iq3t-smnk@asahi-net.or.jp
+**
+
+*
+* Tokyo TCA
+*
+AC B
+AN TYO TCA
+AT 35:50.0N 140:00.0E
+AL 4000ft
+AH 10000ft
+SB 192,192,192
+SP 0,1,0,0,0
+V X=35:36.5N 139:48.9E    * KOHTOH VOR
+DA 25,010,040
+DP 35:48.7N 140:11.1E     * p1
+DP 35:43.9N 139:49.6E     * p2
+
+AC B
+AN TYO TCA
+AL 2500 ft
+AH 10000 ft
+AT 35:14.0N 140:00.0E
+DP 35:36.5N 139:48.9E     * KOHTOH VOR
+DP 35:43.9N 139:49.6E     * p2
+DP 35:48.7N 140:11.1E     * p1
+DP 35:42.4N 140:13.8E     * p3
+V X=35:33.2N 139:46.9E    * HANEDA AP
+DA 30,105,198
+DP 35:11.4N 139:42.8E     * p4
+DP 35:25.2N 139:40.1E     * p5
+
+AC B
+AN TYO TCA
+AL 124.75
+AH See Chart
+AT 35:33.2N 139:46.9E
+V X=35:33.7N 139:45.7E    * HANEDA VOR
+DA 15,70,135
+DP 35:33.7N 139:45.7E     * HANEDA VOR
+
+AC GP
+AN TYO ACA
+AL SFC
+AH 4000ft
+AT 35:33.2N 139:46.9E
+V X=35:33.2N 139:46.9E    * HANEDA AP
+DA 5,187,000
+DP 35:44.3N 139:52.0E     * t1
+DP 35:39.8N 140:03.1E     * t3
+DP 35:35.8N 140:03.6E     * t2
+DA 5,075,125
+DP 35:23.2N 139:57.7E     * t4
+DP 35:20.7N 139:52.4E     * t5
+
+*
+* Narita TCA
+*
+AC B
+AN NRT TCA
+AL 119.45
+AH See Chart
+AT 35:55.0N 140:37.0E
+DP 36:03.5N 140:14.8E     * n1
+DP 36:02.5N 140:26.0E     * n2
+DP 36:04.0N 140:26.8E     * n3
+DP 36:05.2N 140:26.6E     * n4
+DP 36:05.2N 140:43.3E     * n5
+DP 36:00.2N 140:45.6E     * n6
+DP 36:00.2N 140:53.3E     * n7
+V X=35:45.7N 140:22.4E    * NARITA VOR
+DA 30,070,173
+DP 35:42.4N 140:13.8E     * p3
+DP 36:00.2N 140:06.1E     * n8
+
+AC B
+AN NRT TCA
+AL 1700ft
+AH 7000ft
+AT 35:55.0N 140:37.0E
+V X=35:46.0N 140:23.3E    * NARITA AP
+DC 5
+
+AC B
+AN NRT TCA
+AL 3001ft
+AH 7000ft
+AT 36:02.1N 140:11.6E
+V X=36:02.1N 140:11.6E    * KASUMIGAURA AP
+DC 5
+
+AC B
+AN NRT TCA
+AL 6000ft
+AH 10000ft
+AT 35:55.0N 140:37.0E
+V X=35:36.5N 139:48.9E    * KOHTOH VOR
+DA 25,038,065
+DP 35:37.6N 140:16.2E     * n9
+DP 35:42.4N 140:13.8E     * p3
+
+AC GP
+AN NRT ACA
+AL SFC
+AH 6000 ft
+DP 35:46.4N 140:19.3E     * r1
+DP 35:57.5N 140:11.5E     * r2
+DP 36:00.2N 140:17.1E     * r3
+DP 36:00.2N 140:22.8E     * r4
+DP 35:57.5N 140:24.8E     * r5
+DP 35:48.9N 140:24.8E     * r6
+
+AC GP
+AN NRT ACA
+AL SFC
+AH 6000 ft
+DP 35:42.7N 140:22.0E     * s1
+DP 35:44.7N 140:26.3E     * s2
+DP 35:36.2N 140:32.5E     * s3
+DP 35:34.0N 140:28.1E     * s4
+
+*
+* Utsunomiya CZ
+*
+AC C
+AN RJTU
+AL SFC
+AH 4000ft
+SB 192,192,192
+AT 36:30.8N 139:51.9E
+V X=36:30.8N 139:51.9E    * RJTU
+DC 5
+
+*
+* Hyakuri CZ
+*
+AC C
+AN RJAH
+AL SFC
+AH 6000ft
+SB 192,192,192
+AT 36:10.9N 140:24.9E
+V X=36:10.9N 140:24.9E    * RJAH
+DC 5
+
+*
+* Matsumoto CZ
+*
+AC C
+AN RJAF
+AL SFC
+AH 5000ft
+SB 192,192,192
+AT 36:10.0N 137:55.4E
+V X=36:10.0N 137:55.4E    * RJAF
+DC 5
+
+
+
+

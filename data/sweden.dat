@@ -1,0 +1,947 @@
+** ------------ Sweden                   10Jan00 ------------
+**++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+**                                                                             +
+**                            Turnpoints for Sweden                            +
+**                                                                             +
+**             Contributed by Goesta Arvastson and Robert Danewid              +
+**            File created on Monday, 10 January, 2000 at 20:18 MST            +
+**                                                                             +
+**                     Datum: RT90, Magnetic variation: +2                     +
+**                                                                             +
+**                               Time zone: MET                                +
+**          Summer offset from GMT is 2:00, and in winter it is 1:00           +
+**                                                                             +
+**               Latitude Range:     55:32.283N to   66:36.383N                +
+**               Longitude Range:   011:51.700E to  021:29.583E                +
+**                                                                             +
+**                    Comment is Frequency where available                     +
+**                                                                             +
+**                 NOTE: There are 912 waypoints in this file.                 +
+**           The CAI software can handle only 250, so edit this file           +
+**       with your wordprocessor to choose the 250 that you wish to use.       +
+**                It would be prudent to choose fewer than 250.                +
+**               to leave room for 'MarkPoints' and a 'Thermal'.               +
+**                                                                             +
+**                    There is no limit for WinPilot users.                    +
+**                                                                             +
+**           >>>>>>>>>> UNOFFICIAL, USE AT YOUR OWN RISK <<<<<<<<<<            +
+**                                                                             +
+**                  Always consult the relevant publications                   +
+**                  for current and correct information. This                  +
+**                   service is provided free of charge with                   +
+**                    no warrantees, expressed or implied.                     +
+**                        User assumes all risk of use.                        +
+**                                                                             +
+**++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1,58:11:51N,013:52:50E,0,T,Acklinga Ka ,
+2,60:08:26N,013:36:34E,0,T,Acksjön N Sp,
+3,56:44:42N,014:09:01E,0,T,Agunnaryd Ka,
+4,59:17:15N,016:06:53E,0,T,Alberga Vagk,
+5,61:20:43N,016:03:43E,0,T,Alfta Bro   ,
+6,61:20:45N,016:04:22E,0,T,Alfta Stn   ,
+7,57:56:57N,012:34:41E,0,AT,Alingsås Flp,banmitt
+8,59:26:25N,014:24:29E,0,T,Alkvettern  ,Vägkors
+9,56:27:49N,014:42:04E,0,T,AlmundsrydKa,
+10,56:56:12N,015:54:55E,0,T,AlsterbroBro,
+11,65:45:49N,021:19:02E,0,T,AlträsketBrW,
+12,58:05:23N,014:07:27E,0,T,Alvasjön NSp,
+13,56:53:56N,014:33:39E,0,T,Alvesta Stn ,
+14,60:30:34N,013:09:04E,0,T,Ambjörby Bro,
+15,57:16:05N,013:36:22E,0,AT,Anderstorp,Flp N ban
+16,57:17:03N,013:38:29E,0,T,Anderstorp,kyfka
+17,57:07:16N,014:34:00E,0,T,Aneboda   ,kyrka
+18,56:49:58N,013:46:23E,0,T,Angelstad ,kyrka
+19,56:45:39N,013:43:28E,0,T,Annerstad ,kyrka
+20,58:04:54N,012:30:07E,0,T,Anten N Sp  ,
+21,59:23:45N,015:54:54E,0,T,Arboga Fl1  ,N ban
+22,59:23:35N,015:55:44E,0,T,Arboga Fl2  ,segel-hangar
+23,61:31:00N,016:22:33E,0,AT,Arbrå Flp   ,hangar
+24,65:35:37N,019:16:00E,0,AT,Arvidsjaur ,Flp twr
+25,65:38:32N,019:08:48E,0,T,ArvdsjrsjnNw,
+26,59:40:26N,012:38:21E,0,T,Arvika Fl1  ,hangar
+27,59:40:26N,012:38:31E,0,T,Arvika Fl2  ,bana/taxi
+28,57:09:55N,014:47:51E,0,T,Asa Ka      ,
+29,57:54:15N,015:12:28E,0,T,Asby Ka     ,
+30,58:52:43N,014:54:05E,0,T,Askersund  ,kyrka
+31,57:48:22N,014:59:40E,0,T,Askeryd    ,kyrka
+32,60:11:02N,016:07:10E,0,AT,Avesta Flp ,hangar
+33,59:21:43N,015:13:05E,0,T,Axberg      ,kyrka
+34,58:35:11N,014:16:22E,0,T,Beateberg ,kyrka
+35,56:55:21N,013:59:35E,0,T,Berga       ,kyrka
+36,55:57:35N,013:20:13E,0,T,Billinge    ,kyrka
+37,59:02:50N,015:47:16E,0,T,Billsbro    ,station
+38,63:18:37N,018:30:30E,0,T,Billsta     ,vägkors
+39,61:01:26N,015:39:08E,0,T,Bingsjö     ,kapell
+40,63:00:51N,016:37:55E,0,T,Bispfors    ,bro
+41,60:44:18N,015:27:11E,0,T,Bjursås     ,kyrka
+42,59:26:42N,014:19:45E,0,T,Bjurtjärn   ,kyrka
+43,56:17:17N,013:42:33E,0,T,Bjärnum     ,kyrka
+44,60:27:20N,014:43:55E,0,T,Björbo      ,Bro W
+45,55:38:57N,013:37:43E,0,AT,Björka Flp ,banmitt
+46,63:13:17N,017:35:15E,0,T,BjorksjOnBrS,
+47,57:30:57N,014:54:35E,0,T,BjorkO Ka   ,
+48,59:04:24N,017:09:01E,0,T,Björnlunda  ,kyrka
+49,65:20:47N,017:35:38E,0,T,Blattnickelse,station
+50,55:34:55N,013:36:34E,0,T,Blentarp    ,kyrka
+51,58:03:37N,015:03:55E,0,T,Blåvik      ,kyrka
+52,58:55:38N,015:31:06E,0,T,Bo kyrka    ,
+53,60:25:18N,016:27:34E,0,T,Bodås Gruva ,
+54,58:52:39N,017:10:37E,0,T,Bogsta kyrka,
+55,61:23:52N,016:24:23E,0,T,Bollnäs Damm,
+56,57:06:58N,014:10:19E,0,T,Bor Station ,
+57,62:32:27N,015:54:37E,0,T,Borgsjö     ,kyrka
+58,57:52:52N,013:01:53E,0,T,Borgstena   ,kyrka
+59,58:18:03N,013:48:29E,0,T,Borgunda    ,Vägkors
+60,59:20:59N,012:57:44E,0,T,Borgvik     ,Kyrka
+61,60:25:46N,015:29:39E,0,AT,Borlänge Flp,segel-hangar
+62,60:45:58N,016:14:00E,0,T,Borrsjön    ,Damm
+63,57:41:52N,012:50:08E,0,AT,Borås-Viared,FP hang Wsid
+64,64:15:17N,020:15:18E,0,T,Botsmark     ,Bro S
+65,60:26:20N,012:46:44E,0,T,Boviggen NSp,
+66,58:11:24N,015:03:15E,0,T,Boxholm     ,Järnvägsbro
+67,59:40:08N,014:01:41E,0,T,Brattfors   ,Kyrka
+68,59:36:39N,013:55:38E,0,T,Brattforshed,Flp hangar
+69,59:40:57N,016:51:09E,0,T,Bred        ,Kyrka
+70,57:10:27N,013:44:23E,0,T,Bredaryd    ,Kyrka
+71,57:49:01N,014:51:25E,0,T,Bredestad   ,Kyrka
+72,65:54:24N,021:19:33E,0,T,Bredåker Bro,
+73,59:00:46N,015:35:07E,0,T,Brevensbruk ,Vägkors
+74,58:26:25N,014:24:56E,0,T,Brevik      ,Kyrka
+75,57:07:20N,013:14:35E,0,T,Broaryd     ,Kyrka
+76,58:18:30N,013:36:46E,0,T,Broddetorp  ,Kyrka
+77,58:13:15N,015:41:15E,0,T,Brokind     ,Station
+78,59:51:24N,017:26:20E,0,T,Brunna Kyrka,
+79,62:45:51N,015:24:35E,0,T,Bräcke      ,Järnvägkors
+80,62:44:40N,015:25:57E,0,T,Bräcke      ,Kyrka
+81,65:47:12N,021:13:56E,0,T,BrnnbrgVgJvg,
+82,56:04:48N,013:42:03E,0,T,Bronnestad  ,Kyrka
+83,57:12:31N,013:17:21E,0,T,Burseryd    ,Kyrka
+84,64:31:10N,020:40:08E,0,T,Burträsk    ,Kyrka
+85,60:12:08N,016:28:52E,0,T,By Kyrka    ,
+86,57:20:49N,013:31:39E,0,T,Bäraryd     ,Kyrka
+87,58:41:34N,014:01:42E,0,T,Bäck        ,Kyrka
+88,57:24:03N,015:04:48E,0,T,Bäckseda    ,Kyrka
+89,59:33:45N,014:54:20E,0,T,Bälgsjön    ,Öst sp.
+90,56:15:21N,013:22:26E,0,T,Bälinge     ,Vägkors W
+91,58:23:10N,013:50:08E,0,T,Cement      ,Rondell
+92,59:53:04N,012:18:01E,0,T,Charlotten- ,berg jvstn
+93,59:42:45N,014:10:36E,0,T,Daglosen NSp,
+94,60:30:31N,014:48:07E,0,T,Dala-Floda  ,Kyrka
+95,60:33:11N,014:22:31E,0,AT,Dala-Järna ,Flp S ban
+96,60:39:00N,012:59:51E,0,T,Dalby Kyrka ,
+97,57:59:15N,016:11:19E,0,T,Dalhem      ,Kyrka
+98,57:36:42N,013:30:46E,0,T,Dalstorp    ,Kyrka
+99,57:54:00N,013:28:50E,0,T,Dalum Kyrka ,
+100,58:08:25N,014:01:17E,0,T,Daretorp    ,Kyrka
+101,65:51:22N,021:25:57E,0,T,Degerbäcken ,Vägkors
+102,59:13:55N,014:26:23E,0,T,Degerfors   ,Järnvägsbro
+103,55:59:48N,013:53:23E,0,T,Djurrod     ,Kyrka
+104,57:46:11N,015:51:32E,0,T,Djursdala   ,Kyrka
+105,60:33:07N,015:08:03E,0,T,Djurås Udde ,
+106,59:09:54N,016:49:07E,0,T,Dunker      ,Kyrka
+107,58:16:15N,015:24:38E,0,T,DuseborgSltt,
+108,60:56:30N,015:32:28E,0,T,Dådran      ,Kapell
+109,57:00:39N,015:06:35E,0,T,Dådesjö     ,Kyrka
+110,66:13:58N,020:52:30E,0,T,Edefors Bro ,
+111,61:23:16N,015:49:57E,0,T,Edsbyn Fl1  ,W ban
+112,61:23:18N,015:49:52E,0,T,Edsbyn Fl2  ,hangar
+113,63:24:39N,016:33:26E,0,T,Edsele Bro  ,
+114,57:33:54N,015:13:16E,0,T,Edshult     ,Kyrka
+115,59:04:36N,012:24:12E,0,T,Edslan W Sp ,
+116,59:22:55N,016:26:53E,0,AT,Ekeby Flp  ,bankors
+117,59:14:15N,016:45:37E,0,T,Eklångens   ,W spets
+118,60:10:23N,013:30:01E,0,T,Ekshärad    ,Kyrka
+119,60:09:24N,013:31:55E,0,AT,Ekshärad Flp,klubbhus
+120,57:40:16N,014:56:43E,0,T,EksjöRnnsltt,banmitt
+121,56:37:00N,015:36:34E,0,AT,Emmaboda Flp,hangar
+122,58:48:12N,016:27:39E,0,T,Enaren Nw Sp,
+123,60:48:31N,015:45:39E,0,T,Enviken     ,Vägkors
+124,60:02:08N,016:48:11E,0,T,Enåker      ,Kyrka
+125,59:25:18N,015:15:15E,0,T,Ervalla     ,Korsning
+126,59:26:16N,015:14:43E,0,T,Ervalla     ,Kyrka
+127,56:39:42N,015:42:11E,0,T,EsklsrydVgJv,
+128,61:08:03N,013:58:12E,0,T,Evertsberg  ,Kapell
+129,55:55:27N,014:05:19E,0,AT,Everöd Flp ,bana/taxi
+130,56:41:35N,013:45:09E,0,T,Exen N Sp   ,
+131,56:41:23N,013:45:24E,0,T,Exen Åmynnin,Norr
+132,58:36:41N,016:06:24E,0,T,Norrköping  ,F13-bankors
+133,58:24:11N,015:31:45E,0,T,Linköping   ,F3-bankors
+134,65:20:15N,020:54:10E,0,T,Fagerheden  ,Vägkorsn
+135,57:08:57N,015:40:01E,0,T,Fagerhult   ,Kyrka
+136,59:59:21N,015:48:25E,0,T,Fagersta    ,Järnvägsbro
+137,58:10:31N,013:35:37E,0,AT,Falköping  ,Flp hangar
+138,58:10:13N,013:35:26E,0,T,Falköping   ,Ref banmitt
+139,58:11:22N,016:02:38E,0,T,Fallsjön    ,NW spets
+140,60:36:30N,015:38:01E,0,T,Falun       ,Kyrka
+141,56:32:59N,014:18:50E,0,T,Fanhult sjö ,S spets
+142,56:17:55N,014:16:25E,0,T,FarlangnSwSp,
+143,57:06:23N,013:02:15E,0,T,Fegen S Sp  ,
+144,59:27:34N,015:34:44E,0,T,Fellingsbro ,Kyrka
+145,59:35:00N,015:30:25E,0,T,Fellingsbro ,Vg/Jv kors
+146,59:26:01N,015:35:47E,0,T,FellingsbroV,
+147,56:53:33N,013:19:42E,0,T,Femsjö      ,Kyrka
+148,56:57:15N,013:55:35E,0,AT,Feringe Flp,bana/taxi
+149,59:42:31N,014:09:44E,0,T,Filipsstad  ,Station
+150,58:55:56N,014:25:48E,0,T,Finnerödja  ,Kyrka
+151,59:19:39N,012:36:40E,0,T,Finnsjön    ,W spets
+152,60:33:19N,013:06:12E,0,AT,FinnskogaBck,Flp-hangar
+153,58:43:51N,015:36:11E,0,AT,Finspång Flp,S ban
+154,58:26:32N,015:00:23E,0,T,Fivelstad   ,Kyrka
+155,57:56:49N,013:39:39E,0,T,Fivlered    ,Kyrka
+156,59:10:32N,014:52:37E,0,T,Fjugesta    ,Station
+157,56:06:29N,014:10:15E,0,T,Fjälkestad  ,Kyrka
+158,59:03:34N,016:35:55E,0,T,Flen Jvgk   ,
+159,59:03:29N,016:35:28E,0,T,Flen Station,
+160,57:45:40N,014:50:42E,0,T,Flisby      ,Kyrka
+161,58:07:29N,013:20:55E,0,T,Floby Kyrka ,
+162,58:08:20N,013:20:08E,0,T,Floby       ,Station
+163,59:04:03N,016:21:54E,0,T,Floda       ,Kyrka
+164,59:03:44N,016:23:19E,0,T,Floda       ,Vägkors
+165,60:30:49N,014:48:47E,0,T,Flosjön     ,S spets
+166,58:36:32N,014:27:35E,0,AT,Flugebyn Flp,hangrNfltndn
+167,59:52:31N,016:20:50E,0,T,Fläckebo    ,Kyrka
+168,58:07:25N,013:48:50E,0,T,Folkabo Silo,
+169,59:37:52N,015:10:24E,0,T,Fornaboda   ,Travbana
+170,64:45:25N,020:29:44E,0,T,Forsbacka   ,Bro
+171,57:42:04N,014:27:22E,0,T,Forserum    ,Kyrka
+172,60:22:22N,018:09:47E,0,T,Forsmark    ,Kyrka
+173,58:59:47N,016:44:20E,0,T,Forssa      ,Kyrka
+174,58:57:03N,016:17:55E,0,T,ForssjöBruk ,
+175,58:17:37N,014:03:22E,0,T,Fridene     ,Kyrka
+176,57:55:47N,014:50:02E,0,T,Frinnaryd   ,Kyrka
+177,57:33:28N,012:47:42E,0,T,Fritsla     ,Kyrka
+178,57:15:42N,014:09:21E,0,T,Fryele      ,Kyrka
+179,55:43:17N,013:48:29E,0,T,Fränninge   ,Kyrka
+180,59:25:34N,015:34:25E,0,T,Frötuna Bro ,
+181,59:28:52N,015:19:44E,0,T,Frövifors   ,Bruk
+182,56:51:04N,015:02:12E,0,T,Furuby      ,Kyrka
+183,61:10:00N,015:08:16E,0,T,Furudal Bro ,
+184,55:59:41N,013:18:16E,0,T,FurutorpFbrk,
+185,58:11:49N,016:24:46E,0,T,FafallsjnWSp,
+186,65:07:31N,020:47:32E,0,T,Fallfors Ka ,
+187,60:33:03N,015:04:58E,0,AT,Gagnef Flp  ,hangar
+188,60:35:26N,015:03:43E,0,T,Gagnef      ,Kyrka
+189,60:36:00N,015:05:33E,0,T,GagnefMjsjnS,
+190,58:04:39N,015:54:56E,0,T,Galmern     ,N spets
+191,59:46:18N,015:23:08E,0,AT,Gammelbo Flp,hangar
+192,59:46:32N,015:22:53E,0,T,Gammelbo Ref,
+193,60:18:57N,016:12:26E,0,T,Garpenberg  ,Kyrka
+194,59:18:10N,016:23:10E,0,T,Gillberga   ,Kyrka
+195,59:19:19N,012:46:50E,0,T,Gilberga    ,Kyrka
+196,60:35:40N,015:17:59E,0,T,Gimmen      ,E spets
+197,58:04:24N,013:53:22E,0,T,Gimmesjön   ,N spets
+198,57:18:20N,013:32:32E,0,T,Gislaved    ,Kyrka
+199,59:19:11N,015:24:18E,0,T,Glanshammar ,Kyrka
+200,59:33:25N,012:33:50E,0,T,Glava       ,Kyrka
+201,57:21:30N,013:44:20E,0,T,Gnosjö      ,Station
+202,58:43:47N,015:09:36E,0,T,Godegard Ka ,
+203,60:42:42N,015:19:15E,0,T,Gopen W Sp  ,
+204,60:15:45N,014:59:00E,0,T,Grangärde   ,Kyrka
+205,65:33:02N,020:57:17E,0,T,GrantrsktBrN,
+206,59:28:58N,014:18:00E,0,T,Grevudden Sp,
+207,60:40:54N,015:30:10E,0,T,Grycken     ,N spets
+208,60:25:48N,016:13:50E,0,T,Grycken     ,S spets
+209,60:41:19N,015:28:38E,0,T,GrycksbodrPl,
+210,56:12:21N,014:03:06E,0,T,Gryt Kyrka  ,
+211,59:42:22N,014:32:20E,0,T,Grythyttan  ,Kyrka
+212,60:10:05N,016:13:27E,0,T,Grytnäs     ,Kyrka
+213,59:56:49N,012:55:08E,0,T,Gräsmark    ,Kyrka
+214,59:49:58N,013:44:21E,0,T,Grässjön    ,S spets
+215,56:55:23N,013:53:00E,0,T,Guddarp     ,Vägkors
+216,58:14:25N,013:33:27E,0,T,Gudhem      ,Kyrka
+217,59:42:05N,015:06:30E,0,T,Guldsmeds-  ,hyttan
+218,57:48:10N,015:42:24E,0,T,GullringnStn,
+219,61:52:00N,016:16:35E,0,T,GunnrbsjnWSp,
+220,59:48:45N,012:34:03E,0,T,Gunnarskog  ,Kyrka
+221,59:48:20N,015:51:13E,0,T,Gunnilbo    ,Kyrka
+222,59:48:11N,015:50:54E,0,T,Gunnilbo    ,Vägkors
+223,59:38:16N,015:13:29E,0,T,Gusselby    ,Vg/Jvg
+224,59:52:50N,014:20:10E,0,T,Gåsborn     ,Kyrka
+225,63:20:44N,017:44:17E,0,T,Gäddvattnet ,Damm
+226,57:07:56N,014:17:26E,0,T,Gällaryd    ,Kyrka
+227,58:14:41N,012:20:14E,0,T,Gardhem     ,Kyrka
+228,58:09:35N,016:10:19E,0,T,Gardserum Ka,
+229,60:56:45N,015:14:10E,0,T,GardsjO VAgk,
+230,58:10:26N,013:24:38E,0,T,Gökhem      ,Kyrka
+231,58:34:29N,013:36:49E,0,AT,Götene Flp  ,hangar
+232,56:34:18N,013:53:19E,0,T,Göteryd     ,Kyrka
+233,59:21:24N,015:40:11E,0,T,Götlunda    ,Kyrka
+234,57:54:24N,014:04:46E,0,T,Habo        ,Station
+235,60:01:37N,013:35:00E,0,AT,Hagfors Flp ,N ban
+236,57:17:17N,014:07:55E,0,AT,Hagshult Flp,bana/taxi
+237,57:20:24N,014:11:36E,0,T,Hagshult    ,Kyrka
+238,58:51:32N,016:37:43E,0,T,Halla       ,Kyrka
+239,56:23:14N,015:06:35E,0,T,HallabroVgkS,
+240,60:03:12N,016:43:35E,0,T,Hallaren Bro,
+241,56:29:11N,013:53:20E,0,T,Hallaryd    ,Kyrka
+242,55:58:38N,013:27:01E,0,T,Hallarod    ,Kyrka
+243,59:04:03N,015:06:48E,0,T,Hallsberg   ,Station
+244,58:39:24N,014:14:26E,0,T,Halna       ,Kyrka
+245,63:06:54N,016:21:30E,0,T,Hammarstrand,Bro
+246,56:42:01N,013:51:20E,0,T,Hamneda     ,Kyrka
+247,61:14:44N,016:33:35E,0,T,Hanebo      ,Kyrka
+248,66:05:37N,020:56:00E,0,T,Harads Vag  ,
+249,59:46:19N,016:27:44E,0,T,Haraker     ,Kyrka
+250,60:06:20N,017:13:00E,0,T,Harbo       ,Kyrka
+251,62:06:38N,016:42:42E,0,T,Hassela     ,Kyrka
+252,58:24:36N,013:15:59E,0,AT,Hasslösa Flp,
+253,59:56:23N,016:51:37E,0,T,Heby        ,Kyrka
+254,59:40:54N,015:46:08E,0,T,Hed         ,Kyrka
+255,60:16:41N,015:59:43E,0,T,Hedemora    ,Kyrka
+256,60:16:28N,015:59:00E,0,T,Hedemora    ,Station
+257,65:50:08N,021:29:35E,0,AT,Heden Flp   ,E ban
+258,65:50:22N,021:28:24E,0,T,Heden Ref   ,banmitt
+259,59:01:53N,016:47:37E,0,T,Helgesta    ,Kyrka
+260,65:43:40N,015:16:23E,0,AT,Hemavan Flp ,banmitt
+261,62:01:00N,015:54:20E,0,T,Hennan      ,S spets
+262,58:01:58N,013:06:36E,0,AT,Herrljunga  ,Flp-hangar
+263,58:04:44N,013:01:36E,0,T,Herrljunga  ,Kyrka
+264,57:07:42N,014:10:19E,0,T,Hindsen     ,S spets
+265,56:37:05N,013:36:41E,0,T,Hinneryd    ,Kyrka
+266,57:37:11N,016:18:41E,0,T,Hjorted     ,Kyrka
+267,58:53:55N,015:26:20E,0,T,Hjortkvarn  ,Station
+268,59:47:04N,014:46:55E,0,T,Hjulsjö     ,Kyrka
+269,57:14:44N,014:31:03E,0,T,Hjalmseryd  ,
+270,56:27:11N,015:34:40E,0,T,Holmsjö     ,VägJvg
+271,61:07:08N,016:43:30E,0,T,Holmsveden  ,Station
+272,57:25:13N,012:57:52E,0,T,Holsljunga  ,Kyrka
+273,57:23:04N,012:55:34E,0,T,Holssjön    ,S spets
+274,57:54:05N,015:50:30E,0,T,Horn        ,Kyrka
+275,56:39:00N,013:48:26E,0,T,Hornsborg   ,Bro
+276,58:51:34N,014:13:14E,0,T,Hova Ka     ,Kyrka
+277,58:27:41N,013:10:22E,0,AT,Hovby Flp   ,twr
+278,56:47:20N,015:08:10E,0,T,Hovmantorp  ,Kyrka
+279,60:02:58N,016:59:01E,0,T,Huddunge    ,Kyrka
+280,60:38:02N,014:17:15E,0,T,Hulen       ,N spets
+281,57:37:54N,015:07:33E,0,T,Hult        ,Kyrka
+282,57:31:18N,015:50:10E,0,AT,Hultsfred FLP,twr
+283,57:18:57N,014:42:53E,0,T,Hultsjö     ,Kyrka
+284,59:23:17N,016:45:57E,0,T,Husby       ,Gård
+285,59:18:53N,016:27:16E,0,T,HusbyRekarne,Kyrka
+286,65:22:17N,019:31:30E,0,T,Hälberg     ,Station
+287,55:59:27N,013:42:27E,0,T,Häglinge    ,Kyrka
+288,59:52:18N,014:25:35E,0,AT,Hällefors Fp,N ban
+289,59:45:03N,014:30:42E,0,T,Hällefors   ,Väkors
+290,59:47:04N,014:31:19E,0,T,Hälléfors   ,Vg/Jvg
+291,62:57:08N,016:40:20E,0,T,Hälleforsen ,Damm
+292,58:44:34N,015:34:42E,0,T,Hällestad   ,Kyrka
+293,57:53:52N,013:20:05E,0,T,Hällstad    ,Kyrka
+294,58:24:00N,013:22:53E,0,T,Handene     ,Kyrka
+295,56:36:18N,013:53:50E,0,T,Hängasjön   ,S spets
+296,59:43:39N,017:04:43E,0,T,Härnevi     ,Kyrka
+297,57:36:58N,015:33:41E,0,T,Hässleby    ,Kyrka
+298,56:16:50N,013:57:09E,0,T,Hästveda    ,Kyrka
+299,56:11:05N,012:34:38E,0,AT,Höganäs Flp ,bankors
+300,57:09:54N,016:01:37E,0,T,Högsby      ,Kyrka
+301,55:47:39N,013:33:52E,0,T,Högseröd    ,Kyrka
+302,59:22:19N,015:43:39E,0,T,Högsjön     ,S spets
+303,57:38:22N,015:45:30E,0,T,Hökesjön    ,S pets
+304,60:54:00N,012:35:46E,0,T,Höljes      ,Kyrka
+305,60:17:19N,015:58:47E,0,T,Hönsan      ,N spets
+306,57:36:48N,015:01:42E,0,T,Höreda      ,Kyrka
+307,59:58:18N,016:08:56E,0,T,Hörendesjön ,N spets
+308,56:12:21N,013:35:33E,0,T,Hörja       ,Kyrka
+309,55:46:42N,014:02:26E,0,T,Hörröd      ,Kyrka
+310,55:55:53N,013:33:10E,0,T,Höör        ,Kyrka
+311,61:52:07N,012:41:39E,0,AT,Idre Flp    ,S ban
+312,60:22:29N,015:13:48E,0,T,Idtjärn     ,N spets
+313,56:12:22N,014:15:14E,0,T,Immeln      ,SW spets
+314,57:38:19N,015:24:41E,0,T,Ingatorp    ,Kyrka
+315,60:41:07N,015:04:47E,0,T,Insjön      ,Jvg bro
+316,60:41:32N,015:06:21E,0,T,Insjön      ,Udde
+317,59:39:25N,015:33:38E,0,T,Iresjön     ,NW spets
+318,59:37:02N,015:35:45E,0,T,Iresjön     ,S spets
+319,59:34:32N,016:30:13E,0,AT,Johannisberg,Flp bankors
+320,66:36:23N,019:50:45E,0,T,Jokkmokk    ,Kyrka
+321,59:08:32N,016:03:29E,0,T,Julita      ,Kyrka
+322,59:56:35N,017:25:35E,0,T,Jumkil      ,Kyrka
+323,63:41:46N,016:54:15E,0,T,Junsele     ,Kyrka
+324,60:50:35N,016:28:16E,0,T,Jädraås     ,Station
+325,58:01:10N,013:21:45E,0,T,Jala        ,Station
+326,56:14:22N,014:32:10E,0,T,Jamshög     ,Kyrka
+327,60:42:46N,016:36:14E,0,T,Järbo       ,Väg/Jvg
+328,62:47:55N,016:40:00E,0,T,JarkvisslDmm,
+329,59:54:35N,017:12:59E,0,T,JarlAsa Ka  ,
+330,59:38:45N,014:54:02E,0,T,Järnboås    ,Kyrka
+331,59:41:23N,012:09:00E,0,T,Järnskog    ,Kyrka
+332,58:22:37N,012:58:48E,0,T,Järpås      ,Kyrka
+333,55:32:17N,014:17:16E,0,T,Jarrestad   ,Kyrka
+334,63:03:09N,016:46:35E,0,T,Jarsjön     ,Väg/Jvg
+335,61:42:35N,016:11:04E,0,T,Järvsö      ,Kyrka
+336,65:12:25N,019:30:09E,0,T,Järvträsket ,S spets
+337,56:41:09N,016:17:26E,0,AT,Kalmar Flp  ,bankors
+338,57:14:39N,013:04:36E,0,T,Kalv        ,Kyrka
+339,56:43:07N,014:43:42E,0,T,Kalvsvik    ,Kyrka
+340,57:38:02N,014:32:15E,0,T,Kansjön     ,SW spets
+341,60:00:32N,016:04:51E,0,T,Karbenning  ,Kyrka
+342,59:31:35N,012:04:10E,0,T,Karlanda    ,Kyrka
+343,59:26:22N,014:42:08E,0,T,Karlsdal    ,Kyrka
+344,59:20:26N,014:29:39E,0,AT,Karlskoga Fp,S ban
+345,59:00:56N,016:13:30E,0,AT,Katrineholms,F12 hangar
+346,59:01:02N,016:13:34E,0,AT,Katrineholms,Fl2 bana/taxi
+347,59:15:13N,012:33:25E,0,T,KettlsbynVgk,
+348,59:22:17N,015:05:02E,0,T,Kil Ka      ,Kyrka
+349,59:52:13N,016:32:53E,0,T,Kila Ka     ,Kyrka
+350,59:03:57N,015:32:23E,0,T,Kilsmo      ,Station
+351,58:17:06N,015:42:31E,0,T,KindaKanlnlp,
+352,58:04:37N,013:31:25E,0,T,Kinnarp     ,Fabrik
+353,57:59:24N,015:37:55E,0,T,Kisa        ,Kyrka
+354,59:21:46N,016:42:39E,0,AT,Kjula Flp   ,N ban
+355,59:23:50N,016:40:40E,0,T,Kjula Ka    ,Kyrka
+356,60:44:54N,012:47:43E,0,T,Klara Bro   ,
+357,65:29:53N,020:53:39E,0,T,KlockrtrskBr,
+358,59:22:30N,016:31:16E,0,T,Kloster     ,Kyrka
+359,56:11:15N,014:08:21E,0,AT,Knislinge Fp,banmitt
+360,59:11:46N,014:54:06E,0,T,Knista      ,Kyrka
+361,58:09:49N,012:25:02E,0,T,Koberg      ,Slott
+362,66:09:05N,021:02:06E,0,T,Kokhed      ,Bro
+363,59:36:04N,015:50:41E,0,T,Kolsva      ,Vägkors
+364,55:58:43N,013:12:07E,0,T,Konga       ,Kyrka
+365,59:52:40N,015:00:04E,0,T,Kopparberg  ,Kyrka
+366,56:50:22N,015:27:25E,0,AT,Kosta Flp   ,bana/vag
+367,57:24:00N,016:12:15E,0,T,Kristdala   ,Kyrka
+368,56:49:01N,016:02:25E,0,T,Kristvalla  ,Kyrka
+369,56:58:31N,014:34:09E,0,AT,Kronbergshed,FLP banmitt
+370,56:05:11N,012:48:00E,0,T,Kropp       ,Kyrka
+371,60:08:12N,016:13:10E,0,T,Krylbo      ,Jvgbro
+372,57:01:20N,015:51:22E,0,T,Kråksmåla   ,Kyrka
+373,57:41:29N,015:49:51E,0,T,Kron        ,S spets
+374,57:15:23N,013:47:15E,0,T,Kulltorp    ,Kyrka
+375,59:07:10N,015:07:40E,0,T,Kumla       ,Bunkern
+376,59:50:47N,016:38:26E,0,T,Kumla Ka    ,
+377,64:52:38N,020:48:32E,0,T,Kusmark     ,Kyrka
+378,59:27:11N,016:19:24E,0,T,Kvicksund   ,Bro
+379,58:38:52N,016:08:14E,0,T,Kvillinge   ,Kyrka
+380,58:18:07N,013:11:39E,0,T,Kvanum      ,Silo
+381,56:21:20N,014:35:28E,0,T,Kyrkhult    ,Kyrka
+382,56:46:45N,013:54:12E,0,T,Kanna       ,Kyrka
+383,59:24:00N,015:28:12E,0,T,Kagleborg   ,Vägkors
+384,63:06:36N,017:21:59E,0,T,Kallsjön    ,N spets
+385,57:10:22N,013:55:16E,0,T,Karda       ,Kyrka
+386,58:25:39N,013:51:10E,0,T,Karnsjukhust,
+387,59:52:23N,015:39:00E,0,T,Karrbo VAgk ,
+388,59:56:49N,016:46:24E,0,T,KarrbAckVdkt,
+389,59:31:35N,015:58:03E,0,AT,Köping Flp  ,Hangar
+390,59:57:29N,015:57:05E,0,T,L Aspen     ,E spets
+391,59:39:31N,013:48:50E,0,T,LBockelnSwSp,
+392,60:21:14N,014:54:17E,0,T,LMalingenOnE,
+393,57:05:32N,016:01:18E,0,T,LSinnernNSnd,
+394,59:16:37N,014:38:11E,0,T,LVatsjnmynnS,
+395,63:32:31N,016:19:38E,0,T,LafssjonSpVk,
+396,56:30:30N,013:40:28E,0,T,Lagan/E4 Bro,
+397,60:00:38N,013:28:10E,0,T,LakenesjnNSp,
+398,57:10:10N,014:35:40E,0,T,Lammhult Ka ,
+399,57:52:07N,013:05:47E,0,T,Lassesjö    ,S spets
+400,57:04:37N,013:16:06E,0,T,Landeryd    ,Station
+401,58:11:24N,013:07:07E,0,T,Larv        ,Kyrka
+402,59:01:52N,012:19:34E,0,T,Laxarby     ,Kyrka
+403,58:58:45N,014:40:03E,0,AT,Laxå Flp    ,Hangar
+404,63:31:22N,018:31:00E,0,T,LedngssjnWSp,
+405,60:43:45N,015:00:37E,0,T,Leksand     ,Jvgbro
+406,60:43:54N,014:59:09E,0,T,Leksand Ka  ,
+407,58:57:27N,015:03:46E,0,T,Lerback     ,Kyrka
+408,58:28:42N,013:43:10E,0,T,Lerdala     ,Kyrka
+409,62:34:34N,016:25:58E,0,T,LeringenDmmS,
+410,57:50:22N,013:39:01E,0,T,Liared      ,Kyrka
+411,56:49:48N,013:27:11E,0,T,Lidhult     ,Kyrka
+412,58:08:15N,012:07:23E,0,T,LillaEdet   ,Bro
+413,59:19:33N,015:28:48E,0,T,Lillkyrka   ,Kyrka
+414,59:29:34N,015:04:24E,0,T,Lillsjön    ,S spets
+415,63:36:11N,017:39:26E,0,T,LilltgsjnSSp,
+416,60:56:00N,013:21:52E,0,T,Lima Ka     ,
+417,60:52:55N,013:23:56E,0,T,Limedsforsen,Bro
+418,60:54:16N,013:22:52E,0,T,Limedsforsen,
+419,57:32:10N,013:21:19E,0,T,Limmared    ,Station
+420,57:58:34N,014:48:28E,0,T,Linderas    ,Kyrka
+421,55:56:16N,013:49:35E,0,T,Linderod    ,Kyrka
+422,59:35:32N,015:13:46E,0,T,Lindesberg  ,Kyrka
+423,61:02:51N,016:42:07E,0,T,Lingbo      ,Kyrka
+424,56:39:25N,015:08:04E,0,T,Linneryd    ,Kyrka
+425,56:40:58N,015:19:05E,0,T,Ljuder      ,Kyrka
+426,56:50:05N,013:56:15E,0,T,Ljungby     ,Kyrka
+427,56:04:55N,013:11:45E,0,AT,Ljungbyhed,Flp hangar
+428,61:49:03N,016:00:27E,0,AT,Ljusdal Flp ,Hangar
+429,61:49:40N,016:05:58E,0,AT,Ljusdal     ,Station
+430,57:47:53N,016:04:59E,0,T,Locknevi    ,Kyrka
+431,56:30:08N,014:07:03E,0,T,Loshult     ,Kyrka
+432,61:57:12N,015:56:30E,0,T,LostrsjnSwSp,
+433,60:05:17N,015:05:48E,0,AT,Ludvika Flp ,hangar
+434,60:09:02N,015:11:08E,0,T,Ludvika     ,Station
+435,65:44:05N,021:14:58E,0,T,Luleltrvttnt,
+436,59:38:06N,015:55:15E,0,T,Lundbysjön  ,N spets
+437,59:36:32N,015:54:11E,0,T,Lundbysjön  ,S spets
+438,55:50:10N,013:37:25E,0,T,Lyby Ka     ,
+439,56:25:04N,015:41:04E,0,T,Lyckebyan   ,Bro
+440,58:48:05N,014:03:33E,0,T,Lyrestad    ,Kyrka
+441,55:47:15N,013:50:28E,0,T,Långaröd    ,Kyrka
+442,60:27:28N,016:03:26E,0,T,Lången      ,W spets
+443,65:23:38N,021:16:20E,0,AT,LangnAs Flp ,klubbhus
+444,63:10:13N,016:59:34E,0,AT,Långsele Flp,S ban
+445,59:16:49N,012:40:33E,0,T,Långserud   ,Kyrka
+446,59:46:26N,015:50:58E,0,T,Långsvan    ,N spets
+447,59:44:52N,017:08:55E,0,AT,Långtora Flp,bankors
+448,65:23:05N,020:20:43E,0,T,Långträsk   ,Vägkors
+449,56:46:54N,016:17:22E,0,T,Läckeby     ,Kyrka
+450,57:35:55N,013:15:12E,0,T,Langhem Ka  ,
+451,59:08:51N,015:34:58E,0,T,LannAs Ka   ,
+452,56:23:52N,014:19:35E,0,T,Lönsboda    ,Kyrka
+453,55:38:43N,013:53:45E,0,T,Lövestad    ,Kyrka
+454,60:18:40N,014:41:09E,0,T,Lövsjön     ,Vägkors
+455,58:01:57N,015:16:52E,0,T,Malexander  ,Kyrka
+456,59:55:43N,015:26:22E,0,T,Malingsbo   ,Kyrka
+457,59:32:31N,015:56:10E,0,T,Malma Ka    ,
+458,57:34:47N,014:27:53E,0,T,Malmback    ,Kyrka
+459,60:39:23N,013:43:57E,0,AT,Malung Flp  ,S ban
+460,60:43:52N,013:33:09E,0,T,Malungsfors ,Bro
+461,59:45:07N,012:49:37E,0,T,Mangskog    ,Kyrka
+462,57:44:39N,013:25:05E,0,T,Marback     ,Kyrka
+463,56:28:15N,013:34:29E,0,T,Markaryd    ,Kyrka
+464,56:06:47N,013:37:45E,0,T,Matteröd    ,Kyrka
+465,66:34:14N,019:59:55E,0,T,Mattisudden ,Bro
+466,63:22:37N,018:19:39E,0,AT,Mellansel Fp,hangar
+467,59:05:59N,016:33:26E,0,T,Mellösa     ,Kyrka
+468,58:35:25N,014:06:17E,0,AT,Moholm Flp  ,S ban
+469,58:36:27N,014:02:35E,0,T,Moholm      ,Station
+470,59:56:01N,016:57:50E,0,T,Morgongåva  ,Station
+471,58:29:43N,015:06:22E,0,AT,Motala Flp  ,N ban
+472,59:09:09N,014:42:14E,0,T,Mullhyttan  ,Station
+473,57:54:16N,013:51:55E,0,T,Mullsjö     ,Rondell
+474,59:44:59N,016:30:50E,0,T,Mungasjon   ,N spets
+475,55:56:50N,013:27:14E,0,T,Munkarp     ,Kyrka
+476,59:48:10N,013:29:50E,0,AT,Munkfors Flp,N ban
+477,59:50:28N,013:32:28E,0,T,Munkfors     ,Station
+478,62:38:00N,017:59:13E,0,T,MyranHarnsnd,hangar
+479,57:22:40N,014:56:18E,0,T,Myresjö     ,Kyrka
+480,57:23:12N,015:47:56E,0,T,Målilla     ,Kyrka
+481,57:21:56N,014:20:13E,0,T,Möasjön     ,S spets
+482,56:56:23N,015:25:41E,0,T,Möckeln     ,N spets
+483,60:05:19N,016:32:55E,0,T,Möklinta    ,Kyrka
+484,60:05:08N,016:32:58E,0,T,Möklinta    ,Vägkors
+485,60:02:01N,014:55:20E,0,T,N Horken    ,S spets
+486,57:22:36N,014:35:54E,0,T,N Ljunga    ,Kyrka
+487,56:02:56N,013:43:18E,0,T,N Mellby    ,Kyrka
+488,56:01:04N,013:30:35E,0,T,N Rörum     ,Vägkors
+489,56:12:01N,013:55:36E,0,T,N Sandby    ,Kyrka
+490,57:53:07N,015:21:11E,0,T,N Vi Ka     ,
+491,56:05:16N,012:58:36E,0,T,N Vram      ,Kyrka
+492,58:01:19N,013:34:31E,0,T,N Åsarp     ,Kyrka
+493,65:41:38N,020:26:17E,0,T,NattbergetSg,
+494,60:43:26N,013:26:55E,0,T,NistallingnS,
+495,57:33:04N,013:30:04E,0,T,Nittorp     ,Kyrka
+496,59:31:12N,015:02:35E,0,T,Nora Ka     ,
+497,59:31:59N,015:05:32E,0,T,Norasjön    ,E spets
+498,60:06:41N,015:57:18E,0,AT,Norberg Flp ,N ban
+499,59:50:06N,014:06:43E,0,T,Nordmark    ,Kyrka
+500,60:28:25N,012:42:38E,0,T,NrdvggsjnDmm,
+501,65:01:15N,020:44:44E,0,T,NorrlngtrskS,
+502,59:46:52N,015:23:43E,0,T,NorrmogenNSp,
+503,60:16:05N,014:51:57E,0,T,Norsen      ,N spets
+504,57:06:02N,015:10:55E,0,T,Notteback   ,Kyrka
+505,59:43:03N,012:28:28E,0,T,Ny Ka       ,
+506,56:44:33N,015:54:44E,0,T,Nybro       ,Station
+507,57:19:23N,014:20:36E,0,T,Nydala      ,Kyrka
+508,59:35:46N,013:44:13E,0,T,Nyed        ,Kyrka
+509,59:37:11N,014:18:15E,0,T,Nykroppa    ,Kyrka
+510,60:28:15N,012:53:05E,0,T,Nyskoga     ,Kyrka
+511,59:07:06N,014:22:17E,0,T,Nysund      ,Kyrka
+512,60:27:10N,014:29:27E,0,T,Nås Bro     ,
+513,60:10:36N,016:28:32E,0,T,Nas BrukDamm,
+514,59:13:39N,016:21:06E,0,T,Nashulta Ka ,
+515,59:10:28N,016:19:50E,0,T,NashultasjnS,
+516,57:41:04N,014:39:40E,0,T,NassjO GlaKa,
+517,57:38:37N,014:40:20E,0,T,NassjO Tv   ,
+518,63:26:59N,016:54:30E,0,T,NasAkerVAgkN,
+519,60:12:05N,016:11:18E,0,T,Navden      ,E spets
+520,56:03:55N,013:50:19E,0,T,Nävlinge    ,Kyrka
+521,56:41:53N,015:01:20E,0,T,Nöbbele     ,Kyrka
+522,56:42:55N,013:46:03E,0,T,Nöttja      ,Kyrka
+523,59:35:03N,015:59:20E,0,T,Odensvi     ,Kyrka
+524,56:11:45N,013:20:51E,0,T,Oderljunga  ,Kyrka
+525,60:09:32N,014:53:31E,0,T,Olsjön      ,S spets
+526,56:09:08N,014:18:09E,0,T,Oppmanna    ,Kyrka
+527,61:08:21N,015:10:31E,0,T,Ore         ,Kyrka
+528,57:58:29N,012:54:42E,0,T,Ornunga     ,Kyrka
+529,56:50:30N,015:45:03E,0,T,Orrefors    ,
+530,65:29:01N,019:20:14E,0,T,OrrkmmnVgJvg,
+531,61:11:10N,014:42:40E,0,AT,Orsa Flp    ,SW ban
+532,57:11:54N,014:20:22E,0,T,Os Ka       ,
+533,56:23:22N,014:02:23E,0,T,Osby        ,Vägkors
+534,56:22:44N,014:00:05E,0,T,Osbysjön    ,N spets
+535,56:37:15N,015:50:06E,0,T,Oskar       ,Kyrka
+536,57:37:39N,015:42:59E,0,T,Pelarne     ,Kyrka
+537,56:08:30N,013:23:20E,0,T,Perstorp    ,Kyrka
+538,56:08:11N,013:24:01E,0,T,Perstorp    ,Station
+539,56:38:38N,014:01:52E,0,T,Pjatteryd   ,Kyrka
+540,59:03:52N,015:20:40E,0,T,Palsboda    ,Station
+541,57:12:16N,014:57:10E,0,T,Ramkvilla   ,Kyrka
+542,59:45:47N,016:12:42E,0,T,Ramnäs      ,Kyrka
+543,59:46:19N,016:09:28E,0,T,Ramnäs      ,Vägkors
+544,59:46:04N,015:18:03E,0,T,Ramsberg    ,Kyrka
+545,62:11:09N,015:39:28E,0,T,Ramsjö      ,Kyrka
+546,59:47:42N,017:26:34E,0,T,Ramsta      ,Kyrka
+547,60:40:16N,012:56:42E,0,T,Ransby      ,Bro
+548,60:40:33N,012:56:23E,0,T,Ransby Sag  ,
+549,59:48:37N,016:38:37E,0,T,Ransta      ,Station
+550,59:46:13N,013:27:06E,0,T,Ransater    ,Kyrka
+551,57:10:53N,013:34:12E,0,T,Reftele     ,Kyrka
+552,58:53:37N,015:41:52E,0,T,Regna       ,Kyrka
+553,58:49:39N,015:56:37E,0,T,Rejmyre Vagk,Vägkors
+554,58:03:48N,012:57:15E,0,T,Remmene     ,Kyrka
+555,62:43:20N,015:26:46E,0,T,RevsndssjnSp,
+556,60:39:14N,015:17:31E,0,T,Rexbo       ,Vägkors
+557,58:08:17N,015:41:08E,0,T,Rimforsa    ,Silo
+558,58:08:09N,015:41:05E,0,T,Rimforsa    ,Station
+559,55:59:22N,013:07:07E,0,T,RingKnutstrp,
+560,59:18:53N,015:20:26E,0,T,Rinkaby     ,Kyrka
+561,58:42:08N,015:51:01E,0,T,Risinge     ,Kyrka
+562,57:32:37N,012:58:05E,0,T,Roasjö      ,Kyrka
+563,59:43:51N,016:33:40E,0,T,Romfartuna  ,Kyrka
+564,60:17:46N,016:25:52E,0,T,Rossen      ,SW spets
+565,59:48:51N,013:01:42E,0,T,RottnenBrSSp,
+566,57:40:34N,015:35:40E,0,T,Rumskulla   ,Kyrka
+567,58:53:30N,017:02:49E,0,T,Runtuna     ,Kyrka
+568,57:16:30N,014:23:25E,0,T,Rusken DammE,
+569,57:11:10N,014:21:02E,0,T,Rusken      ,S spets
+570,56:14:46N,013:11:48E,0,T,Rya Ka      ,
+571,59:45:14N,017:08:02E,0,T,RydaKungsgrd,
+572,56:59:27N,014:16:52E,0,T,Rydaholm    ,Kyrka
+573,60:34:48N,016:00:06E,0,T,RyggenAmynnE,
+574,56:51:55N,014:09:51E,0,T,Ryssby      ,Kyrka
+575,60:27:23N,013:45:08E,0,T,Raforsen Bro,
+576,60:03:50N,017:05:13E,0,T,RaksjOn N Sp,
+577,59:37:29N,015:12:50E,0,T,RasvalnBrSSp,
+578,60:17:12N,015:09:21E,0,T,Ramen BroSSp,
+579,60:01:55N,014:07:57E,0,T,Rammen      ,Kyrka
+580,60:53:30N,015:05:56E,0,T,Rättvik     ,Kyrka
+581,56:33:20N,015:15:56E,0,T,Rävemåla    ,Kyrka
+582,60:23:29N,012:37:38E,0,T,Röjden      ,E spets
+583,56:14:12N,013:31:27E,0,T,Röke        ,Kyrka
+584,61:08:06N,012:48:50E,0,T,Rörbäcksnäs ,Kyrka
+585,57:14:16N,014:35:14E,0,T,Rörvik      ,Station
+586,58:15:50N,013:23:35E,0,T,Rösjön      ,N spets
+587,55:59:55N,013:17:53E,0,T,RöstAnga    ,Kyrka
+588,56:44:25N,013:58:27E,0,T,S Ljunga    ,Kyrka
+589,55:55:28N,013:40:19E,0,T,S Rorum     ,Kyrka
+590,56:30:52N,015:09:29E,0,T,S Sandsjö   ,Kyrka
+591,57:14:33N,015:02:53E,0,T,S Solberga  ,Kyrka
+592,57:44:38N,015:48:11E,0,T,S Vi Ka     ,
+593,57:38:01N,014:52:59E,0,T,S Vixen N Sp,
+594,59:53:43N,016:38:00E,0,AT,Sala Flp    ,hangar
+595,59:56:03N,016:37:25E,0,T,Sala Silo   ,
+596,57:59:42N,013:47:19E,0,T,Sandhem     ,Kyrka
+597,56:53:35N,015:20:24E,0,T,Sandsjön    ,S spets
+598,63:01:27N,017:47:10E,0,T,Sandslan    ,Bro
+599,65:16:08N,019:21:35E,0,T,Sandträsket ,
+600,57:10:37N,013:09:38E,0,T,Sandvik     ,Kyrka
+601,60:24:39N,015:22:55E,0,T,Sellnas     ,Vg/Jvg
+602,57:34:38N,013:07:27E,0,T,Sexdrega    ,Kyrka
+603,58:57:06N,016:53:08E,0,T,Sibro       ,Bro
+604,63:17:32N,018:17:54E,0,T,Sidensjo Ka ,Kyrka
+605,59:58:43N,017:09:42E,0,T,Siggeforasjn,
+606,60:42:54N,014:58:55E,0,T,SiljanBroSSp,
+607,60:46:58N,014:50:09E,0,AT,Siljansnäs FP,S ban
+608,60:46:38N,014:51:48E,0,T,Siljansnäs  ,Kyrka
+609,59:16:41N,012:23:49E,0,T,SillebttnVgk,
+610,59:18:36N,012:18:47E,0,T,Sillerud    ,Kyrka
+611,60:21:42N,015:30:15E,0,T,Silvberg    ,Kyrka
+612,59:51:24N,014:27:39E,0,T,SilvrgrvnDmm,
+613,58:46:55N,016:09:51E,0,T,Simonstorp  ,Kyrka
+614,58:20:58N,013:46:55E,0,T,Simsjön     ,S spets
+615,59:46:25N,016:54:15E,0,T,Simtuna     ,Kyrka
+616,63:00:46N,016:18:56E,0,T,Singsjon    ,E spets
+617,66:30:45N,020:14:48E,0,T,Sjallarim   ,Vägkors
+618,56:23:23N,013:28:26E,0,AT,SkFagerhltFp,N ban
+619,56:22:11N,013:28:18E,0,T,SkFagerhult ,Kyrka
+620,59:44:07N,013:18:21E,0,T,Skacksjön   ,N Bro
+621,59:05:25N,014:39:25E,0,T,SkagershultK,Kyrka
+622,63:31:06N,017:44:17E,0,T,Sklmsjsjn   ,N spets
+623,58:23:13N,013:26:30E,0,T,Skara       ,Kyrka
+624,56:45:25N,014:34:51E,0,T,Skatelov    ,Kyrka
+625,58:47:23N,016:54:56E,0,T,Skavsta Fl1 ,bankors
+626,58:47:45N,016:54:41E,0,T,Skavsta Fl2 ,N lanken
+627,58:29:41N,013:19:04E,0,T,Skeby Ka    ,Kyrka
+628,58:56:20N,015:53:10E,0,T,Skedevi Ka  ,Kyrka
+629,63:13:08N,017:20:53E,0,T,Skedmssjön   ,N spets
+630,57:32:12N,012:53:03E,0,T,Skephult    ,Kyrka
+631,58:27:14N,015:14:06E,0,T,Skeppsås    ,Kyrka
+632,57:25:43N,014:05:40E,0,T,Skllngryd   ,Station
+633,59:49:06N,012:01:00E,0,T,Skillingmrk ,Kyrka
+634,59:49:48N,015:41:14E,0,T,Sknnskttbrg ,Kyrka
+635,57:22:27N,015:22:32E,0,T,Skiro       ,Kyrka
+636,59:49:50N,017:19:12E,0,T,SkogsTibble ,Kyrka
+637,63:22:36N,017:54:00E,0,T,Skorped     ,Kyrka
+638,56:40:41N,015:22:13E,0,T,Skruv       ,Station
+639,59:43:51N,016:26:20E,0,T,Skultuna    ,Station
+640,59:10:13N,016:43:11E,0,T,Skunderns   ,Trav
+641,59:59:56N,017:31:06E,0,T,Skuttunge   ,Kyrka
+642,57:15:24N,014:50:35E,0,T,Skarsjön    ,W spets
+643,59:02:13N,016:26:19E,0,T,Sköldinge   ,Kyrka
+644,59:07:48N,015:19:35E,0,T,Sköllerst   ,Vägkors
+645,58:27:10N,013:58:38E,0,AT,Skövde Flp  ,segel-hangar
+646,65:49:23N,021:16:05E,0,T,Slyträsket  ,
+647,57:01:15N,014:30:55E,0,T,Slätthög    ,Kyrka
+648,57:09:59N,013:26:20E,0,AT,Sm Stenar Fp,S ban
+649,60:08:33N,015:25:36E,0,T,Smedjebacken,Kyrka
+650,55:32:58N,014:07:13E,0,T,Smedstorp   ,Station
+651,59:58:25N,016:00:52E,0,T,Snyten      ,S spets
+652,63:10:16N,017:16:16E,0,T,Sollefteå   ,Bro
+653,59:04:52N,016:50:12E,0,T,Sparreholm  ,Bro
+654,60:54:00N,013:11:18E,0,T,StAlmsjonBrN,
+655,60:20:59N,014:51:52E,0,T,StMalingennS,
+656,58:58:06N,016:21:50E,0,T,St Malm     ,Kyrka
+657,56:41:36N,016:00:32E,0,T,St Sigfrid  ,Kyrka
+658,60:24:26N,015:48:26E,0,T,St Skedvi Ka,Kyrka
+659,59:16:14N,016:07:47E,0,T,StSundby    ,Slott
+660,58:43:45N,014:34:20E,0,T,StTrehornngn,
+661,62:49:37N,015:18:53E,0,T,Stavre      ,Station
+662,55:53:52N,013:25:04E,0,T,Stehag      ,Kyrka
+663,57:19:20N,015:25:21E,0,T,Stenberga   ,Kyrka
+664,56:37:03N,014:11:05E,0,T,Stenbrohult ,Kyrka
+665,59:29:50N,015:27:36E,0,T,Stenby      ,Jvgbro
+666,56:03:11N,013:05:57E,0,T,Stenestad   ,Kyrka
+667,60:26:09N,016:12:45E,0,T,Stjärnsund  ,Kapell
+668,57:18:58N,014:35:27E,0,T,Stockaryd   ,Kyrka
+669,59:33:45N,014:09:27E,0,T,StorLungn   ,W spets
+670,65:38:09N,020:43:03E,0,T,StorTegrJvgN,
+671,63:43:00N,017:59:50E,0,T,StorUttersjn,
+672,60:07:16N,016:03:38E,0,T,Storsjön    ,SE spets
+673,65:29:57N,021:04:37E,0,T,StrstrsktNSp,
+674,60:35:09N,016:35:10E,64,TAHSF,Storvik Flp ,W ban
+675,60:34:58N,016:32:16E,0,T,Storvik     ,Station
+676,59:43:01N,015:08:41E,0,T,Stora       ,Station
+677,57:03:39N,014:35:45E,0,T,Stråken     ,S pets
+678,59:15:04N,014:24:53E,0,T,Stromtorp   ,Station
+679,60:25:10N,013:15:20E,0,T,StolletBroNw,
+680,60:23:53N,013:16:59E,0,T,Stollet BroS,
+681,60:24:25N,013:16:30E,0,T,Stollet     ,Kyrka
+682,60:25:47N,013:21:41E,0,T,Stollsjön   ,N spets
+683,59:55:26N,017:32:18E,0,AT,Sundbro Flp ,banmitt 2406
+684,59:51:34N,013:06:50E,0,AT,Sunne Flp   ,klubbhus
+685,59:53:08N,013:43:23E,0,T,Sunnemo     ,Kyrka
+686,59:42:25N,016:12:00E,0,T,Sura Ka     ,
+687,65:48:32N,021:15:46E,0,T,SvanmyrnVgJv,
+688,66:00:53N,021:10:20E,0,T,Svartla Bro ,
+689,59:24:45N,014:40:43E,0,T,SvartalvenBr,
+690,62:02:50N,014:25:25E,0,T,Sveg Fl1    ,hangar
+691,62:02:54N,014:25:24E,0,T,Sveg Fl2    ,bana/taxi
+692,57:28:17N,014:19:08E,0,T,Svenarum    ,Kyrka
+693,57:27:53N,014:18:51E,0,T,SvnrmPrstgrd,
+694,59:01:11N,015:22:55E,0,T,Svennevad   ,Kyrka
+695,57:45:14N,015:22:57E,0,T,Svinhult    ,Kyrka
+696,60:45:09N,015:55:29E,0,T,Svärdsjö    ,Kyrka
+697,60:47:14N,015:53:44E,0,T,Svärdsjön   ,N spets
+698,58:20:11N,015:13:48E,0,T,Sya Ka      ,
+699,57:59:26N,014:55:27E,0,T,Säby        ,Kyrka
+700,59:05:17N,012:57:15E,0,AT,Säffle Flp  ,hangar
+701,60:25:11N,015:23:10E,0,T,Sällnässjön ,N spets
+702,57:37:08N,013:22:10E,0,T,Sämsjön     ,SE spets
+703,57:55:30N,012:51:30E,0,T,Säven       ,N spets
+704,60:04:32N,015:34:02E,0,T,Söderbärke  ,Kyrka
+705,59:27:03N,012:46:30E,0,T,Söljeflagen ,Bro
+706,57:01:34N,014:53:35E,0,T,Söraby Ka   ,Kyrka
+707,58:08:38N,013:22:30E,0,T,Sörby Ka    ,Kyrka
+708,59:42:28N,015:24:39E,0,T,Sörmogen    ,SW spets
+709,59:46:09N,015:10:53E,0,T,Sörsjön     ,S spets
+710,61:20:09N,016:13:11E,0,T,Söräng Bro  ,
+711,55:35:49N,013:40:34E,0,AT,Sövde Flp   ,strtpltsbn30
+712,59:53:30N,011:56:14E,0,T,Tannsjön    ,N spets
+713,65:35:10N,020:42:44E,0,T,TeugertrskBr,
+714,58:25:30N,014:10:13E,0,T,Tibro       ,Station
+715,58:11:43N,014:00:15E,0,AT,Tidaholm Flp,N ban
+716,58:34:12N,014:00:42E,0,T,Tidan       ,Vg/Jvg
+717,57:55:36N,015:29:52E,0,T,Tidersrum   ,Kyrka
+718,60:17:18N,017:25:55E,0,AT,Tierp Flp   ,klubbhus
+719,59:41:18N,016:37:34E,0,T,Tillberga   ,Station
+720,57:52:28N,013:25:57E,0,AT,Timmele Flp ,hangar
+721,58:31:36N,013:46:03E,0,T,Timmersdala ,Kyrka
+722,56:31:39N,014:58:35E,0,T,Tingsryd    ,Kyrka
+723,59:01:27N,015:12:38E,0,T,Tisaren     ,N spets
+724,58:54:31N,012:23:55E,0,T,Tisselskog  ,Kyrka
+725,58:46:09N,014:31:56E,0,T,Tived       ,Kyrka
+726,58:42:58N,015:21:20E,0,T,Tjällmo     ,Kyrka
+727,58:07:03N,015:43:17E,0,T,Tjarstad    ,Kyrka
+728,56:00:06N,013:37:11E,0,T,Tjornarp    ,Kyrka
+729,60:15:39N,017:12:38E,0,T,Toften Udde ,
+730,60:22:32N,017:33:11E,0,T,Tolfta      ,Kyrka
+731,57:44:00N,013:12:51E,0,T,Tolken      ,S spets
+732,55:32:48N,013:57:06E,0,T,Tomelilla   ,Station
+733,59:25:20N,016:11:21E,0,T,Torpa       ,Kyrka
+734,56:42:35N,013:35:50E,0,T,Topa        ,Kyrka
+735,59:38:43N,013:08:32E,0,T,Torpsjön    ,N spets
+736,62:38:50N,015:53:00E,0,T,Torringen   ,E spets
+737,63:34:12N,017:31:13E,0,T,Trrvttnt    ,NW spets
+738,60:09:21N,012:59:54E,0,AT,Torsby Fl1  ,hangar
+739,60:09:18N,012:59:48E,0,AT,Torsby Fl2  ,bana/taxi
+740,60:30:35N,016:28:25E,0,T,Torsåker    ,Kyrka
+741,60:27:53N,015:34:22E,0,T,Torsång     ,Kyrka
+742,57:29:16N,013:20:59E,0,T,Tranemo     ,Kyrka
+743,61:05:27N,013:19:05E,0,T,Transtrand  ,Bro
+744,56:34:50N,013:44:56E,0,T,Traryd      ,Kyrka
+745,59:28:20N,014:36:50E,0,T,TrehrnngnSSp,
+746,63:41:54N,018:49:05E,0,T,TrehornngsjK,Kyrka
+747,58:19:04N,012:21:05E,0,AT,Trollhättan ,FLP twr
+748,65:51:03N,021:25:44E,0,T,Trolltjärnen,
+749,55:34:13N,013:55:52E,0,T,Tryde       ,Kyrka
+750,58:09:34N,013:16:04E,0,T,Travattna   ,Kyrka
+751,57:34:00N,016:08:08E,0,T,Tuna        ,Kyrka
+752,56:50:38N,014:03:02E,0,T,Tutaryd     ,Kyrka
+753,57:43:34N,013:19:00E,0,T,Tvarred     ,Kyrka
+754,56:37:20N,016:02:51E,0,T,Tvärskog    ,Vägkors
+755,59:06:37N,014:48:37E,0,T,TangerAsa   ,Kyrka
+756,57:05:29N,014:02:50E,0,T,Tannö       ,Kyrka
+757,59:49:20N,016:44:55E,0,T,Tärna       ,Kyrka
+758,60:09:16N,016:55:22E,0,T,Tärnsjö     ,Kyrka
+759,56:46:34N,014:49:47E,0,T,TavelsAs    ,Kyrka
+760,58:42:02N,014:07:54E,0,T,Töreboda    ,Station
+761,58:11:10N,013:21:02E,0,T,Ullene      ,Kyrka
+762,59:27:18N,015:27:25E,0,T,Ullerstr    ,Vg/Jvg
+763,58:07:28N,015:26:18E,0,T,Ulrika      ,Kyrka
+764,59:48:07N,016:04:00E,0,T,Ulvramen    ,N spets
+765,58:49:03N,014:21:34E,0,T,Unden       ,NW spets
+766,56:57:19N,013:32:01E,0,T,Unnaryd     ,Kyrka
+767,56:31:51N,014:48:06E,0,T,Urshult     ,Kyrka
+768,56:41:28N,014:56:40E,0,AT,Urasa Flp   ,N ban
+769,58:00:38N,015:42:35E,0,T,V Eneby     ,Kyrka
+770,58:21:09N,013:16:44E,0,T,V Gerum     ,Kyrka
+771,57:48:06N,015:09:02E,0,T,V Ryd Ka    ,Kyrka
+772,59:34:35N,015:41:34E,0,T,V Skedvi    ,Kyrka
+773,56:39:01N,014:31:10E,0,T,V Torsås    ,Kyrka
+774,56:08:24N,013:30:13E,0,T,V Torup     ,Kyrka
+775,59:03:12N,015:52:53E,0,T,V Vingåker  ,Kyrka
+776,59:38:20N,013:33:50E,0,T,V Orten     ,SW spets
+777,57:23:50N,014:41:42E,0,T,Vallsjö     ,Kyrka
+778,57:26:30N,014:46:22E,0,T,Vallsjön    ,N spets
+779,59:26:34N,015:57:11E,0,T,Valskog     ,Station
+780,56:10:53N,013:45:05E,0,AT,Vankiva Flp ,hangar
+781,56:11:28N,013:44:54E,0,T,Vankiva Ka  ,Kyrka
+782,60:00:16N,016:58:23E,0,T,Vansjon     ,NW spets
+783,58:15:39N,012:57:16E,0,T,Vara        ,Station
+784,58:23:24N,013:39:13E,0,T,Varnhem     ,Vägkors
+785,59:44:49N,015:08:40E,0,T,Vasselhyttan,
+786,60:00:58N,017:44:00E,0,T,Vattholma   ,Station
+787,58:10:11N,013:00:05E,0,T,Vedum       ,Station
+788,60:05:49N,017:28:42E,0,T,Velangen    ,S spets
+789,57:31:26N,015:58:15E,0,T,Vena        ,Kyrka
+790,60:09:52N,017:36:15E,0,T,Vendel      ,Kyrka
+791,60:57:07N,013:54:38E,0,T,Venjan      ,Kyrka
+792,57:53:41N,015:36:45E,0,T,Verveln Stn ,Station
+793,55:56:52N,012:52:01E,0,AT,Viarp Flp   ,bana/taxi
+794,55:56:47N,012:52:31E,0,T,Viarp Ref   ,
+795,65:49:48N,020:32:30E,0,T,Vidsel      ,Bro
+796,65:54:31N,019:59:04E,0,T,VidslBrWnwFl,
+797,58:52:56N,016:20:18E,0,T,Viggaren    ,NW spets
+798,60:30:49N,015:43:13E,0,T,Vikasjön    ,N spets
+799,59:27:27N,014:53:39E,0,T,Viker Ka    ,Kyrka
+800,59:30:25N,014:53:52E,0,T,VikernSaxn  ,Bro
+801,58:12:29N,013:26:27E,0,T,VilskeKleva ,Kyrka
+802,57:39:58N,015:51:39E,0,T,Vimmerby    ,Kyrka
+803,64:12:04N,019:42:10E,0,T,Vindeln     ,Bro
+804,59:02:33N,015:52:39E,0,T,Vingåker    ,Station
+805,56:06:29N,013:55:07E,0,T,Vinslov     ,Kyrka
+806,59:14:17N,014:59:37E,0,T,Vintrosa    ,Kyrka
+807,56:37:03N,015:14:14E,0,T,Viren Bro   ,S spets
+808,56:37:33N,014:20:34E,0,T,Virestad    ,Kyrka
+809,59:52:03N,016:02:55E,0,T,VirsboBruk  ,Bro
+810,59:52:23N,016:05:13E,0,T,Virsbo      ,Station
+811,57:19:09N,015:35:18E,0,T,Virserum    ,Kyrka
+812,56:46:40N,014:25:58E,0,T,Vislanda    ,Kyrka
+813,56:32:00N,015:36:07E,0,T,Vissefjärda ,Kyrka
+814,56:25:41N,013:51:33E,0,T,Visseltofta ,Kyrka
+815,65:41:36N,020:36:55E,0,T,Vistträsket ,Bro
+816,59:53:20N,017:00:13E,0,T,Vittinge    ,Kyrka
+817,65:51:42N,021:05:29E,0,T,Vitträsk    ,Udde
+818,56:20:35N,013:39:41E,0,T,Vittsjö     ,Kyrka
+819,58:22:55N,013:52:19E,0,T,Volvo       ,Rondell
+820,57:07:41N,014:07:52E,0,T,Voxtorp Ka  ,Kyrka
+821,57:21:21N,014:28:22E,0,T,Vrigstad Ka ,Kyrka
+822,56:44:05N,013:27:22E,0,T,Vrå Ka      ,Kyrka
+823,57:28:37N,015:19:52E,0,T,Vrången     ,Bro
+824,66:26:36N,020:38:50E,0,T,Vuollerim   ,Bro
+825,65:39:10N,019:42:40E,0,T,Vuotner     ,Bro
+826,57:19:18N,015:56:05E,0,T,Våmmesjön   ,E spets
+827,56:10:54N,014:22:39E,0,T,Vånga       ,Kyrka
+828,58:14:16N,015:41:43E,0,T,Vårdnäs     ,Kyrka
+829,58:01:53N,012:48:50E,0,T,Vårgårda    ,Station
+830,56:28:08N,015:00:47E,0,T,Vägkors     ,
+831,60:17:22N,013:03:03E,0,T,Vägsjöfors  ,Bro
+832,60:17:29N,013:04:24E,0,T,Vägsjön     ,NW spets
+833,59:06:07N,017:12:54E,0,AT,Vängsö Flp  ,bankors
+834,59:27:20N,012:55:13E,0,T,Värmskogs   ,Kyrka
+835,57:11:03N,014:02:19E,0,T,Värnamo     ,Jvgbro
+836,58:21:06N,014:03:13E,0,T,Värsås      ,Kyrka
+837,59:56:43N,016:16:55E,0,T,Västerfärnbo,Kyrka
+838,55:46:27N,013:38:31E,0,T,Västerstad  ,Kyrka
+839,59:56:28N,016:02:08E,0,T,Västervåla  ,Kyrka
+840,60:34:40N,013:49:27E,0,T,Yttermalung ,Kyrka
+841,60:46:40N,016:08:34E,0,T,Ågsjön      ,E spets
+842,59:15:10N,017:05:55E,0,T,ÅkersBruk   ,Station
+843,59:52:40N,017:17:15E,0,T,Åland       ,Kyrka
+844,58:43:26N,016:35:20E,0,T,Ålberg      ,viadukt
+845,58:08:16N,013:36:05E,0,T,Ålleberg Fl1,restaurang
+846,58:08:08N,013:36:20E,0,AT,Ålleberg Fl2,banmitt
+847,60:58:02N,016:27:04E,0,T,Åmot        ,Kyrka
+848,62:33:52N,015:50:17E,0,AT,Ånge Flp    ,hangar
+849,62:31:07N,015:38:48E,0,T,Ånge        ,Kyrka
+850,58:59:38N,016:49:56E,0,T,Årdala      ,Kyrka
+851,58:59:55N,015:03:49E,0,T,Åsbro       ,Station
+852,57:10:11N,015:20:57E,0,T,Åseda       ,Kyrka
+853,61:16:31N,013:49:36E,0,T,Åsen        ,Kyrka
+854,57:24:25N,013:48:00E,0,T,Åsenhöga    ,Kyrka
+855,56:18:29N,013:23:25E,0,T,Åsljunga    ,Vägkors
+856,60:17:24N,013:23:51E,0,T,Åstrand     ,Bro
+857,57:48:10N,013:24:18E,0,T,Åsunden     ,N spets
+858,57:41:40N,013:23:30E,0,T,Åsunden     ,SE spets
+859,65:26:06N,020:55:28E,0,T,Åträsket    ,S spets
+860,58:48:04N,014:15:35E,0,T,Älgarås     ,Kyrka
+861,58:48:50N,014:15:33E,0,T,Älgarås     ,Station
+862,56:34:25N,014:10:19E,0,AT,Älmhult Flp ,bana/taxi
+863,56:33:06N,014:08:25E,0,T,Älmhult     ,Station
+864,61:12:50N,014:02:50E,0,T,Älvdalen Fl1,hangar
+865,61:12:54N,014:02:49E,0,AT,Älvdalen Fl2,bana/taxi
+866,65:38:49N,021:03:57E,0,AT,ÄlvsbynHghdn,banmitt
+867,57:14:30N,012:52:11E,0,T,Älvsered    ,Kyrka
+868,60:17:14N,013:33:43E,0,T,Ämten       ,S spets
+869,59:27:59N,014:58:03E,0,T,ÄmtenDmmsjnN,
+870,60:29:34N,013:58:19E,0,T,Äpplbo      ,JvgbroNw
+871,60:28:38N,014:05:35E,0,T,Äppelbo     ,Jvgbr S
+872,60:29:25N,014:00:27E,0,T,Äppelbo     ,Kyrka
+873,59:15:31N,016:35:34E,0,T,Ärla        ,Kyrka
+874,59:16:58N,016:40:51E,0,T,Ärla        ,Station
+875,57:50:30N,012:57:00E,0,T,Ärtingen    ,N spets
+876,59:09:22N,016:06:45E,0,T,Äs Vägk     ,
+877,55:58:45N,013:48:08E,0,T,Äsphult     ,Kyrka
+878,55:51:39N,013:43:46E,0,T,Äspinge     ,Kyrka
+879,57:20:30N,013:02:10E,0,T,Ö FrolundaKa,Kyrka
+880,58:54:13N,014:43:27E,0,T,Ö Laxsjön   ,Bro
+881,55:48:06N,013:43:56E,0,T,Ö Sallerup  ,Kyrka
+882,58:58:09N,016:06:56E,0,T,Ö Vingåker  ,Kyrka
+883,59:44:03N,013:12:10E,0,T,Ö Amtervik  ,Kyrka
+884,59:39:31N,013:41:20E,0,T,Ö OrtenDmm  ,S spets
+885,59:24:24N,015:25:10E,0,T,Ödeby       ,Kyrka
+886,57:36:08N,014:17:21E,0,AT,Ödestugu Flp,bana/väg
+887,58:26:01N,013:41:38E,0,T,Öglunda     ,Kyrka
+888,59:17:13N,016:09:45E,0,T,Öja         ,Kyrka
+889,60:48:40N,013:51:46E,0,T,Öje         ,Kyrka
+890,60:44:02N,013:51:00E,0,T,ÖjenSSpVgbnk,
+891,59:13:52N,014:31:20E,0,T,Ölen        ,Åmynn
+892,59:06:40N,016:02:10E,0,T,ÖljarnGrnddn,
+893,56:25:08N,015:02:41E,0,T,Öljehult Ka ,Kyrka
+894,56:03:30N,014:01:46E,0,T,Önnestad Ka ,Kyrka
+895,59:13:43N,015:03:12E,0,AT,Örebro Flp  ,segelklubbhs
+896,59:14:05N,014:35:26E,0,T,Örgiven     ,S spets
+897,58:31:04N,014:15:54E,0,T,Örlen       ,N spets
+898,56:42:01N,015:45:21E,0,T,Örsjo       ,Kyrka
+899,57:26:34N,013:07:30E,0,T,Örsas       ,Kyrka
+900,59:39:13N,011:55:06E,0,T,Östen       ,N spets
+901,59:24:33N,016:14:40E,0,T,ÖsterTbblVgk,
+902,57:49:28N,015:17:28E,0,T,Österbymo   ,Vägkors
+903,60:18:10N,016:47:51E,0,T,ÖsterfarnebK,Kyrka
+904,59:37:25N,014:15:51E,0,T,Östersjön   ,Bro NW
+905,63:07:24N,014:48:43E,0,AT,Östersund FP,Optand
+906,59:38:10N,011:51:42E,0,T,Östervllskg ,Kyrka
+907,60:10:45N,017:10:56E,0,T,Östervåla   ,Kyrka
+908,59:07:22N,015:59:34E,0,T,Österaker   ,Kyrka
+909,60:16:46N,012:45:56E,0,T,Östmark     ,Kyrka
+910,55:45:35N,013:41:09E,0,T,Östraby     ,Kyrka
+911,64:14:49N,020:39:44E,0,T,Överklinten ,Kyrka
+912,65:46:35N,020:51:06E,0,T,ÖvrTvarsl   ,vägkors

@@ -1,0 +1,20 @@
+* GERMAN Airspace data
+
+* Last Updated December 3, 1998
+
+* SOURCE: Luftfahrthandbuch Deutschland (AIP), Stand 1.1.98 
+
+* Typed in by Johannes and Georg GARRECHT of GARRECHT ComputerSysteme (makers of the Volkslogger IGC-approved logger)
+
+* Author's email address is : g.garrecht@gmx.net
+
+
+* class C aispace germany (ED)
+
+AC C
+AN BERLIN-C
+AL 6500ft STD
+AH 10000ft STD
+V X=52:23:25 N 13:33:18 E
+DB 52:42:54 N 14:12:55 E,52:19:12 N 14:23:31 E
+

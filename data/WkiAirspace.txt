@@ -1,0 +1,286 @@
+*	UNOFFICIAL Airspace file for Waikerie SA.
+*
+*	Version 0.37
+*	File created on 2nd Nov. 2000
+*	Any comments to Michi Uchida	horizon@sa.ozland.net.au
+*	Waikerie Gliding Club Inc. http://www.airnet.ne.jp/waikerie/english
+*
+*	Magnetic variation: 8.5
+*	Time zone: Australia/South
+*	Summer offset from GMT is 10:30, and in winter it is 9:30
+*
+*	UNOFFICIAL, USE AT YOUR OWN RISK
+*
+*	Always consult the relevant publications
+*	for current and correct information. This
+*	service is provided free of charge with
+*	no warrantees, expressed or implied.
+*	User assumes all risk of use.
+
+
+* Adelaide INTL
+AC CTR 
+AN YPAD
+AL SFC
+AH FL600
+V X=34:56.8 S 138:31.5 E
+V T=1
+DB 34:49.0 S 138:40.9 E, 34:46.0 S 138:28.2 E
+DP 34:50.8 S 138:36.5 E
+
+AC R
+AN LL1500
+AL 1500 ft
+AH FL600
+AT 34:50.0 S 138:22.0 E
+V X=34:56.8 S 138:31.5 E
+V T=1
+DB 35:07.4 S 138:28.4 E, 34:46.0 S 138:28.2 E
+DP 34:48.5 S 138:32.3 E
+DP 34:46.3 S 138:34.2 E
+DP 34:44.4 S 138:31.8 E
+V D=-
+DB 34:36.9 S 138:28.6 E, 35:14.8 S 138:20.9 E
+
+AC R
+AN LL2500
+AL 2500 ft
+AH FL600
+AT 35:10.0 S 138:40.0 E
+V X=34:56.8 S 138:31.5 E
+V T=1
+DB 34:49.0 S 138:40.9 E, 35:07.4 S 138:28.4 E
+DP 35:14.8 S 138:20.9 E
+V D=-
+DB 35:14.8 S 138:20.9 E, 34:40.5 S 138:45.6 E
+DP 34:44.6 S 138:39.0 E
+DP 34:48.0 S 138:42.0 E
+DP 34:49.0 S 138:40.9 E
+
+AC R
+AN LL4500
+AL 4500 ft
+AH FL600
+AT 35:24.0 S 138:40.0 E
+V X=34:56.8 S 138:31.5 E
+V T=1
+DB 34:40.5 S 138:45.6 E, 35:14.8 S 138:20.9 E
+DP 35:27.3 S 138:08.0 E
+V D=-
+DB 35:27.3 S 138:08.0 E, 34:28.5 S 138:58.3 E
+DP 34:36.0 S 138:52.2 E
+DP 34:40.5 S 138:45.6 E
+
+AC R
+AN LL8500
+AL 8500 ft
+AH FL600
+AT 35:40.0 S 138:40.0 E
+V X=34:56.8 S 138:31.5 E
+V T=1
+DB 34:16.3 S 139:07.7 E, 35:37.9 S 137:56.9 E
+DP 35:27.3 S 138:08.3 E
+V D=-
+DB 35:27.3 S 138:08.3 E, 34:28.5 S 138:58.3 E
+
+AC R
+AN LL FL125
+AL FL125
+AH FL600
+AT 35:40.0 S 139:25.0 E
+V X=34:56.8 S 138:31.5 E
+V T=1
+DB 34:16.3 S 139:07.7 E, 35:42.8 S 138:07.3 E
+DP 36:01.0 S 137:57.6 E
+V D=-
+DB 36:01.0 S 137:57.6 E, 33:59.5 S 139:20.6 E
+
+AC R
+AN LL FL185
+AL FL185
+AH FL600
+AT 35:35.0 S 140:00.0 E
+V X=34:56.8 S 138:31.5 E
+V T=1
+DB 33:59.5 S 139:20.6 E, 35:52.0 S 139:25.0E
+DP 35:52.5 S 139:58.0 E
+V D=-
+DB 35:52.5 S 139:58.0 E, 33:42.6 S 139:33.5 E
+* This Class R not complete. Need More Areas.
+
+*AC R
+*AN LL FL200
+*AL FL185
+*AH FL600
+* This Class R not complete. Need Area Data.
+
+AC R
+AN LL1500
+AL 1500 ft
+AH FL600
+AT 34:28.0 S 138:43.0 E
+V X=34:56.4 S 138:36.3 E
+V T=1
+V D=-
+DP 34:44.6 S 138:39.0 E
+DP 34:36.0 S 138:52.2 E
+DB 34:26.0 S 139:00.0 E, 34:20.0 S 138:22.7 E
+DP 34:20.0 S 138:22.7 E
+DP 34:44.4 S 138:31.8 E
+DP 34:46.3 S 138:34.2 E
+DP 34:48.5 S 138:32.3 E
+DP 34:50.8 S 138:36.5 E
+DP 34:48.0 S 138:42.1 E
+DP 34:44.6 S 138:39.0 E
+
+AC R
+AN LL6500
+AL 6500 ft
+AH FL600
+AT 34:14.0 S 138:43.0 E
+V T=1
+V X=34:56.4 S 138:36.3 E
+DB 34:08.0 S 138:18.0 E, 34:16.3 S 139:07.7 E
+V D=-
+DB 34:26.0 S 139:00.0 E, 34:20.0 S 138:22.7 E
+
+AC R
+AN LL8500
+AL 8500 ft
+AH FL600
+AT 34:01.0 S 138:43.0 E
+V X=34:56.4 S 138:36.3 E
+V T=1
+V D=-
+DB 34:03.7 S 139:17.0 E, 33:53.6 S 138:12.5 E
+V D=+
+DB 34:08.0 S 138:18.0 E, 34:16.3 S 139:07.7 E
+
+AC R
+AN LL9500
+AL 9500 ft
+AH FL600
+AT 33:36.0 S 138:43.0 E
+V X=34:56.4 S 138:36.3 E
+V T=1
+DB 33:20.0 S 138:00.0 E, 33:34.0 S 139:40.0 E
+V D=-
+DB 34:03.7 S 139:17.0 E, 33:53.6 S 138:12.5 E
+
+
+* Balranald
+AC D
+AN Balranald CTAF 126.7MHz
+AL SFC
+AH 3000 ft
+V X=34:37.5 S 143:34.61 E
+V T=1
+DC 5
+
+* Birchip
+AC D
+AN Birchip CTAF 126.7MHz
+AL SFC
+AH 3000 ft
+V X=36:00.06 S 142:54.96 E
+V T=1
+DC 5
+
+* Hopetoun
+AC D
+AN Hopetoun CTAF 126.7MHz
+AL SFC
+AH 3000 ft
+V X=35:43.16 S 142:21.5 E
+V T=1
+DC 5
+
+* Kerang
+AC D
+AN Kerang CTAF 126.7MHz
+AL SFC
+AH 3000 ft
+V X=35:45.16 S 143:56.28 E
+V T=1
+DC 5
+
+* Loxton
+AC D
+AN YLOX CTAF 126.7MHz
+AL SFC
+AH 3000 ft
+V X=34:28.63 S 140:39.75 E
+V T=1
+DC 5
+
+* Mildura
+AC C
+AN Mildura MBZ 118.8MHz
+AL SFC
+AH 5000 ft
+V X=34:13.85 S 142:05.05 E
+V T=1
+DC 15
+
+* Pooncarie
+AC D
+AN Pooncarie CTAF 126.7MHz
+AL SFC
+AH 3000 ft
+V X=33:22.08 S 142:35.25 E
+V T=1
+DC 5
+
+* Renmark
+AC D
+AN YREN CTAF 126.7MHz
+AL SFC
+AH 3000 ft
+V X=34:11.86 S 140:40.36 E
+V T=1
+DC 5
+
+* Robinvale
+AC D
+AN Robinvale CTAF 126.7MHz
+AL SFC
+AH 5000 ft
+V X=34:39.16 S 142:47.16 E
+V T=1
+DC 5
+
+* Sea Lake
+AC D
+AN Sea Lake CTAF 126.7MHz
+AL SFC
+AH 3000 ft
+V X=35:31.67 S 142:53.25 E
+V T=1
+DC 5
+
+* Swan Hill
+AC D
+AN Swan Hill CTAF 119.1MHz
+AL SFC
+AH 3000 ft
+V X=35:22.63 S 143:31.93 E
+V T=1
+DC 5
+
+* Waikerie
+AC D
+AN YWKI CTAF 126.7MHz
+AL SFC
+AH 3000 ft
+V X=34:11.33 S 140:01.53 E
+V T=1
+DC 5
+
+* Murray Bridge
+*AC D
+*AN Murray Bridge CTAF 127.5MHz
+*AL SFC
+*AH 3000 ft
+*V X=3:. S 14:. E
+*V T=1
+*DC 5

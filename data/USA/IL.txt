@@ -1,0 +1,150 @@
+********** Vicinity of Hinckley, IL ****************
+* Source: 56th edition of CHICAGO Sectional, May 21, 1998
+
+******* OPEN AIR (tm) TERRAIN and AIRSPACE DESRIPTION LANGUAGE *************
+*	Version 0.92
+*	December 10, 1998
+*	Send comments to jerryp@winpilot.com
+*
+*
+*	AIRSPACE-related record types:
+*	==============================
+*
+*	AC	class	;	class = Airspace Class:
+*                        R                       restricted
+*                        Q                       danger
+*                        P                       prohibited
+*                        A                       Class A
+*                        B                       Class B
+*                        C                       Class C
+*                        D                       Class D 
+*                        GP                      glider prohibited 
+*                        CTR                     CTR
+*						 W						 Wave Window
+*
+*
+*	AN string		;	string = Airspace Name
+*	AH string		;	string = Airspace Ceiling
+*	AL string		;	string = Airspace Floor
+*	AT coordinate	;	coordinate = Coordinate of where to place a name label on the map (optional)
+*					;	NOTE: there can be multiple AT records for a single airspace segment
+*	
+*	
+*	TERRAIN-related record types (NYI):
+*	==============================
+*
+*	TO	{string}				; Declares Terrain Open Polygon; string = name (optional)
+*	TC	{string}				; Declares Terrain Closed Polygon; string = name  (optional)
+*	TX							; Specifies the center of the label where terrain name should be placed (optional record)
+*	SP style, width, color		; Selects Pen to be used in drawing
+*	SB color					; Selects Brush to be used in drawing
+*
+* 
+*	Record types common to both TERRAIN and AIRSPACE
+*	=================================================
+*
+*	V x=n			;	Variable assignment.
+*					;	Currently the following variables are supported:
+*					;	D={+|-}	sets direction for: DA and DB records
+*					;					'-' means counterclockwise direction; '+' is the default
+*					;					automatically reset to '+' at the begining of new airspace segment	
+*					;	X=coordinate	: sets the center for the following records: DA, DB, and DC	
+*					;	W=number		: sets the width of an airway in nm (NYI)
+*
+*
+*	DP coordinate					; add polygon pointC
+*	DA radius, angleStart angleEnd	; add an arc, angles in degrees, radius in nm
+*	DB coordinate1, coordinate2		; add an arc, from coordinate1 to coordinate2
+*	DC radius						; draw a circle (center taken from the previous V X record, radius in nm
+*	DY coordinate					; add a segment of an airway (NYI)
+
+
+
+
+
+
+
+
+
+* Chicago Class B
+AC B
+AN CHICAGO O'Hare
+AL Var
+AH 10000 ft
+V X=41:58:46 N 87:54:16 W
+DA 25,303,236
+DA 20,240,299
+
+
+* Peoria Class C
+
+AC C
+AN PEORIA
+AL 1800
+AH 4700 ft
+V X=40:39:51 N 89:41:35 W
+DC 10
+
+
+AC C
+AN PEORIA
+AL 0 
+AH 4700 ft
+DC 5
+
+
+* Quad City Class C
+
+AC C
+AN QUAD CITY
+AL 2000
+AH 4600 ft
+V X=41:26:54 N 90:30:26 W
+DC 10
+
+AC C
+AN QUAD CITY
+AL 0
+AH 4600 ft
+DC 5
+
+
+
+
+* CLASS D
+
+AC D
+AN AURORA
+AL 0
+AH 3200ft
+V X=41:46:15 N 88:28:22 W
+DC 4
+
+AC D
+AN BLOOMINGTON
+AL 0
+AH 3400ft
+V X=40:28:40 N 88:54:57 W
+DC 7
+
+AC D
+AN ROCKFORD
+AL 0
+AH 3200ft
+V X=42:11:43 N 89:05:49 W
+DC 4.5
+
+AC D
+AN ROCK CO
+AL 0
+AH 3300ft
+V X=42:37:10 N 89:02:25 W
+DC 4
+
+
+
+
+
+
+
+

@@ -1,0 +1,184 @@
+* SWAN CREEK, NC
+* Source: 61th edition of Cincinnati sectional, December 31,1998
+* 65th edition of Charlotte sectional, January 28, 1999
+
+
+******* OPEN AIR (tm) TERRAIN and AIRSPACE DESRIPTION LANGUAGE *************
+*	Version 0.92
+*	December 10, 1998
+*	Send comments to jerryp@winpilot.com
+*
+*
+*	AIRSPACE-related record types:
+*	==============================
+*
+*	AC	class	;	class = Airspace Class:
+*                        R                       restricted
+*                        Q                       danger
+*                        P                       prohibited
+*                        A                       Class A
+*                        B                       Class B
+*                        C                       Class C
+*                        D                       Class D 
+*                        GP                      glider prohibited 
+*                        CTR                     CTR
+*						 W						 Wave Window
+*
+*
+*	AN string		;	string = Airspace Name
+*	AH string		;	string = Airspace Ceiling
+*	AL string		;	string = Airspace Floor
+*	AT coordinate	;	coordinate = Coordinate of where to place a name label on the map (optional)
+*					;	NOTE: there can be multiple AT records for a single airspace segment
+*	
+*	
+*	TERRAIN-related record types (NYI):
+*	==============================
+*
+*	TO	{string}				; Declares Terrain Open Polygon; string = name (optional)
+*	TC	{string}				; Declares Terrain Closed Polygon; string = name  (optional)
+*	TX							; Specifies the center of the label where terrain name should be placed (optional record)
+*	SP style, width, color		; Selects Pen to be used in drawing
+*	SB color					; Selects Brush to be used in drawing
+*
+* 
+*	Record types common to both TERRAIN and AIRSPACE
+*	=================================================
+*
+*	V x=n			;	Variable assignment.
+*					;	Currently the following variables are supported:
+*					;	D={+|-}	sets direction for: DA and DB records
+*					;					'-' means counterclockwise direction; '+' is the default
+*					;					automatically reset to '+' at the begining of new airspace segment	
+*					;	X=coordinate	: sets the center for the following records: DA, DB, and DC	
+*					;	W=number		: sets the width of an airway in nm (NYI)
+*
+*
+*	DP coordinate					; add polygon pointC
+*	DA radius, angleStart angleEnd	; add an arc, angles in degrees, radius in nm
+*	DB coordinate1, coordinate2		; add an arc, from coordinate1 to coordinate2
+*	DC radius						; draw a circle (center taken from the previous V X record, radius in nm
+*	DY coordinate					; add a segment of an airway (NYI)
+
+
+* Class B
+AC B
+AN CHARLOTTE 30nm Mode C
+AL 0
+AH 10000ft
+V X=35:12:50 N 80:56:35 W
+DC 30
+
+
+* Class C
+AC C
+AN PIEDMONT
+AL 2100ft
+AH 5000ft
+V X=36:05:51 N 79:56:14 W
+DC 10
+
+AC C
+AN PIEDMONT
+AL 0
+AH 5000ft
+DC 5
+
+AC C
+AN RALEIGH
+AL 1700ft
+AH 4400ft
+V X=35:52:39 N 78:47:14 W
+DC 10
+
+AC C
+AN RALEIGH
+AL 0
+AH 4400ft
+DC 5
+
+AC C
+AN FORT BRAGG
+AL VAR
+AH 4200FT
+V X=35:10:15 N 79:00:52 W
+DA 10,200,98
+V X=34:59:29 N 78:52:47 W
+DA 10, 20, 273
+
+AC C
+AN ROANOKE
+AL 3800ft
+AH 5200ft
+V X=37:19:39 N 79:58:31 W
+DA 10,5,105
+V D=-
+DA 5,105,5
+
+
+AC C
+AN ROANOKE
+AL 3400ft
+AH 5200ft
+DA 10,105,257
+VD=-
+DA 5,270,105
+
+AC C
+AN ROANOKE
+AL 0
+AH 5200ft
+DC 5
+
+
+* Class D
+AC D
+AN TRI-CITIES
+AL 0
+AH 4000ft
+V X=36:28:30 N 82:24:26 W
+DC 4.4
+
+AC D
+AN SMITH INT
+AL 0
+AH 3500
+V X=36:08:01 N 80:13:19 W
+DC 4.2
+
+AC D
+AN HICKORY
+AL 0
+AH 3700ft
+V X=35:44:28 N 81:23:22 W
+DC 4
+
+AC D
+AN STANLY CO 
+AL 0
+AH 3100ft
+V X=35:24:55 N 80:09:03 W
+DC 4
+
+AC D
+AN MACKALL AAF
+AL 0
+AH 2900
+V X=35:02:11 N 79:29:51 W
+DC 4
+
+* Class RESTRICTED
+
+AC R
+AN R-5311 A-B-C
+AL 0
+AH FL290
+DP 35:11:00 N 79:01:45 W
+DP 35:10:00 N 79:08:00 W
+DP 35:12:35 N 79:15:00 W
+DP 35:07:30 N 79:23:00 W
+DP 35:02:20 N 79:20:00 W
+DP 35:03:00 N 79:05:30 W
+DP 35:05:50 N 79:01:25 W
+DP 35:07:10 N 79:02:40 W
+DP 35:08:40 N 79:01:50 W

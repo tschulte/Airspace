@@ -1,0 +1,255 @@
+**  ------------ Leszno ------------
+**  ------ Timezone: 1.0  Datum: 100
+**  ------ Zoom Smielek 21.05.2000
+**  ------ Sktoty uwzglednione 15.06.2000
+**  ------ Litery male 12.30.2000, Wilkow nazwa poprawiona 1.3.2001
+**  ------ Wysokosci lotnisk, czestotliwosci dodane 22.03.2001
+**  ------ Racula ok
+1,52:07.980N,015:47.160E,59M,TA,Babimost    ,W End Runway118.75
+2,52:51.810N,017:57.040E,0.0M,T,Barcin      ,Road Bridge 
+3,50:30.280N,016:44.210E,0.0M,T,Bardo       ,Rail Bridge 
+4,52:59.360N,015:13.450E,0.0M,T,Barlinek    ,Stadium     
+5,52:32.270N,017:12.120E,0.0M,TA,Bednary     ,W End Runway
+6,51:39.180N,018:26.120E,0.0M,T,Blaszki     ,Church      
+7,51:42.030N,016:44.950E,0.0M,T,Bojanowo    ,Rail Station
+8,51:16.110N,015:33.030E,0.0M,T,Boleslawiec ,Rail Bridge 
+9,50:55.310N,016:05.880E,0.0M,T,Bolkow      ,Castle Ruins
+10,51:55.010N,017:14.540E,0.0M,T,Borek       ,Town Hall   
+11,51:47.700N,015:53.820E,0.0M,T,Borowiec    ,Buildings   
+12,53:57.680N,017:16.920E,0.0M,T,Borowy Mlyn ,S Lake End  
+13,53:57.250N,017:55.670E,0.0M,TA,Borsk       ,W End Runway
+14,51:24.980N,014:33.860E,0.0M,T,Boxberg     ,Power Statio
+15,53:15.820N,019:24.390E,0.0M,T,Brodnica    ,Rail Station
+16,51:47.210N,014:46.260E,0.0M,T,Brody       ,Palace      
+17,51:46.940N,015:29.340E,0.0M,T,Broniszow   ,Church      
+18,53:52.950N,017:43.680E,0.0M,T,Brusy       ,Rail Station
+19,52:09.230N,015:04.890E,0.0M,T,Budachow    ,Rail Station
+20,51:23.750N,017:21.440E,0.0M,T,Bukowice    ,Church      
+21,54:10.110N,017:29.500E,0.0M,T,Bytow       ,Castle      
+22,52:52.880N,014:12.420E,0.0M,T,Cedynia     ,School      
+23,51:42.030N,018:10.080E,0.0M,T,Chelmce     ,Tv Tower    
+24,51:25.100N,015:54.090E,0.0M,T,Chocianow   ,Church      
+25,52:59.430N,016:54.580E,0.0M,T,Chodziez    ,Rail Station
+26,52:56.400N,014:24.390E,0.0M,TA,Chojna      ,W End Runway
+27,52:01.810N,015:37.810E,0.0M,T,Cigacice    ,Road Bridge 
+28,50:15.440N,016:48.210E,0.0M,T,Czarna Gora ,Tv Tower    
+29,52:54.500N,016:33.220E,0.0M,T,Czarnkow    ,Road Bridge 
+30,52:26.120N,017:29.280E,0.0M,T,Czerniejewo ,Palace      
+31,51:43.130N,016:37.100E,0.0M,T,Czernna    ,Church      
+32,53:47.960N,017:57.940E,0.0M,T,Czersk      ,Rail Viaduct
+33,50:53.040N,019:12.230E,262M,TA,Czesto-Rud ,Hangar(E)122.8  
+34,53:05.180N,016:07.140E,0.0M,T,Czlopa      ,Ro-Ra Cross 
+35,53:39.710N,017:21.970E,0.0M,T,Czluchow    ,Road Bridge 
+36,52:44.580N,014:43.160E,0.0M,T,Debno Lub   ,Stadion     
+37,51:49.320N,016:24.350E,0.0M,ST,Dlugie Nowe ,Road Junctio*Z20
+38,51:59.180N,017:03.850E,0.0M,T,Dolsk       ,Town Square 
+39,51:53.630N,014:32.930E,0.0M,TA,Drewitz     ,E End Runway
+40,52:51.030N,015:50.220E,0.0M,T,Drezdenko   ,Road Bridge 
+41,51:56.690N,015:18.960E,0.0M,T,Drzonow     ,Road Cross  
+42,50:44.300N,018:11.590E,0.0M,T,Dylaki      ,Church      
+43,51:06.560N,018:52.390E,0.0M,T,Dzialoszyn  ,Road Bridge 
+44,51:42.690N,014:36.710E,0.0M,T,Forst       ,Motoway Viad
+45,51:38.230N,015:53.390E,0.0M,T,Gaworzyce   ,Road Cross  
+46,52:02.490N,017:45.490E,0.0M,T,Gizalki     ,Road Bridge 
+47,50:16.380N,018:40.360E,254M,TA,Gliwice     ,Hangar122.1      
+48,51:21.410N,015:35.640E,0.0M,T,Golnice     ,Road Viaduct
+49,53:06.920N,019:02.980E,0.0M,T,Golub Dobrzy,Castle      
+50,51:53.120N,017:02.120E,0.0M,T,Gostyn      ,Monastery   
+51,51:39.620N,016:32.370E,0.0M,T,Gora        ,Stadium     
+52,51:30.350N,018:07.630E,0.0M,T,Grabow      ,Road Bridge 
+53,51:46.920N,016:01.170E,0.0M,T,Grochowice  ,Church      
+54,52:02.340N,018:03.690E,0.0M,T,Grodziec    ,Church      
+55,52:13.830N,016:21.820E,0.0M,T,Grodzsk Wlk,Rail Station
+56,51:52.350N,016:34.000E,0.0M,ST,Gronowo     ,Rail Viaduct*Z20
+57,51:02.040N,015:25.740E,0.0M,T,Gryfow Sl,Rail Station
+58,50:47.660N,015:30.080E,0.0M,T,Hala Szrenic,Refuge      
+59,50:45.040N,015:43.490E,0.0M,T,Hala Zlotowk,Refuge      
+60,51:47.130N,016:32.930E,0.0M,ST,Henrykowo   ,Road Junctio*Z20
+61,52:48.430N,018:16.630E,85M,TA,Inowroclaw  ,Hangar122.1      
+62,51:54.590N,015:02.220E,0.0M,T,Janiszowice ,Church      
+63,51:53.920N,017:57.250E,0.0M,T,Jankow      ,Road Bridge 
+64,51:57.370N,017:31.140E,0.0M,T,Jarocin     ,Road Junctio
+65,51:45.190N,015:01.610E,0.0M,T,Jasien      ,Rail Station
+66,50:53.810N,015:47.040E,342M,TA,Jelenia Gora,Hangar122.9      
+67,51:31.580N,016:32.580E,0.0M,T,Jemielno    ,Road Junctio
+68,53:16.700N,015:52.700E,0.0M,T,Kalisz Pom  ,Ro-Ra Cross 
+69,50:47.130N,016:01.410E,0.0M,T,Kamienna Gora,Rail Station
+70,52:04.380N,015:51.910E,0.0M,T,Kargowa     ,Church      
+71,51:57.420N,016:09.670E,0.0M,T,Kaszczor    ,School      
+72,52:19.170N,018:10.310E,0.0M,TA,Kazimierz Bisk,E End Runway
+73,51:51.520N,016:41.470E,0.0M,ST,Kakolewo E ,Ra-Ro Cross*Z20 
+74,52:13.900N,016:15.570E,0.0M,TA,Kakol N    ,E End Runway
+75,50:58.080N,018:13.530E,0.0M,T,Kluczbork   ,Sports Hall 
+76,51:43.170N,017:13.370E,0.0M,T,Kobylin     ,Rail Station
+77,51:57.760N,015:57.420E,0.0M,T,Kolsko      ,Ro-Ra Cross 
+78,52:36.940N,015:06.770E,0.0M,T,Kolczyn     ,Road Bridge 
+79,51:32.270N,016:52.530E,0.0M,T,Korzensko   ,Rail Bridge 
+80,52:06.270N,016:40.200E,0.0M,T,Koscian     ,Road Junctio
+81,52:10.460N,018:34.250E,0.0M,T,Koscielec   ,Road Cross  
+82,51:49.900N,017:26.650E,0.0M,T,Kozmin      ,Rail Station
+83,51:44.110N,015:35.770E,0.0M,T,Kozuchow    ,Ro-Ra Cross 
+84,51:46.480N,016:59.130E,0.0M,T,Krobia      ,Town Hall   
+85,52:03.030N,015:05.920E,0.0M,T,Krosno Odrz ,Road Bridge 
+86,51:41.930N,017:27.420E,0.0M,T,Krotoszyn   ,Stadium     
+87,51:54.300N,016:27.020E,0.0M,ST,Krzycko    ,Ro-Ra Cross*Z20 
+88,51:16.430N,015:47.640E,0.0M,T,Krzywa      ,Road Viaduct
+89,51:57.620N,016:48.930E,0.0M,T,Krzywin     ,Road Bridge 
+90,52:33.300N,016:05.130E,0.0M,T,Kwilcz      ,Road Cross  
+91,51:46.200N,016:31.700E,0.0M,ST,Laskowa    ,Road Bridge*Z20 
+92,51:48.930N,016:29.030E,0.0M,ST,Lasocice   ,Ro-Ra Cross*Z20 
+93,50:20.530N,016:51.590E,0.0M,T,Ladek Zdr   ,Rail Station
+94,51:11.110N,016:11.390E,128M,TA,Legnica    ,E End Runway119.22
+95,51:50.350N,016:36.570E,0.0M,ST,LesznH     ,Hospital*Z20    
+96,51:50.000N,016:32.020E,95M,TSHA,LesznT    ,Tower122.3      
+97,51:53.340N,015:19.220E,0.0M,T,Letnica     ,Ro-Ra Cross 
+98,52:43.550N,015:31.850E,0.0M,T,Lipki       ,Church      
+99,51:26.190N,015:00.570E,0.0M,T,Lipna       ,Church      
+100,51:55.080N,016:34.220E,0.0M,ST,Lipno      ,Ro-Ra Cross*Z20 
+101,51:07.340N,015:17.510E,0.0M,T,Luban       ,Church      
+102,51:15.640N,016:28.170E,0.0M,T,Lubiaz      ,Monastery   
+103,51:25.550N,016:11.440E,156M,TA,Lubin      ,S End Runway122.4
+104,51:25.910N,015:23.290E,0.0M,T,Luboszow    ,Road Viaduct
+105,51:06.590N,015:35.610E,0.0M,T,Lwowks Sl   ,Rail Station
+106,52:26.980N,016:10.900E,0.0M,T,Lwowkw Wielk,Church      
+107,52:57.430N,017:55.230E,0.0M,T,Labiszyn    ,Road Bridge 
+108,52:20.090N,015:17.570E,0.0M,T,Lagow       ,Castle      
+109,52:29.930N,015:54.220E,0.0M,T,Lowyn       ,Church      
+110,51:43.420N,019:24.370E,179M,TA,Lodz Lublnk,E End Runway122.9
+111,51:48.950N,016:13.050E,0.0M,T,Lysiny      ,Church      
+112,51:57.250N,018:23.570E,0.0M,T,Malanow     ,Road Cross  
+113,50:54.580N,019:47.930E,0.0M,T,Maluszyn    ,Road Bridge 
+114,51:41.830N,017:51.070E,143M,TA,Michalkow   ,Hangar(E)122.2  
+115,52:36.280N,015:53.190E,0.0M,T,Miedzchod  ,Road Bridge 
+116,52:26.880N,015:35.160E,0.0M,T,Miedzrzecz ,Road Bridge 
+117,51:31.880N,017:58.380E,0.0M,T,Mikstat     ,Church      
+118,51:32.030N,017:16.420E,0.0M,T,Milicz      ,Church      
+119,51:56.940N,015:46.460E,0.0M,T,Milsko      ,N End Road  
+120,52:37.420N,017:36.620E,0.0M,T,Modliszewko ,Road Junctio
+121,51:04.600N,017:43.040E,0.0M,T,Namyslow    ,Town Hall   
+122,50:20.750N,023:19.670E,0.0M,T,Narol       ,Road Bridge 
+123,52:42.230N,017:50.080E,0.0M,T,Niestronno  ,Road Junctin
+124,52:03.940N,015:19.790E,0.0M,T,Nietkowice  ,Ro-Ra Cross 
+125,51:47.990N,015:44.260E,0.0M,T,Nowa Sol    ,Road Bridge 
+126,51:33.510N,014:45.790E,0.0M,T,Nowe Czaple ,Road Cross  
+127,51:48.390N,015:14.390E,0.0M,T,Nowogrod Bob,Rail Bridge 
+128,52:18.230N,016:07.680E,0.0M,T,Nowy Tomysl ,Ro-Ra Cross 
+129,51:18.130N,016:54.390E,0.0M,T,Oborniki Sl ,Rail Viaduct
+130,52:04.250N,016:03.420E,0.0M,T,Obra        ,Monastery   
+131,51:34.480N,017:40.120E,0.0M,T,Odolanow    ,Rail Station
+132,52:18.600N,016:24.170E,0.0M,T,Opalenica   ,Rail Station
+133,52:29.870N,018:01.180E,0.0M,T,Orchowo     ,Stadium     
+134,51:13.500N,019:24.800E,0.0M,TA,Orla Gora   ,W End Runway
+135,52:06.570N,017:29.150E,0.0M,T,Orzechowo   ,Rail Bridge 
+136,51:54.330N,016:41.000E,0.0M,ST,Osieczna    ,School*Z20      
+137,51:25.680N,017:56.530E,0.0M,T,Ostrzeszow  ,Ro-Ra Cross 
+138,52:27.230N,014:52.140E,0.0M,T,Osno Lub    ,Church      
+139,51:18.250N,020:06.890E,0.0M,T,Paradyz     ,Church      
+140,53:06.220N,017:35.220E,0.0M,T,Paterek     ,Factory Hall
+141,52:31.960N,019:41.280E,0.0M,T,Plock       ,Road Bridge 
+142,51:49.350N,017:13.720E,0.0M,T,Pogorzela   ,Church      
+143,51:29.440N,016:04.590E,0.0M,T,Polkowice   ,Road Viaduct
+144,50:37.630N,017:46.990E,188M,TA,Pol Nowa Wie,Hangar(M)122.2
+145,51:33.700N,016:01.820E,0.0M,T,Potoczek    ,Road Viaduct
+146,52:24.600N,017:55.400E,0.0M,T,Powidz      ,Church      
+147,52:00.620N,016:17.550E,0.0M,T,Przedmiescie,Church      
+148,51:58.510N,015:27.890E,77M,TA,Przylep     ,Hangar(N)122.8  
+149,52:34.630N,015:41.510E,0.0M,T,Przytoczna  ,Stadium     
+150,52:10.100N,017:41.670E,0.0M,T,Pyzdry      ,Road Bridge 
+151,51:55.480N,015:33.660E,0.0M,T,Racula      ,Road Viaduct
+152,52:08.280N,016:15.630E,0.0M,T,Rakoniewice ,Road Junctio
+153,51:36.400N,016:50.480E,0.0M,T,Rawicz      ,Ro-Ra Cross 
+154,52:06.680N,014:43.790E,0.0M,T,Rapice      ,Road Cross  
+155,52:09.960N,015:34.710E,0.0M,T,Rosin       ,Road Cross  
+156,51:30.250N,016:16.030E,0.0M,T,Rudna       ,Road Viaduct
+157,51:19.030N,018:58.180E,0.0M,T,Rusiec      ,Rail Station
+158,50:04.270N,018:37.780E,255M,TA,Rybnik-Gotar,Hangar122.4      
+159,51:47.300N,016:40.350E,0.0M,ST,Rydzyna     ,Palace*Z20      
+160,53:45.400N,017:45.650E,0.0M,T,Rytel       ,Rail Bridge 
+161,52:19.880N,014:49.470E,0.0M,T,Rzepin      ,Road Cross  
+162,51:16.060N,016:09.260E,0.0M,T,Rzeszotary  ,Road Junctio
+163,52:13.380N,014:50.720E,0.0M,T,Sadow       ,Church      
+164,54:06.520N,023:20.720E,0.0M,T,Sejny       ,Church      
+165,51:43.580N,016:25.530E,0.0M,ST,Siciny      ,Church*Z20      
+166,52:08.220N,016:00.220E,0.0M,T,Siedlec     ,Road Junctio
+167,51:36.350N,018:44.050E,0.0M,T,Sieradz     ,Rail Bridge 
+168,52:39.170N,016:04.830E,0.0M,T,Sierakow    ,Road Bridge 
+169,52:40.620N,017:09.780E,0.0M,T,Skoki       ,Rail Station
+170,52:35.340N,015:25.570E,0.0M,T,Skwierzyna  ,Road Junctin
+171,52:33.890N,014:50.000E,0.0M,T,Slonsk      ,Buildings   
+172,52:18.460N,014:38.560E,0.0M,T,Slubice     ,Terminal    
+173,51:36.320N,016:58.230E,0.0M,T,Slupia Kapit,Road Junctio
+174,52:05.900N,017:19.580E,0.0M,T,Solec       ,Rail Bridge 
+175,52:23.320N,018:30.230E,0.0M,T,Sompolno    ,Town Square 
+176,51:28.350N,017:38.340E,0.0M,T,Sosnie      ,Ro-Ra Cross 
+177,51:51.690N,015:46.490E,0.0M,T,Stany       ,Rail Bridge 
+178,52:09.770N,018:12.390E,0.0M,T,Stare Miasto,Road Viaduct
+179,50:50.580N,017:37.480E,0.0M,T,Stobrawa    ,Road Bridge 
+180,51:15.230N,017:39.090E,0.0M,T,Stradomia   ,Buildings   
+181,52:38.430N,018:10.800E,0.0M,T,Strzelno    ,Road Cross  
+182,52:26.140N,015:06.440E,0.0M,T,Sulecin     ,Stadium     
+183,51:29.460N,017:09.860E,0.0M,T,Sulow       ,Road Bridge 
+184,53:01.800N,017:07.420E,0.0M,T,Szamocin    ,Road Cross  
+185,50:49.930N,015:31.260E,0.0M,T,Szklarska Po,Rail Viaduct
+186,51:33.740N,015:33.970E,0.0M,TA,Szprotawa   ,W End Runway
+187,51:24.380N,016:26.790E,0.0M,T,Scinawa     ,Rail Bridge 
+188,50:51.810N,016:42.610E,0.0M,T,Sleza       ,Tv Tower    
+189,52:00.750N,016:31.570E,0.0M,T,Smigiel     ,Town Square 
+190,50:12.460N,016:49.940E,0.0M,T,Snieznik    ,Refuge      
+191,52:05.480N,017:01.100E,0.0M,T,Srem        ,Road Bridge 
+192,52:14.120N,017:17.420E,0.0M,T,Sroda Wlkp   ,Dam         
+193,52:15.730N,015:32.020E,0.0M,T,Swiebodzin  ,Road Cross  
+194,50:54.790N,015:20.600E,0.0M,T,Swieradow   ,Stadium     
+195,51:51.180N,016:29.720E,0.0M,ST,Swieciechowa,Church*Z20      
+196,51:50.420N,017:45.400E,0.0M,T,Taczanow    ,Ra-Ro Cross 
+197,51:51.430N,015:59.920E,0.0M,T,Tarnow Jez  ,Road Junctio
+198,53:01.830N,018:32.270E,50M,TA,Torun       ,Runway Junct122.2
+199,52:18.780N,015:03.490E,0.0M,T,Torzym      ,Rail Station
+200,52:22.310N,015:52.470E,0.0M,T,Trzciel     ,Road Bridge 
+201,52:57.960N,014:36.490E,0.0M,T,Trzcinsko Zd,Church      
+202,52:34.220N,017:49.220E,0.0M,T,Trzemeszno  ,Ro-Ra Cross 
+203,53:34.930N,017:52.070E,0.0M,T,Tuchola     ,Stadium     
+204,52:51.650N,018:08.480E,0.0M,T,Tuczno      ,Sugar Factor
+205,51:40.310N,014:50.190E,0.0M,T,Tuplice     ,Rail Station
+206,52:00.800N,018:29.100E,0.0M,T,Turek       ,Roundabout  
+207,51:21.630N,017:28.160E,0.0M,T,Twardogora  ,Rail Station
+208,51:02.040N,016:27.730E,0.0M,T,Udanin      ,Road Junctin
+209,50:42.830N,021:18.640E,0.0M,T,Ujazd       ,Castle Ruins
+210,51:58.150N,018:47.650E,0.0M,T,Uniejow     ,Road Bridge 
+211,51:59.060N,014:47.590E,0.0M,T,Walowice    ,Ra-Ro Cross 
+212,52:49.230N,017:12.150E,0.0M,T,Wagrowiec   ,Stadium     
+213,51:33.700N,016:41.080E,0.0M,T,Wasosz      ,Rail Bridge 
+214,51:17.360N,015:13.360E,0.0M,T,Wegliniec   ,Rail Station
+215,52:11.360N,015:20.490E,0.0M,T,Wegrzynice  ,Road Junctio
+216,52:53.870N,016:10.380E,0.0M,T,Wielen      ,Road Bridge 
+217,50:40.810N,016:29.160E,0.0M,T,Wielka Sowa ,Stone Tower 
+218,51:14.400N,018:33.640E,0.0M,T,Wielun      ,Ro-Ra Cross 
+219,51:18.060N,018:08.890E,0.0M,T,Wieruszow   ,Rail Bridge 
+220,51:53.250N,016:32.320E,0.0M,ST,Wilkowice   ,Ra-Ro Cross*Z20 
+221,51:41.770N,016:12.180E,0.0M,T,Wilkow      ,Road Cross  
+222,51:28.180N,016:36.560E,0.0M,T,Winsko      ,School      
+223,50:50.260N,020:00.890E,0.0M,T,Wloszczowa  ,Rail Station
+224,51:20.010N,016:38.030E,0.0M,T,Wolow       ,Rail Station
+225,52:42.700N,016:22.770E,0.0M,T,Wronki      ,Road Bridge 
+226,52:20.420N,017:32.450E,0.0M,T,Wrzesnia    ,Rail Bridge 
+227,51:47.620N,016:18.870E,0.0M,T,Wschowa     ,Road Viaduct
+228,51:30.840N,015:05.340E,0.0M,T,Wymiarki    ,Road Junctio
+229,52:10.100N,017:54.130E,0.0M,T,Zagorow     ,Square      
+230,52:09.680N,017:09.610E,0.0M,T,Zaniemysl   ,Stadium     
+231,51:52.520N,016:22.450E,0.0M,ST,Zbarzewo    ,Road Junctio*Z20
+232,52:15.600N,015:53.670E,0.0M,T,Zbaszyn     ,Rail Station
+233,51:57.170N,018:07.970E,0.0M,T,Zbiersk     ,Road Cross  
+234,51:15.230N,015:24.730E,0.0M,T,Zebrzydowa  ,Rail Bridge 
+235,51:09.240N,015:01.730E,0.0M,T,Zgorzelec   ,Road Cross  
+236,51:24.950N,018:36.310E,0.0M,T,Zloczew     ,Church      
+237,51:07.730N,015:54.640E,0.0M,T,Zlotoryja   ,Ra-Ro Cross 
+238,53:22.050N,017:01.780E,0.0M,T,Zlotow      ,Castle      
+239,50:26.630N,016:52.090E,0.0M,T,Zloty Stok  ,Church      
+240,51:37.040N,015:18.920E,0.0M,T,Zagan       ,Road Bridge 
+241,51:38.080N,015:08.270E,0.0M,T,Zary        ,Rail Station
+242,51:28.880N,016:54.160E,0.0M,T,Zmigrod     ,Rail Bridge 
+243,51:50.370N,016:31.700E,0.0M,F,FL-1,*Z10        
+244,51:50.350N,016:31.070E,0.0M,F,FL-2,*Z10        
+245,51:50.030N,016:30.950E,0.0M,F,FL-3,*Z10        
+246,51:49.830N,016:31.330E,0.0M,F,FL-4,*Z10        
+
+

@@ -1,0 +1,123 @@
+******* OPEN AIR (tm) TERRAIN and AIRSPACE DESRIPTION LANGUAGE *************
+*	Version 0.92
+*	December 10, 1998
+*	Send comments to jerryp@winpilot.com
+*
+*
+*	AIRSPACE-related record types:
+*	==============================
+*
+*	AC	class	;	class = Airspace Class:
+*                        R                       restricted
+*                        Q                       danger
+*                        P                       prohibited
+*                        A                       Class A
+*                        B                       Class B
+*                        C                       Class C
+*                        D                       Class D 
+*                        GP                      glider prohibited 
+*                        CTR                     CTR
+*						 W						 Wave Window
+*
+*
+*	AN string		;	string = Airspace Name
+*	AH string		;	string = Airspace Ceiling
+*	AL string		;	string = Airspace Floor
+*	AT coordinate	;	coordinate = Coordinate of where to place a name label on the map (optional)
+*					;	NOTE: there can be multiple AT records for a single airspace segment
+*	
+*	
+*	TERRAIN-related record types (NYI):
+*	==============================
+*
+*	TO	{string}				; Declares Terrain Open Polygon; string = name (optional)
+*	TC	{string}				; Declares Terrain Closed Polygon; string = name  (optional)
+*	TX							; Specifies the center of the label where terrain name should be placed (optional record)
+*	SP style, width, color		; Selects Pen to be used in drawing
+*	SB color					; Selects Brush to be used in drawing
+*
+* 
+*	Record types common to both TERRAIN and AIRSPACE
+*	=================================================
+*
+*	V x=n			;	Variable assignment.
+*					;	Currently the following variables are supported:
+*					;	D={+|-}	sets direction for: DA and DB records
+*					;					'-' means counterclockwise direction; '+' is the default
+*					;					automatically reset to '+' at the begining of new airspace segment	
+*					;	X=coordinate	: sets the center for the following records: DA, DB, and DC	
+*					;	W=number		: sets the width of an airway in nm (NYI)
+*
+*
+*	DP coordinate					; add polygon pointC
+*	DA radius, angleStart angleEnd	; add an arc, angles in degrees, radius in nm
+*	DB coordinate1, coordinate2		; add an arc, from coordinate1 to coordinate2
+*	DC radius						; draw a circle (center taken from the previous V X record, radius in nm
+*	DY coordinate					; add a segment of an airway (NYI)
+
+
+
+
+********** HOBBS ****************
+
+AC D
+AN LEA Co D
+AH 6200ft
+AL SFC
+V X=32:41:15 N 103:13:01 W
+DA 4,59,203
+DA 5, 207, 207
+DA 5, 235, 235
+DA 4,239,23
+DA 5, 27, 27
+DA 5, 55,55
+
+AC D
+AN ROSWELL D
+AH 6200ft
+AL SFC
+V X=33:18:05 N 104:31:49 W
+DC 5
+
+AC D
+AN Cannon AFB 
+AH 6800ft
+AL SFC
+V X=34:22:58 N 103:19:19 W
+DA 4.5, 56, 294
+DA 5, 295, 295
+DA 5, 315, 315
+DA 4.5, 316, 34
+DA 5, 35, 35
+DA 5, 55, 55
+
+AC D
+AN REESE AFB
+AH 5800ft
+AL SFC
+V X=33:36:00 N 102:02:40 W
+DC 5
+
+
+AC R
+AN R-5105
+AH 10000ft
+AL SFC
+DP 34:39:00 N 103:40:00 W c1
+DP 34:25:30 N 103:40:00 W c2 
+DP 34:28:00 N 103:43:00 W c3
+DP 34:28:00 N 103:55:00 W c4
+DP 34:39:00 N 103:55:00 W c5
+
+AC R
+AN R-5104A
+AH 18000ft
+AL SFC
+DP 34:25:30 N 103:40:00 W c2 
+DP 34:14:25 N 103:40:00 W 
+DP 34:10:00 N 103:46:30 W 
+DP 34:10:00 N 103:55:00 W
+DP 34:28:00 N 103:55:00 W c4
+DP 34:28:00 N 103:43:00 W c3
+
+
