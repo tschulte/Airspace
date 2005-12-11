@@ -43,7 +43,7 @@ import de.gliderpilot.geom.Rectangle4D;
 import de.gliderpilot.gui.event.DisplayedRectChangeEvent;
 import de.gliderpilot.gui.event.TrackParamsChangedEvent;
 import de.gliderpilot.preferences.Prefs;
-import de.gliderpilot.trace.TraceLevels;
+
 import de.gliderpilot.tracklog.TrackLog;
 
 
@@ -53,7 +53,7 @@ import de.gliderpilot.tracklog.TrackLog;
  * @author <a href="mailto:tobias.schulte@gliderpilot.de">Tobias Schulte</a>
  */
 public abstract class AbstractZoomable4DPanel extends JPanel
-		implements TraceLevels, Modes4D, DisplayedRectChangeEvent.Source,
+		implements Modes4D, DisplayedRectChangeEvent.Source,
 				   DisplayedRectChangeEvent.Listener, Point4DChangedEvent.Source,
 				   Point4DChangedEvent.Listener, TrackParamsChangedEvent.Listener {
 	protected static String AIRSPACE = "Airspace";
@@ -101,7 +101,7 @@ public abstract class AbstractZoomable4DPanel extends JPanel
 		this.trackTable = trackTable;
 		trackTable.getSelectionModel()
 		  .addListSelectionListener(new TrackListSelectionListener());
-		Logger.getLogger(LOGGER)
+		Logger.getLogger(getClass())
 			  .debug("Width:" + getWidth() + ",Height:" + getHeight());
 		xform = new AffineTransform();
 		reverseXform = new AffineTransform();
@@ -395,7 +395,7 @@ public abstract class AbstractZoomable4DPanel extends JPanel
 	 */
 	public void addDrawable(String key, Drawable drawable) {
 		drawables.put(key, drawable);
-		Logger.getLogger(LOGGER).info("Added Drawable");
+		Logger.getLogger(getClass()).info("Added Drawable");
 	}
 
 	/**
@@ -444,7 +444,7 @@ public abstract class AbstractZoomable4DPanel extends JPanel
 	 * @return DOCUMENT ME!
 	 */
 	public Drawable removeDrawable(String key) {
-		Logger.getLogger(LOGGER).info("removed Drawable");
+		Logger.getLogger(getClass()).info("removed Drawable");
 
 		return (Drawable) drawables.remove(key);
 	}
@@ -468,7 +468,7 @@ public abstract class AbstractZoomable4DPanel extends JPanel
 		mousePoint.y = y;
 		fireMousePointChanged();
 		repaint();
-		Logger.getLogger(LOGGER).debug("X: " + x + "; Y: " + y);
+		Logger.getLogger(getClass()).debug("X: " + x + "; Y: " + y);
 	}
 
 	/**
@@ -604,7 +604,7 @@ public abstract class AbstractZoomable4DPanel extends JPanel
 		 * @param e DOCUMENT ME!
 		 */
 		public void mouseClicked(MouseEvent e) {
-			Logger.getLogger(LOGGER).debug("mouseClicked");
+			Logger.getLogger(getClass()).debug("mouseClicked");
 		}
 
 		/**
@@ -613,7 +613,7 @@ public abstract class AbstractZoomable4DPanel extends JPanel
 		 * @param e DOCUMENT ME!
 		 */
 		public void mouseEntered(MouseEvent e) {
-			Logger.getLogger(LOGGER).debug("mouseEntered");
+			Logger.getLogger(getClass()).debug("mouseEntered");
 		}
 
 		/**
@@ -622,7 +622,7 @@ public abstract class AbstractZoomable4DPanel extends JPanel
 		 * @param e DOCUMENT ME!
 		 */
 		public void mouseExited(MouseEvent e) {
-			Logger.getLogger(LOGGER).debug("mouseExited");
+			Logger.getLogger(getClass()).debug("mouseExited");
 		}
 
 		/**
@@ -631,7 +631,7 @@ public abstract class AbstractZoomable4DPanel extends JPanel
 		 * @param e DOCUMENT ME!
 		 */
 		public void mousePressed(MouseEvent e) {
-			Logger.getLogger(LOGGER).debug("mousePressed");
+			Logger.getLogger(getClass()).debug("mousePressed");
 
 			if ((e.getModifiers() & MouseEvent.BUTTON1_MASK) != 0) {
 				zoomPoint1 = new Point(e.getX(), e.getY());
@@ -645,7 +645,7 @@ public abstract class AbstractZoomable4DPanel extends JPanel
 		 * @param e DOCUMENT ME!
 		 */
 		public void mouseReleased(MouseEvent e) {
-			Logger.getLogger(LOGGER).debug("mouseReleased");
+			Logger.getLogger(getClass()).debug("mouseReleased");
 
 			if (((e.getModifiers() & MouseEvent.BUTTON1_MASK) != 0) && 
 					(zoomPoint1 != null) && (zoomPoint2 != null)) {
@@ -684,7 +684,7 @@ public abstract class AbstractZoomable4DPanel extends JPanel
 			if (zoomPoint1 != null) {
 				zoomPoint2 = new Point(e.getX(), e.getY());
 				zoomRect.setFrameFromDiagonal(zoomPoint1, zoomPoint2);
-				Logger.getLogger(LOGGER).debug("ZoomRect set");
+				Logger.getLogger(getClass()).debug("ZoomRect set");
 				repaint();
 			}
 		}

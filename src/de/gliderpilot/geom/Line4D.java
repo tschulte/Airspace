@@ -6,6 +6,7 @@
 package de.gliderpilot.geom;
 
 
+import java.awt.Shape;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Line2D;
 import java.awt.geom.PathIterator;
@@ -13,7 +14,6 @@ import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
 import java.util.Date;
 
-import de.gliderpilot.trace.TraceLevels;
 
 
 /**
@@ -22,7 +22,7 @@ import de.gliderpilot.trace.TraceLevels;
  * @version 1.0
  * @author <a href="mailto:tobias.schulte@gliderpilot.de">Tobias Schulte</a>
  */
-public class Line4D extends Line2D.Double implements TraceLevels, Modes4D {
+public class Line4D extends Line2D.Double implements Modes4D {
 	float vario;
 	int baro = XY;
 	Point4D p1;

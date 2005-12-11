@@ -14,7 +14,7 @@ import java.util.Vector;
 
 import de.gliderpilot.geom.Rectangle4D;
 import de.gliderpilot.gui.Drawable;
-import de.gliderpilot.trace.TraceLevels;
+
 
 
 /**
@@ -23,8 +23,7 @@ import de.gliderpilot.trace.TraceLevels;
  * @version 1.0
  * @author Tobias Schulte
  */
-public class AirspaceVector extends Vector implements AirspaceContainer,
-													  TraceLevels {
+public class AirspaceVector extends Vector implements AirspaceContainer {
 	private Rectangle4D rect;
 
 	/**

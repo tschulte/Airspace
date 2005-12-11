@@ -27,7 +27,6 @@ import de.gliderpilot.gui.event.TrackParamsChangedEvent;
 import de.gliderpilot.task.OlcTask;
 import de.gliderpilot.task.Task;
 import de.gliderpilot.trace.Dumpable;
-import de.gliderpilot.trace.TraceLevels;
 import de.gliderpilot.util.DumpString;
 
 
@@ -37,7 +36,7 @@ import de.gliderpilot.util.DumpString;
  * @version $Revision$
  * @author $author$
  */
-public class TrackLog implements Dumpable, Drawable4D, TraceLevels, Modes4D,
+public class TrackLog implements Dumpable, Drawable4D, Modes4D,
 								 TrackParamsChangedEvent.Source {
 	ArrayList paramsChangedListeners = new ArrayList();
 	ArrayList tasks = new ArrayList();
@@ -167,7 +166,7 @@ public class TrackLog implements Dumpable, Drawable4D, TraceLevels, Modes4D,
 				break;
 			}
 		}
-		Logger.getLogger(LOGGER).info("End of glide set to " + endOfGlide);
+		Logger.getLogger(getClass()).info("End of glide set to " + endOfGlide);
 		fireParamsChanged(TrackParamsChangedEvent.END_TIME);
 	}
 
@@ -294,7 +293,7 @@ public class TrackLog implements Dumpable, Drawable4D, TraceLevels, Modes4D,
 				break;
 			}
 		}
-		Logger.getLogger(LOGGER).info("Start of glide set to " + 
+		Logger.getLogger(getClass()).info("Start of glide set to " + 
 									  startOfGlide);
 		fireParamsChanged(TrackParamsChangedEvent.START_TIME);
 	}
@@ -324,7 +323,7 @@ public class TrackLog implements Dumpable, Drawable4D, TraceLevels, Modes4D,
 	 * @param point DOCUMENT ME!
 	 */
 	public void add(Point4D point) {
-		Logger.getLogger(LOGGER)
+		Logger.getLogger(getClass())
 			  .debug("Adding Point to Track: " + point.getDumpString());
 
 		if (lastPoint != null) {

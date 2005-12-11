@@ -6,7 +6,6 @@
 package de.gliderpilot.task;
 
 
-import de.gliderpilot.trace.TraceLevels;
 import de.gliderpilot.tracklog.TrackLog;
 
 
@@ -15,7 +14,7 @@ import de.gliderpilot.tracklog.TrackLog;
  * 
  * @author <a href="mailto:tobias.schulte@gliderpilot.de">Tobias Schulte</a>
  */
-public abstract class AbstractOptimizer implements Optimizer, TraceLevels {
+public abstract class AbstractOptimizer implements Optimizer {
 	protected TrackLog track;
 	protected int endIndex;
 	protected int startIndex;

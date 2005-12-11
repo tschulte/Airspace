@@ -28,7 +28,7 @@ import de.gliderpilot.airspace.OpenAirspaceFile;
 import de.gliderpilot.geom.Point4D;
 import de.gliderpilot.geom.Rectangle4D;
 import de.gliderpilot.igc.IgcFile;
-import de.gliderpilot.trace.TraceLevels;
+
 import de.gliderpilot.tracklog.TrackLog;
 import de.gliderpilot.util.Util;
 
@@ -50,7 +50,7 @@ public class AirspaceIgcImageCreator {
 	 * @param igcFile DOCUMENT ME!
 	 */
 	public AirspaceIgcImageCreator(File airFile, String igcFile) {
-		Logger.getLogger(TraceLevels.LOGGER).setLevel(Level.INFO);
+		Logger.getLogger(getClass()).setLevel(Level.INFO);
 		airspace = new AirspaceVector();
 		track = new TrackLog();
 

@@ -94,7 +94,7 @@ public abstract class ExternalAppOptimizer extends AbstractOptimizer {
 	protected final void optimize() {
 		setCanceled(false);
 		String command = getCommand();
-		Logger.getLogger(LOGGER).info("Executing '" + command + "'");
+		Logger.getLogger(getClass()).info("Executing '" + command + "'");
 
 		try {
 			process = Runtime.getRuntime().exec(command);

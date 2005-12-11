@@ -15,7 +15,6 @@ import java.util.Properties;
 
 import org.apache.log4j.Logger;
 
-import de.gliderpilot.trace.TraceLevels;
 
 
 /**
@@ -34,7 +33,7 @@ public abstract class Prefs {
 		try {
 			properties.load(new FileInputStream(PROPERTY_FILE));
 		} catch (Exception e) {
-			Logger.getLogger(TraceLevels.LOGGER).warn(e);
+			Logger.getLogger(getClass()).warn(e);
 		}
 	}
 
@@ -61,7 +60,7 @@ public abstract class Prefs {
 		try {
 			properties.store(new FileOutputStream(PROPERTY_FILE), "");
 		} catch (Exception e) {
-			Logger.getLogger(TraceLevels.LOGGER).warn(e);
+			Logger.getLogger(getClass()).warn(e);
 		}
 	}
 

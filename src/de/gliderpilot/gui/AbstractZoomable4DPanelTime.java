@@ -115,7 +115,7 @@ public abstract class AbstractZoomable4DPanelTime
 		Point4D p = realRect.getCenter4D();
 		p.move(Util.getRealValue(systemX, zoomX), 
 			   Util.getRealValue(-systemY, zoomX));
-		Logger.getLogger(LOGGER).info("After: " + p.getDumpString());
+		Logger.getLogger(getClass()).info("After: " + p.getDumpString());
 		setCenter(p);
 	}
 
@@ -141,7 +141,7 @@ public abstract class AbstractZoomable4DPanelTime
 
 		this.zoomX = zoomX;
 
-		Logger.getLogger(LOGGER).info("ZOOM: " + zoomX);
+		Logger.getLogger(getClass()).info("ZOOM: " + zoomX);
 	}
 
 	/**

@@ -6,6 +6,8 @@
 package de.gliderpilot.geom;
 
 
+import java.awt.Shape;
+import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
 import java.util.Date;
 

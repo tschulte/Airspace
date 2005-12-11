@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Gliderpilot" default="Jar" basedir=".">
+<project name="airspace" default="build" basedir=".">
+	
+	<property name="src.dir" value="src"/>
+	<property name="messages.dir" value="${src.dir}/resources/messages"/>
+	
 
-    <target name="Jar">
+	<target name="build" depends="compile, jar"/>
+	
+	<target name="compile">
+	</target>
+    <target name="jar">
     	<jar destfile="lib/gliderpilot.jar" basedir="classes" />
     </target>
 
-    <target name="SignJar" depends="Jar">
+    <target name="SignJar" depends="jar">
     	<signjar jar="lib/gliderpilot.jar" alias="gliderpilot" storepass="gpsp02"/>
     </target>
 
@@ -23,5 +31,32 @@
     		</fileset>
     	</ftp>
     </target>
+	
+	<target name="native2ascii" description="Translates .tmp files to .properties">
+		<input>*.properties files will be overwritten. Continue?</input>
+		<delete>
+			<fileset dir="${messages.dir}" includes="*.properties" />
+		</delete>
+		<native2ascii src="${messages.dir}"
+		              dest="${messages.dir}"
+			reverse="false"
+		              includes="*.tmp"
+		              ext=".properties" 
+			encoding="ISO-8859-15"
+				/>
+	</target>
+
+	<target name="ascii2native" description="Translates .properties files to .tmp">
+		<input>*.tmp files will be overwritten. Continue?</input>
+		<delete>
+			<fileset dir="${messages.dir}" includes="*.tmp" />
+		</delete>
+		<native2ascii src="${messages.dir}"
+		              dest="${messages.dir}"
+		              reverse="true"
+		              includes="*.properties"
+		              ext=".tmp" encoding="UTF-8"/>
+	</target>
+
 
 </project>

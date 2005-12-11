@@ -22,7 +22,6 @@ import de.gliderpilot.geom.Point4D;
 import de.gliderpilot.task.OlcTask2003;
 import de.gliderpilot.task.Task;
 import de.gliderpilot.task.UnlimitedTask;
-import de.gliderpilot.trace.TraceLevels;
 import de.gliderpilot.tracklog.Glider;
 import de.gliderpilot.tracklog.Pilot;
 import de.gliderpilot.tracklog.TrackLog;
@@ -33,7 +32,7 @@ import de.gliderpilot.tracklog.TrackLog;
  * 
  * @author <a href="mailto:tobias.schulte@gliderpilot.de">Tobias Schulte</a>
  */
-public class IgcFile implements TraceLevels {
+public class IgcFile {
 	private static SimpleDateFormat timeFormat;
 	private static SimpleDateFormat dateFormat;
 

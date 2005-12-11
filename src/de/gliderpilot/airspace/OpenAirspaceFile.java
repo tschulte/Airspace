@@ -16,7 +16,6 @@ import java.util.StringTokenizer;
 import org.apache.log4j.Logger;
 
 import de.gliderpilot.geom.Point4D;
-import de.gliderpilot.trace.TraceLevels;
 
 
 /**
@@ -25,7 +24,7 @@ import de.gliderpilot.trace.TraceLevels;
  * @version 1.0
  * @author <a href="mailto:tobias.schulte@gliderpilot.de">Tobias Schulte</a>
  */
-public class OpenAirspaceFile implements AirspaceFile, AirspaceTypes, TraceLevels {
+public class OpenAirspaceFile implements AirspaceFile, AirspaceTypes {
 //		32:50:25 N 112:49:00 W
 //		39:29.9 N 119:46.1 W
 //		36:42.0N 119:49.0 W
@@ -95,12 +94,12 @@ public class OpenAirspaceFile implements AirspaceFile, AirspaceTypes, TraceLevel
 //		25:38.52 S 027:11.16 E
 		substring = substring.trim();
 
-		Logger.getLogger(LOGGER).debug(substring);
+		Logger.getLogger(getClass()).debug(substring);
 		
 		StringTokenizer tokenizer = new StringTokenizer(substring, ".:\t ");
 
 		if (tokenizer.countTokens() < 8) {
-			Logger.getLogger(LOGGER).debug("Less than 8 tokens");
+			Logger.getLogger(getClass()).debug("Less than 8 tokens");
 			return null;
 		}
 		String[] data = new String[8];
@@ -241,7 +240,7 @@ public class OpenAirspaceFile implements AirspaceFile, AirspaceTypes, TraceLevel
 	}
 
 	private boolean parse() throws IOException {
-		Logger.getLogger(LOGGER).debug("start parsing");
+		Logger.getLogger(getClass()).debug("start parsing");
 
 		String line;
 		AirspaceElement airspace = null;

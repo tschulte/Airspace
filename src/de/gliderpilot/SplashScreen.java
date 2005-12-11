@@ -36,7 +36,8 @@ public class SplashScreen extends JWindow {
 		}
 		g.drawImage(image, 0, 0, this);
 	}
-	public void show() {
+	@Override
+    public void show() {
 		// we must delay show until at least the image dimension is known
 		int w = image.getWidth(this);
 		int h = image.getHeight(this);

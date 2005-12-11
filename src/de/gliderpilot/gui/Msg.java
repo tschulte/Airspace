@@ -12,6 +12,9 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.ResourceBundle;
 
+import org.apache.log4j.Logger;
+
+
 /**
  * @author Tobias Schulte
  *
@@ -27,7 +30,9 @@ public class Msg implements TranslationKeys {
 			String bundleName = "resources/messages/messages";
 			bundle = ResourceBundle.getBundle(bundleName);
 		} catch (Exception e) {
-			e.printStackTrace();
+			Logger.getLogger(Msg.class).warn("ResourceBundle for language "
+					+ Locale.getDefault()
+					+" not found -- Using defaults.");
 		}
 		
 		put(OK, "OK");

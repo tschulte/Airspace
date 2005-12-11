@@ -11,7 +11,6 @@ import java.io.IOException;
 
 import org.apache.log4j.Logger;
 
-import de.gliderpilot.trace.TraceLevels;
 
 
 /**
@@ -20,7 +19,7 @@ import de.gliderpilot.trace.TraceLevels;
  * @version 1.0
  * @author <a href="mailto:tobias.schulte@gliderpilot.de">Tobias Schulte</a>
  */
-public abstract class NmeaListener extends Thread implements TraceLevels {
+public abstract class NmeaListener extends Thread {
 	protected BufferedReader bufferedReader;
 	private boolean stop = false;
 	private int baudrate = 4800;
@@ -61,13 +60,13 @@ public abstract class NmeaListener extends Thread implements TraceLevels {
 		try {
 			while (!stop) {
 				String line = bufferedReader.readLine();
-				Logger.getLogger(LOGGER).debug(line);
+				Logger.getLogger(getClass()).debug(line);
 			}
 		} catch (IOException ioe) {
 			close();
-			Logger.getLogger(LOGGER).debug(ioe.toString());
+			Logger.getLogger(getClass()).debug(ioe.toString());
 		} catch (NullPointerException npe) {
-			Logger.getLogger(LOGGER).debug("NullPointerException in run()");
+			Logger.getLogger(getClass()).debug("NullPointerException in run()");
 		}
 	}
 

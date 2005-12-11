@@ -19,7 +19,7 @@ import de.gliderpilot.geom.Point4D;
  * @author Tobias Schulte
  *
  */
-public class AbstractOlcDefinitionWriter {
+public abstract class AbstractOlcDefinitionWriter {
 	protected static final SimpleDateFormat dateFormat = new SimpleDateFormat("dd%2'E'MM%2'E'yy");
 	protected static final SimpleDateFormat timeFormat = new SimpleDateFormat("HH%3'A'mm%3'A'ss");
 	static {

@@ -64,14 +64,14 @@ public abstract class AbstractZoomable4DPanelXY
 	 * @see AbstractZoomable4DPanel#moveCenter(int, int)
 	 */
 	public void moveCenter(int systemX, int systemY) {
-		Logger.getLogger(LOGGER)
+		Logger.getLogger(getClass())
 			  .info("MoveCenter (" + systemX + ", " + systemY + ")");
 
 		Point4D p = realRect.getCenter4D();
-		Logger.getLogger(LOGGER).info("Before: " + p.getDumpString());
+		Logger.getLogger(getClass()).info("Before: " + p.getDumpString());
 		p.move(Util.getRealValue(systemX, zoomX), 
 			   Util.getRealValue(-systemY, zoomX));
-		Logger.getLogger(LOGGER).info("After: " + p.getDumpString());
+		Logger.getLogger(getClass()).info("After: " + p.getDumpString());
 		setCenter(p);
 	}
 
@@ -82,7 +82,7 @@ public abstract class AbstractZoomable4DPanelXY
 		super.calculateTranslation();
 
 		Point4D realUl = new Point4D(realRect.getX(), realRect.getY());
-		Logger.getLogger(LOGGER).info("Real Corner: " + 
+		Logger.getLogger(getClass()).info("Real Corner: " + 
 									  realUl.getDumpString());
 
 		double zoomX = Util.getFactor(getWidth(), 
@@ -101,7 +101,7 @@ public abstract class AbstractZoomable4DPanelXY
 
 		this.zoomX = zoom;
 
-		Logger.getLogger(LOGGER).info("ZOOM: " + zoom);
+		Logger.getLogger(getClass()).info("ZOOM: " + zoom);
 
 		double xOffs = Util.getRealValue(getWidth() / 2, zoom);
 		double yOffs = Util.getRealValue(getHeight() / 2, zoom);

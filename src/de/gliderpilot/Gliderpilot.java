@@ -40,7 +40,6 @@ import de.gliderpilot.preferences.PositionPreference;
 import de.gliderpilot.preferences.Prefs;
 import de.gliderpilot.preferences.PrefsChangeEvent;
 import de.gliderpilot.preferences.PrefsDialog;
-import de.gliderpilot.trace.TraceLevels;
 import de.gliderpilot.tracklog.TrackLog;
 
 
@@ -50,11 +49,11 @@ import de.gliderpilot.tracklog.TrackLog;
  * @version 1.0
  * @author <a href="mailto:tobias.schulte@gliderpilot.de">Tobias Schulte</a>
  */
-public class Gliderpilot extends JFrame implements TraceLevels, Prefs.Listener {
+public class Gliderpilot extends JFrame implements Prefs.Listener {
 	public static final String APP_NAME = "Gliderpilot 2003 Beta 03";
-	static Logger logger = Logger.getLogger(LOGGER);
+	static Logger logger = Logger.getLogger(Gliderpilot.class);
 	static {
-		logger.setLevel(Level.WARN);
+		Logger.getRootLogger().setLevel(Level.WARN);
 		BasicConfigurator.configure();
 	}
 	static JFrame frame;

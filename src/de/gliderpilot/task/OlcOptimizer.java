@@ -8,9 +8,10 @@ package de.gliderpilot.task;
 
 import java.util.Iterator;
 
+import org.apache.log4j.Logger;
+
 import de.gliderpilot.geom.Point4D;
 import de.gliderpilot.preferences.Prefs;
-import de.gliderpilot.trace.Logger;
 import de.gliderpilot.tracklog.TrackLog;
 
 
@@ -31,17 +32,17 @@ public class OlcOptimizer extends AbstractOptimizer {
 		super(track);
 
 		int maxSpeed = track.getMaxSpeed();
-		Logger.getLogger(LOGGER).info("maxSpeed: " + maxSpeed);
+		Logger.getLogger(getClass()).info("maxSpeed: " + maxSpeed);
 		int avgSpeed = track.getAvgSpeed();
-		Logger.getLogger(LOGGER).info("avgSpeed: " + avgSpeed);
+		Logger.getLogger(getClass()).info("avgSpeed: " + avgSpeed);
 		int minSpeed = track.getMinSpeed();
-		Logger.getLogger(LOGGER).info("minSpeed: " + minSpeed);
+		Logger.getLogger(getClass()).info("minSpeed: " + minSpeed);
 		int deltaT = track.getDeltaT();
-		Logger.getLogger(LOGGER).info("deltaT: " + deltaT);
+		Logger.getLogger(getClass()).info("deltaT: " + deltaT);
 		double pointsPerHour = ((double) 60 * 60 * 1000) / deltaT;
-		Logger.getLogger(LOGGER).info("pointsPerHour: " + pointsPerHour);
+		Logger.getLogger(getClass()).info("pointsPerHour: " + pointsPerHour);
 		deltaPOneKm = (int) Math.ceil(pointsPerHour / maxSpeed);
-		Logger.getLogger(LOGGER).info("DeltaPOneKm: " + deltaPOneKm);
+		Logger.getLogger(getClass()).info("DeltaPOneKm: " + deltaPOneKm);
 	}
 
 	public Prefs getPrefs() {
@@ -65,7 +66,7 @@ public class OlcOptimizer extends AbstractOptimizer {
 		// this will hold the best result
 		OlcTask bestTask;
 
-		Logger.getLogger(LOGGER).info("Number of TrackPoints " + 
+		Logger.getLogger(getClass()).info("Number of TrackPoints " + 
 									  track.size());
 
 		// first leg
@@ -101,7 +102,7 @@ public class OlcOptimizer extends AbstractOptimizer {
 		// this is for the progress dialog
 		cancel();
 		
-		Logger.getLogger(LOGGER).info("\n"+bestTask.getDumpString());
+		Logger.getLogger(getClass()).info("\n"+bestTask.getDumpString());
 	}
 	
 	/**

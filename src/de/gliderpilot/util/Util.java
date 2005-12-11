@@ -7,7 +7,6 @@ package de.gliderpilot.util;
 
 
 import de.gliderpilot.geom.Point4D;
-import de.gliderpilot.trace.TraceLevels;
 
 
 /**
@@ -16,7 +15,7 @@ import de.gliderpilot.trace.TraceLevels;
  * @version 1.0
  * @author <a href="mailto:tobias.schulte@gliderpilot.de">Tobias Schulte</a>
  */
-public class Util implements TraceLevels {
+public class Util {
 	private static double kmOneDegree = new Point4D(1, 0, 0, true, 1, 0, 0, 
 													true).getXDistanceFrom(
 												new Point4D());

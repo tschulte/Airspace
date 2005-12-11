@@ -25,7 +25,7 @@ import org.apache.log4j.Logger;
 import de.gliderpilot.geom.Point4D;
 import de.gliderpilot.geom.Rectangle4D;
 import de.gliderpilot.gui.Drawable;
-import de.gliderpilot.trace.TraceLevels;
+
 
 
 /**
@@ -34,8 +34,7 @@ import de.gliderpilot.trace.TraceLevels;
  * @version 1.0
  * @author <a href="mailto:tobias.schulte@gliderpilot.de">Tobias Schulte</a>
  */
-public class AirspaceElement implements Drawable, AirspaceTypes, TraceLevels,
-										Shape {
+public class AirspaceElement implements Drawable, AirspaceTypes, Shape {
 	/** DOCUMENT ME! */
 	public static Color COLOR_ALPHA = new Color(Color.red.getRed(), 
 												Color.red.getGreen(), 
@@ -184,7 +183,7 @@ public class AirspaceElement implements Drawable, AirspaceTypes, TraceLevels,
 	 * @param name The name to set
 	 */
 	public void setName(String name) {
-		Logger.getLogger(LOGGER).debug("set Name: " + name);
+		Logger.getLogger(getClass()).debug("set Name: " + name);
 		this.name = name;
 	}
 
@@ -265,9 +264,9 @@ public class AirspaceElement implements Drawable, AirspaceTypes, TraceLevels,
 		// this is because calculation might differ from correct values
 		addPoint(p2);
 
-		Logger.getLogger(LOGGER)
+		Logger.getLogger(getClass())
 			  .debug("Arc: angle start : " + arc.getAngleStart());
-		Logger.getLogger(LOGGER)
+		Logger.getLogger(getClass())
 			  .debug("Arc: angle extend: " + arc.getAngleExtent());
 		elements += 3;
 	}
@@ -279,7 +278,7 @@ public class AirspaceElement implements Drawable, AirspaceTypes, TraceLevels,
 	 * @param radius The radius in km
 	 */
 	public void addCircle(Point4D center, double radius) {
-		Logger.getLogger(LOGGER).debug("Center: " + center.getDumpString());
+		Logger.getLogger(getClass()).debug("Center: " + center.getDumpString());
 
 		Point4D corner = center.getPointAt(radius, radius);
 		Ellipse2D ellipse = new Ellipse2D.Double();
@@ -294,7 +293,7 @@ public class AirspaceElement implements Drawable, AirspaceTypes, TraceLevels,
 	 * @param p DOCUMENT ME!
 	 */
 	public void addPoint(Point4D p) {
-		Logger.getLogger(LOGGER).debug("Adding " + p.getDumpString());
+		Logger.getLogger(getClass()).debug("Adding " + p.getDumpString());
 
 		if (elements++ == 0) {
 			airspacePath.moveTo((float) p.x, (float) p.y);
