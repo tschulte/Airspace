@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="airspace" default="build" basedir=".">
 	
-	<property name="src.dir" value="src"/>
-	<property name="messages.dir" value="${src.dir}/resources/messages"/>
+	<property name="src.dir" value="src/main/java"/>
+	<property name="messages.dir" value="src/main/resources/messages"/>
 	
 
 	<target name="build" depends="compile, jar"/>
