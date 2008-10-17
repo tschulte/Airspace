@@ -8,7 +8,7 @@
   <artifactId>airspace</artifactId>
   <name>Airspace Viewer</name>
   <version>1.0-SNAPSHOT</version>
-  <url>http://gliderpilot.de</url>
+  <url>http://gliderpilot.de/airspace</url>
   <scm>
   	<connection>scm:svn:file:///home/tobias/.svn/repos/airspace/trunk</connection>
   	<developerConnection>scm:svn:file:///home/tobias/.svn/repos/airspace/trunk</developerConnection>
@@ -23,31 +23,21 @@
         </configuration>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-scm-plugin</artifactId>
-        <configuration>
-          <goals>install</goals>
-        </configuration>
-      </plugin>
-      <plugin>
         <groupId>org.codehaus.mojo.webstart</groupId>
         <artifactId>webstart-maven-plugin</artifactId>
         <executions>
            <execution>
 				<phase>process-resources</phase>
-           
               <goals>
                  <goal>jnlp</goal> <!-- use jnlp, jnlp-inline or jnlp-single as appropriate -->
               </goals>
            </execution>
         </executions>
         <configuration>
-
            <!-- JNLP generation -->
            <jnlp>
              <mainClass>de.gliderpilot.Gliderpilot</mainClass>
            </jnlp>
-
         </configuration>
       </plugin>
     </plugins>
@@ -58,6 +48,13 @@
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>log4j</groupId>
+    	<artifactId>log4j</artifactId>
+    	<version>1.2.9</version>
+    	<type>jar</type>
+    	<scope>compile</scope>
     </dependency>
   </dependencies>
 </project>
